@@ -1,0 +1,58 @@
+# The Trusted Creator 30 Days, Landing Founder
+
+Trang bán cho khóa đầu tiên, khai giảng 28/09/2026. Đây là **Landing Founder**, trang chính dành cho nhà sáng lập và chủ doanh nghiệp chuyên môn.
+
+Nguồn nội dung duy nhất: `02 Projects/The Trusted Creator/[C] The Trusted Creator - Chiến lược Tệp Khách hàng OfferDoc và Landing Page.md` trong vault, phiên bản 1.5 ngày 22/08/2026. Mọi thay đổi về offer, giá, ngày hoặc điều khoản phải sửa ở file đó trước, rồi mới sửa trang này.
+
+Phong cách kế thừa nguyên từ trang Cộng đồng Next Gen Founder (kho `next-gen-founder`): nền trắng, chữ than `#0F1218`, một màu cam `#D97757` dùng tiết chế, ba font Bricolage Grotesque, Be Vietnam Pro và IBM Plex Mono.
+
+## Chỗ còn phải điền trước khi đưa trang cho khách
+
+0. **Gỡ dòng chặn công cụ tìm kiếm.** Trong `index.html` có dòng `<meta name="robots" content="noindex, nofollow">` và một dòng ghi chú ngay trên nó. Trang đang ở dạng bản nháp nên chưa muốn Google ghi nhận. Khi đã điền đủ các mục dưới đây thì xóa cả hai dòng đó rồi đẩy lại.
+1. **Thông tin chuyển khoản** trong khối `#khoi-ck`: chủ tài khoản, số tài khoản, ngân hàng. Đang để dấu `[Điền ...]`.
+2. **Nơi nhận đăng ký**: biến `DANG_KY` ở đầu đoạn mã. Đang để `loai:'thu'`, tức mở sẵn ứng dụng thư. Khi có địa chỉ nhận biểu mẫu, đổi thành `loai:'form'` và điền `form`.
+3. **Phiếu chẩn đoán 7 phút**: hai lối hành động đang trỏ tới `phieu-chan-doan.html`, tệp này chưa được dựng. Phiếu phải ghi nhận ba lớp là vai trò, cấp độ và điểm gãy, cộng với `trang_nguon = founder`.
+4. **Hình thức giao hàng** trong phần Cách học: lịch buổi học đang lấy theo cách vận hành của REX, tối thứ Hai và tối thứ Năm từ 19:30 đến 22:00. Mức thời gian người học cần dành, khoảng 5 giờ học cộng 3 đến 5 giờ tự làm mỗi tuần, cũng suy ra từ lịch đó. Cả hai là số liệu tạm, phải khóa theo mục 44 của tài liệu nguồn.
+5. **Bằng chứng cơ chế** trong phần Người dạy: cần một tình huống thật đã được chuyển thành video, bài viết, chuỗi ảnh có chữ, một điểm thu hút và một bảng đo.
+6. **Dòng giới thiệu Coach Duy**: cần Coach Duy xác nhận cách gọi vai trò trước khi công bố.
+
+## Quy tắc đã cài sẵn vào trang
+
+- Hai lối hành động đúng thứ tự: nút đăng ký đứng trước, Phiếu chẩn đoán là một dòng chữ ngay dưới, không phải nút ngang cấp.
+- Mọi chỗ nêu giá đều hiện cả số chưa thuế và số đã gồm thuế giá trị gia tăng 8 phần trăm.
+- Sau ngày 21/09/2026, đoạn mã tự gỡ mức đăng ký sớm khỏi trang, không giữ dạng gạch ngang. Mốc này nằm ở biến `NGAY_CHUYEN`.
+- Biểu mẫu tự ghi nhận `trang_nguon`, `phien_ban_trang` và `nguon_chien_dich`, đọc từ tham số `?nguon=` hoặc `?utm_source=`.
+- Khối giới hạn lời hứa và câu nói thẳng đây là khóa đầu tiên nằm ngay trên trang, không giấu ở cuối.
+
+## Xuất bản
+
+Kho công khai: `https://github.com/coachduynguyen-creator/trusted-creator`
+Địa chỉ trang: `https://coachduynguyen-creator.github.io/trusted-creator/`
+
+Đẩy bản mới:
+
+```bash
+git add -A && git commit -m "cập nhật nội dung trang" && git push
+```
+
+GitHub Pages tự dựng lại sau khoảng một tới hai phút.
+
+## Chạy thử
+
+```bash
+python3 -m http.server 4188 --directory .
+```
+
+Thêm `?static` vào địa chỉ để tắt mọi hiệu ứng khi cần chụp ảnh hoặc kiểm tra.
+
+## Ghi chú thiết kế, vòng sửa ngày 23/08/2026
+
+Sau khi tự soi lại bằng góc nhìn trang chuyển đổi và góc nhìn người chủ doanh nghiệp:
+
+- Phần **Người dạy được đưa lên trước Phù hợp và Mức đầu tư**. Khóa đầu chưa có bằng chứng người học, nên uy tín người dạy là tài sản thuyết phục lớn nhất và phải đứng trước lúc người đọc nhìn giá.
+- Thêm **một lời mời giữa trang** ngay sau phần Kết quả, giữ đúng thứ tự hai lối hành động.
+- Ba con số của chương trình được **đưa lên trên ảnh chân dung** ở hero để nhìn thấy ngay, không phải cuộn.
+- Mười đầu ra **xếp hai cột** trên máy tính, giảm gần một nửa chiều dài phần đó.
+- Biểu mẫu được **chia hai nhóm có tiêu đề** và có **dòng giá đang áp dụng ngay đầu biểu mẫu**, để người điền không phải cuộn ngược lên tìm giá.
+- Thêm khối **thời gian người học cần dành mỗi tuần** trong phần Cách học, vì đây là câu hỏi đầu tiên của một người chủ đang bận.
+- **Không dùng ảnh slide của chương trình khác** để lấp chỗ trống ở đoạn giữa trang. Ảnh `cd-thuc-hanh.jpg` đã bị gỡ vì nó là tài liệu của một chương trình khác, đưa lên đây là mượn bằng chứng sai chỗ.
