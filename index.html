@@ -196,9 +196,9 @@ figure{margin:0}
 .cap-the{height:100%;display:flex;flex-direction:column;gap:12px;padding:24px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper);background-color:#fff;box-shadow:var(--shadow-s);transition:transform .2s var(--ease),box-shadow .2s var(--ease),border-color .2s}
 @media (hover:hover){.cap-the:hover{transform:translateY(-4px);box-shadow:var(--shadow-h);border-color:var(--line-2)}}
 .cap-the.chinh{border-color:var(--ink);box-shadow:var(--shadow)}
-.nhan-cap{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.nhan-cap span{font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
-.nhan-cap em{font-style:normal;font-size:13px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--bg-3);color:var(--ink-2)}
+.nhan-cap{display:flex;justify-content:space-between;align-items:center;gap:8px 10px;flex-wrap:wrap}
+.nhan-cap span{font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);min-width:0;flex:1 1 auto}
+.nhan-cap em{font-style:normal;font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--bg-3);color:var(--ink-2);white-space:nowrap;flex:0 0 auto}
 .cap-the.chinh .nhan-cap em{background:var(--cam-dam);color:#fff}
 .cap-the h3{font-family:var(--f-tit);font-size:22px;letter-spacing:-.02em;line-height:1.2}
 .cap-the .mota{font-size:15px;color:var(--ink-2);line-height:1.55}
@@ -387,7 +387,7 @@ figure{margin:0}
 .bang-anh .nguon{display:block;margin-top:18px;font-size:13px;color:#9AA2AF}
 .bang-anh .anh{position:relative;min-height:330px;background:var(--bg-3)}
 .bang-anh .anh img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%}
-@media (max-width:860px){.bang-anh{grid-template-columns:minmax(0,1fr)}.bang-anh .anh{min-height:0;aspect-ratio:2.5;order:-1}}
+@media (max-width:860px){.bang-anh{grid-template-columns:minmax(0,1fr)}.bang-anh .anh{min-height:0;aspect-ratio:4/3;order:-1}}
 @media (max-width:640px){.bang-anh .chu{padding:26px 20px 24px}.bang-anh p{font-size:15.5px}}
 
 /* ba thẻ ảnh: ảnh lớn, chữ ít */
@@ -787,7 +787,7 @@ figure{margin:0}
         <div class="dinh"><b>Nếu đúng là bạn</b>Bạn vẫn vào được, với điều kiện làm xong phần chuẩn bị trước ngày khai giảng và chịu đăng bài ngay trong tuần đầu.</div>
       </div>
       <div class="cap-the chinh">
-        <div class="nhan-cap"><span>Làm rồi, chưa giữ được nhịp</span><em>Đúng người</em></div>
+        <div class="nhan-cap"><span>Làm rồi lại dừng</span><em>Đúng người</em></div>
         <h3>Tôi làm được một thời gian rồi dừng</h3>
         <p class="mota">Bạn đã đăng, đã quay, có khi đã thuê đội làm. Nhưng chạy được một hai tháng rồi dừng, bận một tuần là mất nhịp, và có những bài quay xong lại để đó vì thấy chưa ưng.</p>
         <div class="dinh"><b>Nếu đúng là bạn</b>Chương trình viết cho đúng chỗ này. Bạn không thiếu kiến thức. Bạn thiếu một nhịp đủ chắc để không dừng lại lần nữa.</div>
@@ -996,7 +996,7 @@ figure{margin:0}
           <p>Bạn không ngồi nghe rồi về. Mỗi ngày bạn làm thật, luyện cùng đồng đội và báo lại. Cuối 30 ngày bạn có sản phẩm thật của mình, không phải một tập ghi chép.</p>
           <span class="nguon">Ảnh chụp tại một chương trình trước của Coach Duy Nguyễn.</span>
         </div>
-        <div class="anh"><img src="img/cd-dai-hoi.jpg" alt="Hội trường đông người trong một chương trình do Coach Duy Nguyễn dẫn" loading="lazy" decoding="async"></div>
+        <div class="anh"><img src="img/cd-gio-tay.jpg" alt="Cả hội trường giơ tay nhận thử thách trong một chương trình của Coach Duy Nguyễn" loading="lazy" decoding="async"></div>
       </div>
       <div class="the-anh hien tre">
         <figure>
@@ -1010,7 +1010,7 @@ figure{margin:0}
           </figcaption>
         </figure>
         <figure>
-          <div class="khung"><img src="img/cd-gio-tay.jpg" alt="Cả hội trường giơ tay nhận thử thách" loading="lazy" decoding="async"></div>
+          <div class="khung"><img src="img/cd-dai-hoi.jpg?v=2" alt="Hội trường đông người trong một chương trình do Coach Duy Nguyễn dẫn" loading="lazy" decoding="async"></div>
           <figcaption>
             <b>Cả nhóm cùng chạy một nhịp</b>
             <ul>
