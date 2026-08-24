@@ -172,3 +172,14 @@ Trong `index.html`, phần Người dạy có một ghi chú HTML đánh dấu c
 1. Chỉ ghi số cuộc **đã thật sự thực hiện**. Không ghi số mục tiêu.
 2. Ghi kèm bao nhiêu người trong đó **là chủ doanh nghiệp**, vì đây là trang dành cho nhà sáng lập.
 3. Chưa nên ghi con số của đợt 1. Xem mục 4 của bản phân tích: mẫu 29 phiếu chưa bão hòa (chủ đề mới còn xuất hiện tới phiếu 26) và lệch nguồn nặng (16 trên 18 phiếu có ghi nguồn là học viên cũ).
+
+### Sửa cách gọi tên người đọc, ngày 24/08/2026
+
+Coach Duy bắt lỗi cụm "nhà sáng lập hoặc chủ doanh nghiệp chuyên môn" trong hero: đó là chữ của tài liệu nội bộ, người đọc không biết mình có nằm trong đó không.
+
+Đã sửa theo hai lớp:
+
+1. **Hero nói đặc điểm thật rồi mới cho ví dụ ngành.** Đặc điểm là "khách tin bạn trước rồi mới tin công ty", tức đúng tiêu chí trong NGF-17 về nhóm khách lõi. Ví dụ ngành lấy từ mục 4 tài liệu nguồn cộng các ngành có thật trong khảo sát: đào tạo, tư vấn, dịch vụ chuyên môn, phòng khám và thẩm mỹ, bất động sản, tài chính.
+2. **Phần Điều kiện tham gia nói rõ ngành chỉ là ví dụ.** Thêm câu: điều quyết định không phải bạn làm ngành nào, mà là khách có cần tin người trước khi xuống tiền hay không. Nếu khách mua chủ yếu vì giá hoặc vì tiện thì chương trình chưa phải chỗ của họ. Câu này vừa mở cho ngành không có trong danh sách, vừa loại đúng nhóm mà mục 4 tài liệu nguồn xếp vào rủi ro nhận sai người.
+
+Cụm "chủ doanh nghiệp chuyên môn" đã bị gỡ khỏi toàn bộ trang.
