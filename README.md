@@ -286,3 +286,27 @@ Trang hiện có bốn khối gập cho người muốn xem kỹ: khối lượn
 ### Nguyên tắc giữ lại cho các vòng sau
 
 Không thêm phần mới để giải thích cách vận hành. Nếu cần nói chi tiết, đặt trong khối gập. Phần hiện ra mặc định chỉ giữ thứ chạm cảm xúc: nỗi đau, điều họ muốn, ảnh thật của lò rèn, người dạy, giá và lời mời.
+
+## Vòng đọc lại bằng mắt khách hàng, ngày 24/08/2026
+
+Coach Duy yêu cầu đọc lại toàn trang với vai người chủ doanh nghiệp: có chạm không, có phải ngôn ngữ họ nói không, nhân dạng họ muốn có được gọi tên không, có hào hứng không.
+
+Kết quả đếm được trước khi sửa:
+
+| Điều đo | Số |
+| --- | --- |
+| Câu dè dặt và cảnh báo rải khắp trang | **45** |
+| Chữ "chuyên gia" | 3 |
+| Chữ "cố vấn" | 4 |
+| Chữ "uy tín" | **0** |
+| Chữ "chất liệu", từ nội bộ còn sót nhiều nhất | **10** |
+
+Trong khi khảo sát cho thấy 17 trên 29 người nói muốn hình ảnh chuyên gia và 6 người tự nói ra chữ cố vấn. Tức là **nhân dạng khách muốn trở thành gần như không có mặt trên trang**.
+
+Đã sửa năm việc:
+
+1. **Tiêu đề hero viết bằng ngôn ngữ khách nói.** Từ "Biến tiếng nói của người chủ thành một thương hiệu được tin" sang **"Ngồi với khách, bạn nói đâu ra đấy. Lên mạng, không ai biết bạn là ai."** Câu hứa chuyển xuống dòng dưới: 30 ngày để đổi điều đó. **Lưu ý: mục 38A tài liệu nguồn khóa câu tiêu đề cũ. Coach Duy đã duyệt đổi, tài liệu cần cập nhật cho khớp.**
+2. **Gọi tên nhân dạng** ở phần Đích đến, đặt trong một ô nền cam nhạt: thị trường nhìn bạn như một người cố vấn đáng tin trong nghề của mình, không phải một người đang chào hàng.
+3. **Nối triệu chứng với lời giải** trên từng bậc leo dốc, mỗi bậc thêm một dòng bắt đầu bằng "Hết cảnh": hết cảnh sáng nào cũng nghĩ đăng gì, hết cảnh bận một tuần là mất nhịp, hết cảnh bài có người xem mà không ai nhắn tin.
+4. **Gỡ câu dè dặt khỏi hai đỉnh cảm xúc**: phần Đích đến và phần Bốn tuần. Nội dung dè dặt vẫn còn đủ ở khối "Điều chương trình không bảo đảm" và phần Người dạy, chỉ không rải vào chỗ người đọc đang lên cảm xúc.
+5. **Bỏ hết cụm nội bộ còn sót.** "Chất liệu" từ 10 lần xuống **0**, đổi thành "chuyện để kể" và "ý để nói". Viết lại câu dẫn Bốn tuần bằng lời người: người ta nhớ bạn vì cái gì, bạn có chuyện gì để kể, kể bằng giọng của chính bạn.

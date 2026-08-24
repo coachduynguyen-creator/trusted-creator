@@ -321,6 +321,7 @@ figure{margin:0}
 .leo .chan{padding-top:16px;border-top:2px solid var(--ink);display:flex;flex-direction:column;gap:6px}
 .leo b{font-size:16px;font-weight:700;color:var(--ink);letter-spacing:-.01em;line-height:1.25}
 .leo span{font-size:14px;line-height:1.45;color:var(--ink-2)}
+.leo em{font-style:normal;display:block;margin-top:7px;font-size:13.5px;line-height:1.4;color:var(--cam-sau);font-weight:600}
 .leo .cuoi b{color:var(--cam-sau)}
 @media (min-width:820px){.leo{display:grid}.nl.the-ve-thay,.dong.the-ve-thay{display:none}}
 @media (max-width:1100px){.leo .cot{height:210px}.leo > div:nth-child(6) .bac{height:168px}.leo > div:nth-child(5) .bac{height:145px}.leo > div:nth-child(4) .bac{height:122px}.leo > div:nth-child(3) .bac{height:99px}.leo > div:nth-child(2) .bac{height:76px}.leo > div:nth-child(1) .bac{height:53px}.leo b{font-size:15px}.leo span{font-size:13.5px}}
@@ -496,6 +497,12 @@ figure{margin:0}
 @media (max-width:520px){.tuan{grid-template-columns:repeat(2,minmax(0,1fr))}.tuan > div{min-height:92px}}
 @supports (grid-template-rows: subgrid){.tuan{grid-template-rows:auto auto 1fr}.tuan > div{display:grid;grid-template-rows:subgrid;grid-row:span 3;gap:8px}.tuan .gio{margin-top:0}}
 @media (max-width:900px){@supports (grid-template-rows: subgrid){.tuan > div{grid-row:auto;grid-template-rows:none;display:flex;flex-direction:column}.tuan .gio{margin-top:auto}}}
+
+
+/* ============ DÒNG NHÂN DẠNG ============ */
+.nhan-dang{margin:26px 0 0;padding:20px 24px;border-radius:var(--r);background:var(--cam-mo);border:1px solid color-mix(in srgb,var(--cam-dam) 35%,transparent);max-width:74ch}
+.nhan-dang b{display:block;font-family:var(--f-tit);font-size:clamp(19px,2.1vw,25px);letter-spacing:-.02em;line-height:1.25;color:var(--cam-sau);margin-bottom:8px;text-wrap:balance}
+.nhan-dang span{display:block;font-size:15.5px;line-height:1.55;color:var(--ink-2)}
 
 /* ============ CÁCH HỌC ============ */
 .hoc{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:start}
@@ -750,12 +757,12 @@ figure{margin:0}
     <div class="hero-luoi">
       <div class="hero-chu">
         <span class="vien"><i></i>The Trusted Creator 30 Days dành cho nhà sáng lập</span>
-        <h1>Biến tiếng nói của người chủ thành một thương hiệu được tin, <span>giúp đúng khách hàng hiểu và đến gần doanh nghiệp hơn.</span></h1>
-        <p class="dan">Dành cho <b>chủ doanh nghiệp và chuyên gia muốn thu hút khách hàng bằng thương hiệu của chính mình.</b> Bạn đã có sản phẩm, có khách thật, chỉ là nội dung vẫn còn rời rạc.</p>
+        <h1>Ngồi với khách, bạn nói đâu ra đấy. <span>Lên mạng, không ai biết bạn là ai.</span></h1>
+        <p class="dan"><b>30 ngày để đổi điều đó.</b> Dành cho chủ doanh nghiệp và chuyên gia muốn thu hút khách hàng bằng thương hiệu của chính mình. Bạn đã có sản phẩm, có khách thật, chỉ là nội dung vẫn còn rời rạc.</p>
         <ul class="hero-ket">
           <li class="tieu" style="padding-left:0">Sau 30 ngày, bạn có</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một câu nói rõ bạn là ai trong nghề, khách nghe một lần là hiểu.</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một kho chất liệu, để không sáng nào cũng phải nghĩ hôm nay đăng gì.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một kho chuyện để kể, lấy từ chính việc bạn làm mỗi ngày.</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Nội dung thật đã đăng, ở nhiều dạng, bằng giọng của chính bạn.</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một nhịp làm bạn vẫn chạy được cả khi bận.</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một đường đi từ bài đăng tới cuộc trao đổi với đúng khách.</li>
@@ -785,7 +792,7 @@ figure{margin:0}
       <div class="hien">
         <span class="nhan" style="display:block;margin-bottom:14px">Vấn đề cần gọi đúng</span>
         <h2>Doanh nghiệp đã có giá trị. <span>Nhưng phần lớn điều khiến khách hàng tin vẫn nằm trong đầu người chủ.</span></h2>
-        <p class="dan" style="margin-top:26px">Bạn không cần trở thành người làm nội dung toàn thời gian. Bạn cần một cách lấy chuyên môn sẵn có của mình, chuyển thành nội dung đáng tin, rồi đưa niềm tin đó về đúng doanh nghiệp.</p>
+        <p class="dan" style="margin-top:26px">Bạn không cần trở thành người làm nội dung toàn thời gian. Bạn cần một cách lấy đúng thứ bạn đã biết, kể ra cho người ta tin, rồi để họ tin luôn cả công ty của bạn.</p>
       </div>
       <div class="ke-thu hien">
         <b>Điều đang làm hỏng nhịp</b>
@@ -795,7 +802,7 @@ figure{margin:0}
           <li>Chạy theo định dạng và xu hướng đang nổi.</li>
           <li>Giao tiếng nói cho công cụ trí tuệ nhân tạo (AI) hoặc cho đội bên ngoài.</li>
           <li>Đo mọi thứ bằng lượt xem.</li>
-          <li>Không có đường đưa sự chú ý về một quan hệ có thể tiếp tục.</li>
+          <li>Người xem xong rồi thôi, không có bước nào để họ đi tiếp.</li>
         </ul>
       </div>
     </div>
@@ -816,7 +823,11 @@ figure{margin:0}
     <div class="dau-phan hien">
       <span class="nhan">Đích đến</span>
       <h2>Bạn thôi phải chứng minh mình lại từ đầu <span>trong mỗi cuộc gặp</span></h2>
-      <p class="dan">Khách đọc bạn trước, hiểu bạn trước, tin bạn một phần trước khi hai bên ngồi xuống. Sau 30 ngày, đây là thứ bạn cầm trong tay để đi tới đó. Ba mươi ngày đủ để cài đặt và chạy thử một vòng, chưa phải là lúc thương hiệu của bạn đã xong.</p>
+      <p class="dan">Khách đọc bạn trước, hiểu bạn trước, tin bạn một phần trước khi hai bên ngồi xuống.</p>
+      <div class="nhan-dang hien">
+        <b>Thị trường nhìn bạn như một người cố vấn đáng tin trong nghề của mình, không phải một người đang chào hàng.</b>
+        <span>Đó là chỗ đến. Dưới đây là những thứ bạn cầm trong tay sau 30 ngày để đi tới đó.</span>
+      </div>
     </div>
     <div class="ke hien tre">
       <div>
@@ -831,7 +842,7 @@ figure{margin:0}
         <div class="mk"><div class="mk-chong"><i></i><i></i><i><s></s><s></s><s></s></i></div></div>
         <h3>Kho để không bí ý</h3>
         <ul>
-          <li>Kho chất liệu và kho câu chuyện lấy từ việc thật.</li>
+          <li>Một kho chuyện và ý để nói, lấy từ chính việc bạn làm.</li>
           <li>Nội dung thật của bạn đã đăng công khai, ở nhiều dạng.</li>
         </ul>
       </div>
@@ -905,28 +916,28 @@ figure{margin:0}
     <div class="dau-phan hien">
       <span class="nhan">Cách nó chạy</span>
       <h2>Bốn tuần thay đổi cách bạn xuất hiện</h2>
-      <p class="dan">Mỗi tuần đóng lại bằng một việc bạn làm xong, không phải bằng cảm giác đã hiểu thêm. Bốn tuần cộng lại là một vòng chạy đủ: được nhớ đúng, có chuyện đáng nói, nói bằng giọng thật, tự chạy với AI, rồi biến niềm tin thành quan hệ.</p>
+      <p class="dan">Mỗi tuần đóng lại bằng một việc bạn làm xong, không phải bằng cảm giác đã hiểu thêm. Bốn tuần cộng lại là một vòng đủ: người ta nhớ bạn vì cái gì, bạn có chuyện gì để kể, kể bằng giọng của chính bạn, chạy đều được với AI phụ việc, rồi từ đó ra được cuộc nói chuyện với khách.</p>
     </div>
-    <div class="leo hien tre" role="img" aria-label="Sáu bậc của hành trình 30 ngày, mỗi tuần cao hơn tuần trước: trước khi bắt đầu xem bạn đang đứng ở đâu, tuần một làm rõ bạn là ai trong nghề, tuần hai xây kho chất liệu và câu chuyện, tuần ba đặt nhịp làm chạy được khi bận, tuần bốn mở đường về khách hàng, cuối khóa đưa ra bằng chứng của chính bạn">
+    <div class="leo hien tre" role="img" aria-label="Sáu bậc của hành trình 30 ngày, mỗi tuần cao hơn tuần trước: trước khi bắt đầu xem bạn đang đứng ở đâu, tuần một làm rõ bạn là ai trong nghề, tuần hai gom kho chuyện để kể, tuần ba đặt nhịp làm chạy được khi bận, tuần bốn mở đường về khách hàng, cuối khóa đưa ra bằng chứng của chính bạn">
       <div>
         <div class="cot"><span class="so">0</span><div class="bac"></div></div>
         <div class="chan"><b>Trước khi bắt đầu</b><span>Xem bạn đang đứng ở đâu</span></div>
       </div>
       <div>
         <div class="cot"><span class="so">1</span><div class="bac"></div></div>
-        <div class="chan"><b>Tuần 1</b><span>Rõ bạn là ai trong nghề</span></div>
+        <div class="chan"><b>Tuần 1</b><span>Rõ bạn là ai trong nghề</span><em>Hết cảnh khách hỏi bạn làm gì mà bạn kể mãi không xong.</em></div>
       </div>
       <div>
         <div class="cot"><span class="so">2</span><div class="bac"></div></div>
-        <div class="chan"><b>Tuần 2</b><span>Kho chất liệu và câu chuyện</span></div>
+        <div class="chan"><b>Tuần 2</b><span>Kho chuyện để kể</span><em>Hết cảnh sáng nào cũng ngồi nghĩ hôm nay đăng gì.</em></div>
       </div>
       <div>
         <div class="cot"><span class="so">3</span><div class="bac"></div></div>
-        <div class="chan"><b>Tuần 3</b><span>Nhịp làm chạy được khi bận</span></div>
+        <div class="chan"><b>Tuần 3</b><span>Nhịp làm chạy được khi bận</span><em>Hết cảnh bận một tuần là mất nhịp rồi bỏ luôn.</em></div>
       </div>
       <div>
         <div class="cot"><span class="so">4</span><div class="bac"></div></div>
-        <div class="chan"><b>Tuần 4</b><span>Đường về khách hàng</span></div>
+        <div class="chan"><b>Tuần 4</b><span>Đường về khách hàng</span><em>Hết cảnh bài có người xem mà không ai nhắn tin.</em></div>
       </div>
       <div>
         <div class="cot"><span class="so">5</span><div class="bac"></div></div>
@@ -943,13 +954,13 @@ figure{margin:0}
       <div>
         <span class="so">02</span>
         <h3>Biến công việc thật thành nội dung đáng nhớ</h3>
-        <p>Một kho chất liệu lấy thẳng từ công việc thật, một kho câu chuyện, và luyện kể lại bằng video cùng những cách trình bày hợp với khách của bạn.</p>
-        <p class="dat">Xong tuần này: kho chất liệu và kho câu chuyện của riêng bạn.</p>
+        <p>Gom lại những chuyện thật trong nghề của bạn thành một kho dùng dần, rồi luyện kể lại bằng video và những cách trình bày hợp với khách.</p>
+        <p class="dat">Xong tuần này: một kho chuyện để kể của riêng bạn.</p>
       </div>
       <div>
         <span class="so">03</span>
         <h3>Xuất bản mà không lệ thuộc cảm hứng</h3>
-        <p>Một bảng theo dõi việc viết và đăng dành cho người làm một mình, bản đặt bài ghi rõ nguồn chất liệu, AI phụ phần tra cứu và viết lại, và một nhịp làm khớp với quỹ thời gian thật của bạn.</p>
+        <p>Một bảng theo dõi việc viết và đăng dành cho người làm một mình, mẫu đặt bài ghi rõ lấy chuyện từ đâu, AI phụ phần tra cứu và viết lại, và một nhịp làm khớp với quỹ thời gian thật của bạn.</p>
         <p class="dat">Xong tuần này: một nhịp làm bạn vẫn chạy được khi bận.</p>
       </div>
       <div>
@@ -961,7 +972,7 @@ figure{margin:0}
     </div>
     <div class="dong the-ve-thay hien">
       <div><b>Trước ngày bắt đầu: xem bạn đang ở đâu</b><p>Xem bạn đang đứng chỗ nào và đang tắc ở đâu. Kiểm lại nội dung và kênh bạn đang có. Ghi lại mức hiện tại, để cuối khóa còn có cái mà so.</p></div>
-      <div><b>Cuối chương trình: đưa ra bằng chứng</b><p>Bạn trình bày bạn là ai trong nghề, những gì đã đăng, cách bạn đang chạy, chỗ khách để lại thông tin và những con số đầu tiên. Chỉ tính kết quả có bằng chứng, không lấy cảm giác tiến bộ thay cho việc làm được.</p></div>
+      <div><b>Cuối chương trình: đưa ra bằng chứng</b><p>Bạn trình bày bạn là ai trong nghề, những gì đã đăng, cách bạn đang chạy, chỗ khách để lại thông tin và những con số đầu tiên. Cuối cùng bạn nhìn thấy chính mình của 30 ngày trước, và thấy khoảng cách.</p></div>
     </div>
     <details class="gap hien">
       <summary><i aria-hidden="true"></i>Xem cách một câu chuyện ra được bốn dạng bài <span>video, chuỗi ảnh, bài viết, buổi phát trực tiếp</span></summary>
@@ -1064,7 +1075,7 @@ figure{margin:0}
         <!-- CHỖ ĐIỀN: khi Coach Duy chốt bộ phần thưởng riêng của The Trusted Creator,
              thay năm dòng "Mốc thứ..." bằng tên phần thưởng thật. Không dùng lại bộ quà
              của TTA vì đó là tài sản của chương trình khác. -->
-        <p class="ghi">Phần trăm hoàn thành đo mức bạn thực sự làm, không đo năng lực. Năng lực nhìn qua bài bạn đăng, phản hồi bạn nhận và hồ sơ trước sau của chính bạn. Danh sách phần thưởng từng mốc sẽ công bố cho người đã đăng ký trước ngày bắt đầu.</p>
+        <p class="ghi">Thanh này đo mức bạn thực sự làm. Danh sách phần thưởng từng mốc sẽ công bố cho người đã đăng ký trước ngày bắt đầu.</p>
       </div>
     </div>
     <details class="gap hien">
@@ -1115,7 +1126,7 @@ figure{margin:0}
           <p>Video là một phần rèn luyện, vì bạn cần học cách hiện diện và diễn đạt bằng chính giọng nói của mình. Nhưng thương hiệu không chỉ nằm trong video. <b>Một câu chuyện viết tốt, một chuỗi ảnh có góc nhìn, một lá thư đúng lúc hoặc một tài liệu giúp khách nghĩ rõ đều có thể tích lũy niềm tin.</b></p>
         </div>
         <div>
-          <p>AI cũng không phải nhân vật chính. Nó giúp bạn gom chất liệu, tra cứu, viết bản nháp, dùng lại một ý cho nhiều bài và đọc số liệu nhanh hơn. <b>Nó không biết bạn đã trải qua điều gì, tiêu chuẩn nào bạn thật sự bảo vệ và điều gì bạn không sẵn sàng nói chỉ để có thêm lượt xem.</b></p>
+          <p>AI cũng không phải nhân vật chính. Nó giúp bạn gom chuyện, tra cứu, viết bản nháp, dùng lại một ý cho nhiều bài và đọc số liệu nhanh hơn. <b>Nó không biết bạn đã trải qua điều gì, tiêu chuẩn nào bạn thật sự bảo vệ và điều gì bạn không sẵn sàng nói chỉ để có thêm lượt xem.</b></p>
         </div>
       </div>
       <p class="chot">The Trusted Creator giúp bạn xây phần công cụ không thể làm thay, rồi dùng công cụ để vận hành phần còn lại gọn hơn.</p>
@@ -1296,7 +1307,7 @@ figure{margin:0}
       </div>
       <div class="muc">
         <button type="button" aria-expanded="false"><b>05</b><span>Tôi đã dùng AI rồi. Chương trình có gì khác?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Nếu chỗ đứng của bạn còn mờ và chất liệu đưa vào cũng mờ, AI chỉ giúp bạn ra nội dung chung chung nhanh hơn. Đó là lý do nhiều người dùng AI xong đọc lại thấy bài mình giống mọi người. Chương trình bắt đầu từ chuyên môn và quyết định biên tập của bạn, sau đó mới dùng AI để bớt việc lặp lại.</p></div></div>
+        <div class="than"><div><p>Nếu chỗ đứng của bạn còn mờ và chuyện bạn đưa vào cũng mờ, AI chỉ giúp bạn ra nội dung chung chung nhanh hơn. Đó là lý do nhiều người dùng AI xong đọc lại thấy bài mình giống mọi người. Chương trình bắt đầu từ chuyên môn và quyết định biên tập của bạn, sau đó mới dùng AI để bớt việc lặp lại.</p></div></div>
       </div>
       <div class="muc">
         <button type="button" aria-expanded="false"><b>06</b><span>Tôi có xây xong thương hiệu trong 30 ngày không?</span><i aria-hidden="true"></i></button>
