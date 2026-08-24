@@ -396,3 +396,63 @@ Mép so le của chữ chạy là bình thường, mắt không bắt. Cái mắ
 Không thêm gạch đầu dòng để cho đủ bốn thẻ bằng nhau. Bịa việc bàn giao để lấp ô là đúng thứ trang này đang tránh.
 
 Sáu bài kiểm chạy ở 1400, 1000, 768 và 375 đều ra 0 lỗi, không có kéo ngang.
+
+---
+
+# BẢN 2: DỰNG LẠI THEO TRUSTED FOUNDER BRAND CHALLENGE 3.1, NGÀY 24/08/2026
+
+Toàn bộ phần trên là lịch sử của bản The Trusted Creator 30 Days. Giữ lại để tra cách làm, không dùng để lấy lời hứa, chương trình, giá hoặc điều khoản.
+
+## Vì sao phải dựng lại
+
+Coach Duy đưa tài liệu `[C] Trusted Founder Brand Challenge - Chiến lược Tệp Khách hàng OfferDoc và Landing Page` bản 3.1, cập nhật 24/08/2026. Tài liệu tự nhận là nguồn duy nhất đang hiệu lực và ghi rõ các tệp trong `docs/trusted-creator/` chỉ là lịch sử. Trang này dựng từ bản 1.6, tức lệch hai lần đổi tên và một lần đổi cấu trúc.
+
+Đếm trước khi sửa: "The Trusted Creator" 12 chỗ, "30 Days" 8 chỗ, "30 ngày" 21 chỗ. Các chữ của bản mới đều bằng 0: ba tuần, Challenge, điểm danh, Founder Presence, phong thái, chất liệu, đều nhịp, tín hiệu.
+
+## Ba thay đổi phá cấu trúc
+
+**Thời lượng 30 ngày thành ba tuần.** Mục 2 của tài liệu giải thích: với người sáng lập, 30 ngày làm việc liên tục là thiết kế thiếu thực tế, vì họ vẫn phải điều hành doanh nghiệp. Ép giữ chuỗi mỗi ngày tạo hai kết quả xấu, hoặc bỏ cuộc hoặc đăng cho đủ số. Phần `bon-tuan` và `cach-hoc` viết lại hoàn toàn.
+
+**Kiến trúc kết quả đổi từ bốn nhóm sang năm tiêu chuẩn:** đúng vị thế, có phong thái, đủ chất liệu, đều nhịp, có tín hiệu. Bốn thẻ cũ khớp được ba. Thiếu hẳn "có phong thái", tức Founder Presence, một trong tám điểm khác biệt của chương trình.
+
+**Cơ chế điểm danh:** 15 lần điểm danh thực hành trong ba tuần, đạt tối thiểu 12 lần nhận phần quà, điểm danh không phải điều kiện để hoàn thành. Khoảng 3 tới 4 giờ mỗi tuần.
+
+## Hai chỗ trang cũ hứa quá tay
+
+**Thẻ "Đường về khách" bỏ.** Mục 12 nói quà tặng thu thông tin, chuỗi thư nuôi dưỡng, phần mềm quản lý khách hàng, tự động hóa và phễu hoàn chỉnh không còn là kết quả bắt buộc; chúng thuộc Cộng đồng Thành viên hoặc chương trình sau. Thẻ cũ hứa đúng hai thứ đầu.
+
+**Khối "50 người, 30 ngày" gỡ hẳn.** Mục 32 phần Hỏi đáp: "Vì chưa có kết quả người học của chính chương trình, Landing Page không được mượn case của chương trình khác để tạo cảm giác đã được kiểm chứng." Khối Sales Warrior mùa 2 là đúng thứ điều khoản đó cấm. CSS của khối tối đó cũng gỡ theo.
+
+**Phần ba cấp độ trưởng thành bỏ.** Mục 9 nói Landing Page chính chỉ nói với cấp độ 2, còn cấp độ 1 và 3 xử lý bằng khối tự nhận diện, phần phù hợp và Phiếu chẩn đoán. Ba thẻ cấp độ thành thừa.
+
+## Cấu trúc mới, 11 phần
+
+Theo đúng thứ tự khối của mục 30, thêm phần Người dạy trước phần Phù hợp.
+
+`hero` → `tu-nhan-dien` → `van-de` → `ket-qua` → `nam-chuan` → `ba-tuan` → `cach-hoc` → `ranh-gioi` → `nguoi-day` → `phu-hop` → `muc-dau-tu` → `hoi-dap` → `dang-ky`
+
+Nền xen kẽ trắng và xám chạy đúng từ đầu tới cuối.
+
+Lớp CSS tái dùng gần hết. Chỉ thêm bốn thứ: `.leo.nam` (thang năm bậc cho năm tiêu chuẩn), `.nl.ba` (ba thẻ tuần), `.ket6` (danh sách sáu kết quả hai cột), và 15 chấm điểm danh trên `.thanh` sẵn có.
+
+## Giữ nguyên, không đụng
+
+Giá 10 triệu tới hết 20/09 và 14,9 triệu từ 21/09, thuế 8%, hai con số sau thuế 10.800.000 và 16.092.000, đoạn giải thích vì sao khóa đầu rẻ hơn gần 5 triệu, ngày khai giảng 28/09/2026, Phiếu chẩn đoán làm đường dẫn phụ, phần Người dạy và ảnh hero vừa cắt lại.
+
+## Hai lỗi bắt được khi kiểm
+
+**Lỗi im lặng về độ ưu tiên CSS.** `.nl.ba{grid-template-columns:repeat(3,...)}` viết ngoài mọi câu truy vấn khổ màn hình. Nó có độ ưu tiên 0-2-0, cao hơn luật thu cột `.nl` 0-1-0 nằm trong `@media`, nên ba cột giữ nguyên xuống tới 375px, mỗi thẻ chỉ còn 87px. Không có thông báo lỗi nào; bài kiểm chữ mồ côi phát hiện gián tiếp qua tiêu đề "Đúng và có trọng lượng" rớt chữ "lượng" xuống dòng riêng. Sửa bằng cách bọc luật ba cột vào `@media (min-width:981px)`.
+
+Bài học chung: luật ghi đè dạng `.a.b` phải nằm trong câu truy vấn khổ màn hình, nếu không nó thắng cả các luật đáp ứng của lớp gốc.
+
+**"đầu ra" là văn dịch.** `kiem_van_dich.py` bắt 14 lần. Không bỏ qua được: với chủ doanh nghiệp Việt, "đầu ra" nghĩa quen thuộc là chỗ bán được hàng, nên "10 đầu ra" dễ đọc thành "10 kênh tiêu thụ". Đã viết lại cả 14 câu bằng "việc bạn làm xong", "bài nộp", "sản phẩm thật của mình". Lần cuối còn sót một chỗ viết hoa "Đầu ra được phản hồi" mà `grep` chữ thường không thấy; bộ kiểm so khớp không phân biệt hoa thường nên vẫn bắt được.
+
+## Kết quả kiểm
+
+Sáu bài kiểm chạy ở 1400, 1000, 768 và 375: 0 lỗi cỡ chữ, 0 lỗi tương phản, 0 chữ mồ côi, 0 ảnh cắt quá ngưỡng, 0 lớp thiếu luật, 0 kéo ngang. `kiem_van_dich.py`: 0 từ dịch thẳng, 0 nhóm cấu trúc vượt ngưỡng. Trang còn 4.561 chữ, cao 14.944px ở khổ 1400.
+
+## Việc chưa làm được
+
+1. **Landing Chuyên gia**, biến thể thứ hai ở mục 31. Chỉ thay hero, khối tự nhận diện và khối kết quả theo vai trò; các phần còn lại dùng chung.
+2. **Mười quyết định vận hành ở mục 37** phải khóa trước khi giao hàng: ngày giờ và nền tảng từng buổi, công suất phản hồi, nơi nộp bài, trách nhiệm của Coach Duy và người phản hồi, danh mục công cụ AI và chi phí, chính sách thanh toán và hoàn, điều kiện mở lớp, bằng chứng được phép công bố, giá và quyền lợi Cộng đồng Thành viên, và **nội dung phần quà Challenge cùng cách đối soát điểm danh**. Chỗ cuối đã đánh dấu bằng ghi chú trong mã.
+3. Số tài khoản chuyển khoản, nơi nhận biểu mẫu, trang `phieu-chan-doan.html`, và gỡ thẻ chặn tìm kiếm trước khi mở công khai.

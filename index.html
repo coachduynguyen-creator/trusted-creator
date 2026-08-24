@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Trusted Creator 30 Days cho nhà sáng lập | Coach Duy Nguyễn</title>
+<title>Trusted Founder Brand Challenge cho nhà sáng lập | Coach Duy Nguyễn</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M25.53 10.5A11 11 0 1 0 25.53 21.5' fill='none' stroke='%230F1218' stroke-width='3.4' stroke-linecap='round'/%3E%3Ccircle cx='27' cy='16' r='3.6' fill='%23D97757'/%3E%3C/svg%3E">
-<meta name="description" content="Chương trình 30 ngày dành cho nhà sáng lập đã có sản phẩm, khách hàng và trải nghiệm thật nhưng nội dung còn rời rạc. Khóa đầu tiên khai giảng ngày 28/09/2026.">
+<meta name="description" content="Thử thách ba tuần xây thương hiệu nhà sáng lập được tin cậy, dành cho founder và chuyên gia đã có sản phẩm, khách hàng và trải nghiệm thật. Khóa đầu tiên khai giảng ngày 28/09/2026.">
 <!-- BẢN NHÁP: dòng dưới chặn công cụ tìm kiếm ghi nhận trang. XÓA DÒNG NÀY khi trang đã điền đủ và sẵn sàng công bố. -->
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,7 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;font-family:var(--f-than);font-size:17px;line-height:1.6;color:var(--ink-2);background:var(--bg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 h1,h2,h3,h4{margin:0;color:var(--ink);font-family:var(--f-tit);font-variation-settings:'opsz' 72;letter-spacing:-.025em;line-height:1.08;font-weight:700;text-wrap:balance}
 h1 span,h2 span{text-wrap:balance}
-.vach li p,.khong-phai li,.nl .dat,.cap-the .mota,.dong b,.moc b,.nam5 b,.dk b,.o3 h3,.gia-the b{text-wrap:balance}
+.vach li p,.khong-phai li,.nl .dat,.nl h3,.dong b,.moc b,.dk b,.gia-the b,.the-anh figcaption b,.leo b,.leo em,.luu b,.ket-cap b{text-wrap:balance}
 p,li{text-wrap:pretty}
 p{margin:0}
 a{color:inherit}
@@ -93,12 +93,12 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* ============ HERO ============ */
 .hero{position:relative;padding:56px 0 88px;overflow:hidden}
-.hero-luoi{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:56px;align-items:center}
+.hero-luoi{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr);gap:52px;align-items:center}
 .hero-chu{display:flex;flex-direction:column;align-items:flex-start;gap:18px}
 .vien{display:inline-flex;align-items:center;gap:8px;min-height:30px;padding:5px 12px 5px 10px;line-height:1.3;border-radius:999px;background:var(--bg-2);border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--ink-2);letter-spacing:.01em}
 .vien i{width:7px;height:7px;border-radius:50%;background:var(--nhan);box-shadow:0 0 0 0 rgba(194,65,12,.35);animation:nhay 2s ease-out infinite;flex:none}
 @keyframes nhay{0%{box-shadow:0 0 0 0 rgba(194,65,12,.35)}70%{box-shadow:0 0 0 7px rgba(194,65,12,0)}100%{box-shadow:0 0 0 0 rgba(194,65,12,0)}}
-.hero h1{font-size:clamp(29px,2.95vw,41px);line-height:1.08;letter-spacing:-.03em}
+.hero h1{font-size:clamp(28px,2.6vw,36px);line-height:1.1;letter-spacing:-.03em}
 .hero h1 span{display:block;color:var(--ink-3)}
 .hero .dan{font-size:17px;line-height:1.6;color:var(--ink-2);max-width:56ch}
 .hero .dan b{color:var(--ink);font-weight:600}
@@ -323,11 +323,23 @@ figure{margin:0}
 .leo span{font-size:14px;line-height:1.45;color:var(--ink-2)}
 .leo em{font-style:normal;display:block;margin-top:7px;font-size:13.5px;line-height:1.4;color:var(--cam-sau);font-weight:600}
 .leo .cuoi b{color:var(--cam-sau)}
-@media (min-width:820px){.leo{display:grid}.nl.the-ve-thay,.dong.the-ve-thay{display:none}}
+.leo.nam{grid-template-columns:repeat(5,minmax(0,1fr))}
+.leo.nam > div:nth-child(1) .bac{height:52px;background:color-mix(in srgb,var(--cam) 18%,#fff)}
+.leo.nam > div:nth-child(2) .bac{height:88px;background:color-mix(in srgb,var(--cam) 34%,#fff)}
+.leo.nam > div:nth-child(3) .bac{height:124px;background:color-mix(in srgb,var(--cam) 52%,#fff)}
+.leo.nam > div:nth-child(4) .bac{height:160px;background:color-mix(in srgb,var(--cam) 72%,#fff)}
+.leo.nam > div:nth-child(5) .bac{height:196px;background-color:var(--ink);background-image:var(--chip);border-color:var(--ink)}
+@media (min-width:820px){.leo{display:grid}.nl.the-ve-thay,.dong.the-ve-thay,.vach.the-ve-thay{display:none}}
+@media (max-width:1100px){.leo.nam .cot{height:210px}.leo.nam > div:nth-child(5) .bac{height:156px}.leo.nam > div:nth-child(4) .bac{height:130px}.leo.nam > div:nth-child(3) .bac{height:104px}.leo.nam > div:nth-child(2) .bac{height:78px}.leo.nam > div:nth-child(1) .bac{height:52px}}
 @media (max-width:1100px){.leo .cot{height:210px}.leo > div:nth-child(6) .bac{height:168px}.leo > div:nth-child(5) .bac{height:145px}.leo > div:nth-child(4) .bac{height:122px}.leo > div:nth-child(3) .bac{height:99px}.leo > div:nth-child(2) .bac{height:76px}.leo > div:nth-child(1) .bac{height:53px}.leo b{font-size:15px}.leo span{font-size:13.5px}}
 
 /* ============ BỐN TUẦN ============ */
 .nl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--ink)}
+@media (min-width:981px){.nl.ba{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ket6{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:44px;border-top:1px solid var(--ink)}
+.ket6 li{position:relative;padding:16px 0 16px 28px;border-bottom:1px solid var(--line);font-size:16px;line-height:1.5;color:var(--ink);text-wrap:pretty}
+.ket6 li::before{content:'';position:absolute;left:0;top:23px;width:9px;height:9px;border-radius:2px;background:var(--cam-dam)}
+@media (max-width:820px){.ket6{grid-template-columns:minmax(0,1fr);column-gap:0}}
 .nl > div{padding:24px 22px 26px 0;display:flex;flex-direction:column;gap:8px;position:relative}
 .nl > div + div{padding-left:22px;border-left:1px solid var(--line)}
 .nl .so{font-family:var(--f-tit);font-size:44px;line-height:1;letter-spacing:-.03em;color:var(--cam-dam);font-weight:700;margin-bottom:6px}
@@ -437,6 +449,7 @@ figure{margin:0}
 .thanh{position:relative;height:10px;border-radius:5px;background:var(--bg-3);border:1px solid var(--line);margin:0 0 14px}
 .thanh i{position:absolute;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:#fff;border:2px solid var(--ink)}
 .thanh i.dat{background:var(--cam-dam);border-color:var(--cam-dam)}
+@media (max-width:700px){.thanh i{width:12px;height:12px;margin:-6px 0 0 -6px;border-width:1.5px}}
 .moc5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
 .moc5 > div{padding-top:6px}
 .moc5 b{display:block;font-family:var(--f-tit);font-size:22px;letter-spacing:-.02em;color:var(--ink);line-height:1}
@@ -595,23 +608,6 @@ figure{margin:0}
 @media (max-width:900px){.ai2{grid-template-columns:minmax(0,1fr);gap:26px}.ai2 .anh-khung{max-width:340px;height:auto;min-height:0;aspect-ratio:3/4}}
 
 
-/* ============ KHỐI TỐI: kết quả một chương trình 30 ngày khác ============ */
-.mua-truoc{margin:52px 0 0;border-radius:var(--r);background-color:var(--ink);background-image:linear-gradient(150deg,#1A202C 0%,#0F1218 100%);box-shadow:var(--shadow);padding:32px 30px 28px;overflow:hidden}
-.mua-truoc .nhan{color:var(--cam);display:flex;align-items:center;gap:10px;margin-bottom:12px}
-.mua-truoc .nhan::before{content:'';width:18px;height:2px;background:var(--cam);flex:none}
-.mua-truoc h4{color:#fff;font-family:var(--f-tit);font-size:clamp(22px,2.5vw,30px);letter-spacing:-.025em;line-height:1.12;margin-bottom:22px;max-width:26ch;text-wrap:balance}
-.so4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14)}
-.so4 > div{display:flex;flex-direction:column;gap:6px}
-.so4 b{font-family:var(--f-tit);font-size:clamp(30px,3.6vw,42px);line-height:1;letter-spacing:-.03em;color:var(--vang-toi)}
-.so4 span{font-size:14px;line-height:1.4;color:#D7DBE2}
-.so4 em{font-style:normal;display:block;font-size:13px;color:#9AA2AF;margin-top:3px}
-.mua-truoc .ro{margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:14.5px;line-height:1.6;color:#D7DBE2;max-width:82ch}
-.mua-truoc .ro b{color:#fff;font-weight:600}
-@media (max-width:820px){.so4{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}}
-@media (max-width:480px){.mua-truoc{padding:26px 20px 24px}.so4{grid-template-columns:minmax(0,1fr)}}
-@supports (grid-template-rows: subgrid){.so4{grid-template-rows:auto 1fr}.so4 > div{display:grid;grid-template-rows:subgrid;grid-row:span 2}}
-@media (max-width:820px){@supports (grid-template-rows: subgrid){.so4 > div{grid-row:auto;grid-template-rows:none;display:flex;flex-direction:column}}}
-
 /* ============ HỎI ĐÁP ============ */
 .faq{border:1px solid var(--line);border-radius:var(--r);background:#fff;box-shadow:var(--shadow-s);overflow:hidden}
 .faq .muc{border-bottom:1px solid var(--line)}
@@ -736,13 +732,14 @@ figure{margin:0}
 <!-- ================= THANH ĐIỀU HƯỚNG ================= -->
 <header class="nav" id="top">
   <div class="bao-rong">
-    <a class="logo" href="#top"><svg class="dau-hieu" viewBox="0 0 32 32" aria-hidden="true"><path d="M25.53 10.5A11 11 0 1 0 25.53 21.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="27" cy="16" r="3.4" fill="#D97757"/></svg><span class="ten-hieu">The Trusted Creator<small>30 Days · by Coach Duy Nguyễn</small></span></a>
+    <a class="logo" href="#top"><svg class="dau-hieu" viewBox="0 0 32 32" aria-hidden="true"><path d="M25.53 10.5A11 11 0 1 0 25.53 21.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="27" cy="16" r="3.4" fill="#D97757"/></svg><span class="ten-hieu">Trusted Founder Brand<small>Challenge ba tuần · by Coach Duy Nguyễn</small></span></a>
     <nav class="nav-links" id="nav-links" aria-label="Các phần của trang">
+      <a href="#tu-nhan-dien">Bạn đang gặp gì</a>
       <a href="#van-de">Vấn đề</a>
       <a href="#ket-qua">Kết quả</a>
-      <a href="#o-dau">Bạn đang ở đâu</a>
-      <a href="#bon-tuan">Cách nó chạy</a>
-      <a href="#cach-hoc">Cách vận hành</a>
+      <a href="#nam-chuan">Năm tiêu chuẩn</a>
+      <a href="#ba-tuan">Ba tuần</a>
+      <a href="#cach-hoc">Cách chạy</a>
       <a href="#ranh-gioi">Khác gì</a>
       <a href="#nguoi-day">Người dạy</a>
       <a href="#phu-hop">Phù hợp</a>
@@ -759,28 +756,27 @@ figure{margin:0}
   <div class="bao">
     <div class="hero-luoi">
       <div class="hero-chu">
-        <span class="vien"><i></i>The Trusted Creator 30 Days dành cho nhà sáng lập</span>
-        <h1>Bạn không thiếu điều để nói. <span>Bạn thiếu một cách để nói đều, và nói ra đúng chất của mình.</span></h1>
-        <p class="dan"><b>30 ngày để đổi điều đó.</b> Dành cho chủ doanh nghiệp và chuyên gia muốn thu hút khách hàng bằng thương hiệu của chính mình. Bạn đã có sản phẩm, có khách thật, chỉ là nội dung vẫn còn rời rạc.</p>
+        <span class="vien"><i></i>Trusted Founder Brand Challenge dành cho nhà sáng lập</span>
+        <h1>Phần lớn điều khiến khách hàng tin doanh nghiệp <span>vẫn đang nằm trong đầu người chủ.</span></h1>
+        <p class="dan"><b>Trusted Founder Brand Challenge</b> giúp bạn biến trải nghiệm, quan điểm và tiêu chuẩn làm nghề thành một thương hiệu được nhìn thấy. Trong ba tuần, bạn làm rõ vị thế, rèn phong thái và đặt được một nhịp nội dung chạy tiếp được cùng trí tuệ nhân tạo (AI) hoặc đội ngũ.</p>
         <ul class="hero-ket">
-          <li class="tieu" style="padding-left:0">Sau 30 ngày, bạn có</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một câu nói rõ bạn là ai trong nghề, khách nghe một lần là hiểu.</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một kho chuyện để kể, lấy từ chính việc bạn làm mỗi ngày.</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Nội dung thật đã đăng, ở nhiều dạng, bằng giọng của chính bạn.</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một nhịp làm bạn vẫn chạy được cả khi bận.</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một đường đi từ bài đăng tới cuộc trao đổi với đúng khách.</li>
+          <li class="tieu" style="padding-left:0">Sau ba tuần, bạn có</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một vị thế rõ: ai cần nghe bạn, và bạn có quyền nói về điều gì.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một tiêu chuẩn phong thái để tự xem lại mỗi lần xuất hiện.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một kho chất liệu lấy từ khách hàng và công việc thật.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một nhịp làm vẫn chạy sau khi ba tuần kết thúc.</li>
         </ul>
         <div class="loi2">
-          <a class="nut" href="#dang-ky">Đăng ký The Trusted Creator 30 Days, khai giảng 28/09/2026 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <p class="phu">Chưa chắc mình đúng là người chương trình phục vụ? <a href="phieu-chan-doan.html">Làm Phiếu chẩn đoán 7 phút</a>.</p>
+          <a class="nut" href="#dang-ky">Đăng ký Trusted Founder Brand Challenge <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <p class="phu">Chưa chắc mình có đúng là người chương trình phục vụ? <a href="phieu-chan-doan.html">Tôi muốn làm Phiếu chẩn đoán trước</a>.</p>
         </div>
-        <p class="gia-dong"><b>Khóa đầu tiên, học trong 30 ngày, khai giảng 28/09/2026.</b> Mức đầu tư và điều khoản ghi đầy đủ ở <a class="lien" href="#muc-dau-tu">phần Mức đầu tư</a>.</p>
+        <p class="gia-dong"><b>Khóa đầu tiên, thử thách ba tuần, khai giảng 28/09/2026.</b> Mức đầu tư và điều khoản ghi đầy đủ ở <a class="lien" href="#muc-dau-tu">phần Mức đầu tư</a>.</p>
       </div>
       <div class="hero-anh">
         <div class="so3">
-          <div><b>30<small>ngày</small></b><span>Cài đặt và chạy trọn một vòng, không phải học lý thuyết</span></div>
-          <div><b>5<small>chặng</small></b><span>Đi từ chỗ làm rõ bạn là ai, tới lúc khách chủ động hỏi</span></div>
-          <div><b>10<small>kết quả</small></b><span>Những việc bạn làm xong và giữ lại được sau khóa</span></div>
+          <div><b>3<small>tuần</small></b><span>Tính bằng việc bạn làm xong, không phải 21 ngày giữ chuỗi</span></div>
+          <div><b>5<small>tiêu chuẩn</small></b><span>Vị thế, phong thái, chất liệu, đều nhịp và tín hiệu</span></div>
+          <div><b>10<small>việc</small></b><span>Bạn làm xong, nộp lại và giữ được sau chương trình</span></div>
         </div>
         <figure class="anh-khung"><img src="img/cd-ca-phong.jpg?v=3" alt="Coach Duy Nguyễn đang dẫn một chương trình trước hội trường đông người" width="886" height="902" loading="eager" decoding="async"></figure>
       </div>
@@ -788,86 +784,69 @@ figure{margin:0}
   </div>
 </section>
 
+<!-- ================= TỰ NHẬN DIỆN ================= -->
+<section class="phan nen" id="tu-nhan-dien">
+  <div class="bao">
+    <div class="dau-phan hien">
+      <span class="nhan">Bạn có thấy mình ở đây không</span>
+      <h2>Năm tình trạng người chủ hay gặp <span>khi thương hiệu vẫn phụ thuộc vào chính mình</span></h2>
+      <p class="dan">Năm câu dưới đây viết đúng như cách người ta hay kể về mình. Giống từ hai câu trở lên thì phần còn lại của trang đáng để bạn đọc tiếp.</p>
+    </div>
+    <div class="noi hien tre">
+      <div><i>&ldquo;</i><p>Mỗi khi đội nội dung cần ý, họ vẫn phải chờ tôi.</p></div>
+      <div><i>&ldquo;</i><p>Bài đăng đều, nhưng giọng không giống con người ngoài đời của tôi.</p></div>
+      <div><i>&ldquo;</i><p>Khách tin tôi sau khi gặp. Còn trước cuộc gặp thì chưa.</p></div>
+      <div><i>&ldquo;</i><p>Tôi biết cần video, nhưng không muốn thành người chạy theo xu hướng.</p></div>
+      <div><i>&ldquo;</i><p>Tôi đã dùng AI. Nhanh hơn thật, mà chiều sâu lại giảm đi.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= VẤN ĐỀ ================= -->
-<section class="phan nen" id="van-de">
+<section class="phan" id="van-de">
   <div class="bao">
     <div class="chia">
       <div class="hien">
         <span class="nhan" style="display:block;margin-bottom:14px">Vấn đề cần gọi đúng</span>
-        <h2>Doanh nghiệp đã có giá trị. <span>Nhưng phần lớn điều khiến khách hàng tin vẫn nằm trong đầu người chủ.</span></h2>
-        <p class="dan" style="margin-top:26px">Bạn không cần trở thành người làm nội dung toàn thời gian. Bạn cần một cách lấy đúng thứ bạn đã biết, kể ra cho người ta tin, rồi để họ tin luôn cả công ty của bạn.</p>
+        <h2>Doanh nghiệp đã có giá trị. <span>Thị trường chỉ chưa nhìn thấy đủ những điều tạo nên giá trị đó.</span></h2>
+        <p class="dan" style="margin-top:26px">Thương hiệu người chủ còn yếu không chỉ làm bạn ít được biết tới. Nó bắt doanh nghiệp giải thích lại từ đầu trong từng cuộc gặp, từng lần tuyển người và từng lần giới thiệu sản phẩm.</p>
+        <p class="dan" style="margin-top:14px">Việc này không giải quyết được bằng cách bảo đội ngũ đăng nhiều hơn. Trước hết bạn phải làm rõ mình đại diện cho điều gì, phần nào chỉ mình nói được, và phần nào giao được cho AI hoặc đội ngũ.</p>
       </div>
       <div class="ke-thu hien">
         <b>Điều đang làm hỏng nhịp</b>
-        <h3>Không phải thuật toán. Đó là cách làm nội dung rời rạc.</h3>
+        <h3>Không phải thuật toán. Đó là cách làm nội dung tách rời khỏi công việc thật.</h3>
         <ul>
           <li>Bắt đầu từ câu hỏi hôm nay đăng gì.</li>
-          <li>Chạy theo định dạng và xu hướng đang nổi.</li>
-          <li>Giao tiếng nói cho công cụ trí tuệ nhân tạo (AI) hoặc cho đội bên ngoài.</li>
-          <li>Đo mọi thứ bằng lượt xem.</li>
-          <li>Người xem xong rồi thôi, không có bước nào để họ đi tiếp.</li>
+          <li>Người chủ thành người đọc kịch bản do người khác viết.</li>
+          <li>Dùng AI tạo thật nhiều bản nháp nhưng không có quan điểm.</li>
+          <li>Coi thương hiệu cá nhân là video và lượt theo dõi.</li>
+          <li>Cố xây cả phễu bán hàng trước khi có một nhịp xuất hiện đáng tin.</li>
         </ul>
       </div>
-    </div>
-    <div class="noi hien tre">
-      <div><i>&ldquo;</i><p>Biết nhiều thứ đáng nói, mà không biết sắp thế nào.</p></div>
-      <div><i>&ldquo;</i><p>Ngày nào cũng phải nghĩ hôm nay đăng gì.</p></div>
-      <div><i>&ldquo;</i><p>Chạy được một hai tháng rồi dừng.</p></div>
-      <div><i>&ldquo;</i><p>Quay xong, dựng xong, thấy chưa ưng nên để đó.</p></div>
-      <div><i>&ldquo;</i><p>Đội làm ra bài chỉn chu, nhưng không giống mình.</p></div>
-      <div><i>&ldquo;</i><p>Đã thử AI. Nhanh hơn, nhưng đọc lên giống mọi người.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ================= KẾT QUẢ ================= -->
-<section class="phan" id="ket-qua">
+<section class="phan nen" id="ket-qua">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Đích đến</span>
-      <h2>Bạn thôi phải chứng minh mình lại từ đầu <span>trong mỗi cuộc gặp</span></h2>
+      <h2>Sau ba tuần, bạn có một nền thương hiệu chạy tiếp được, <span>không phải một thư mục bài học chưa xem hết</span></h2>
       <p class="dan">Khách đọc bạn trước, hiểu bạn trước, tin bạn một phần trước khi hai bên ngồi xuống.</p>
     </div>
     <div class="nhan-dang hien">
       <b>Thị trường nhìn bạn như một người cố vấn đáng tin trong nghề của mình, không phải một người đang chào hàng.</b>
-      <span>Đó là chỗ đến. Dưới đây là những thứ bạn cầm trong tay sau 30 ngày để đi tới đó.</span>
+      <span>Đó là chỗ đến. Dưới đây là sáu thứ bạn cầm trong tay sau ba tuần để đi tới đó.</span>
     </div>
-    <div class="ke hien tre">
-      <div>
-        <div class="mk"><div class="mk-trang"><b></b><i></i><i></i><i></i><i></i></div></div>
-        <h3>Bạn là ai trong nghề</h3>
-        <ul>
-          <li>Một trang giấy nói rõ bạn đại diện cho điều gì.</li>
-          <li>Những chủ đề bạn nói, và cách bạn nhìn chúng khác người cùng ngành.</li>
-        </ul>
-      </div>
-      <div>
-        <div class="mk"><div class="mk-chong"><i></i><i></i><i><s></s><s></s><s></s></i></div></div>
-        <h3>Kho để không bí ý</h3>
-        <ul>
-          <li>Một kho chuyện và ý để nói, lấy từ chính việc bạn làm.</li>
-          <li>Nội dung thật của bạn đã đăng công khai, ở nhiều dạng.</li>
-        </ul>
-      </div>
-      <div>
-        <div class="mk"><div class="mk-lich"><i></i><i class="on"></i><i></i><i></i><i class="y"></i><i></i><i class="on"></i><i></i><i></i><i class="y"></i><i></i><i class="on"></i><i></i><i></i><i class="y"></i></div></div>
-        <h3>Bộ máy chạy đều</h3>
-        <ul>
-          <li>Bảng theo dõi việc viết và đăng, làm cho người chạy một mình.</li>
-          <li>Bộ mẫu đặt bài và câu lệnh cho trợ lý AI.</li>
-          <li>Kế hoạch cho vòng chạy 30 ngày tiếp theo.</li>
-        </ul>
-      </div>
-      <div>
-        <div class="mk"><div class="mk-pheu"><i></i><i></i><i></i><i></i></div></div>
-        <h3>Đường về khách</h3>
-        <ul>
-          <li>Một tài liệu hoặc bài kiểm tra ngắn đáng để khách để lại số.</li>
-          <li>Cách giữ liên lạc với người vừa để lại thông tin.</li>
-          <li>Bảng số liệu đi từ bài đăng tới cuộc trao đổi.</li>
-        </ul>
-      </div>
-    </div>
+    <ul class="ket6 hien tre">
+      <li>Một vị thế và ba luận điểm bạn bảo vệ được.</li>
+      <li>Một tiêu chuẩn phong thái để tự xem lại mỗi lần xuất hiện.</li>
+      <li>Một kho chất liệu từ khách hàng, quyết định và trải nghiệm thật.</li>
+      <li>Nội dung đã đăng thật, có video và các định dạng phù hợp.</li>
+      <li>Một quy trình rõ phần bạn giữ, phần AI và đội ngũ đỡ.</li>
+      <li>Một bảng tín hiệu và kế hoạch bốn tuần tiếp theo.</li>
+    </ul>
     <div class="ket-cap hien">
       <b>Điều bạn thật sự muốn: khách tin bạn, rồi từ đó hiểu và quan tâm tới doanh nghiệp, sản phẩm, đội ngũ và cách bạn phục vụ họ.</b>
       <span>Đó là lý do chương trình không dừng ở việc bạn nói hay hơn trước máy quay.</span>
@@ -875,155 +854,117 @@ figure{margin:0}
     <div class="moi-giua hien">
       <p>Nếu đọc tới đây bạn thấy đúng chỗ mình đang đứng, phần còn lại của trang nói về cách học, điều kiện, mức đầu tư và những gì chương trình không hứa.</p>
       <div class="loi2">
-        <a class="nut" href="#dang-ky">Đăng ký The Trusted Creator 30 Days, khai giảng 28/09/2026 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="nut" href="#dang-ky">Đăng ký Trusted Founder Brand Challenge <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <p class="phu">Chưa chắc mình đúng là người chương trình phục vụ? <a href="phieu-chan-doan.html">Làm Phiếu chẩn đoán 7 phút</a>.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= BẠN ĐANG Ở ĐÂU ================= -->
-<section class="phan nen" id="o-dau">
+<!-- ================= NĂM TIÊU CHUẨN ================= -->
+<section class="phan" id="nam-chuan">
   <div class="bao">
     <div class="dau-phan hien">
-      <span class="nhan">Trước khi đọc tiếp</span>
-      <h2>Xem bạn đang ở chỗ nào, <span>vì chương trình này chỉ hợp với một trong ba</span></h2>
-      <p class="dan">Ba câu dưới đây viết đúng như cách người ta hay kể về mình. Đọc xem câu nào giống bạn nhất, rồi mới cân nhắc tiếp.</p>
+      <span class="nhan">Cơ chế</span>
+      <h2>Năm tiêu chuẩn để thương hiệu bắt đầu tích lũy niềm tin</h2>
+      <p class="dan">Năm tiêu chuẩn này là xương sống của ba tuần. Chúng xếp theo thứ tự, vì thiếu tiêu chuẩn trước thì tiêu chuẩn sau không đứng được.</p>
     </div>
-    <div class="cap3 hien tre">
-      <div class="cap-the">
-        <div class="nhan-cap"><span>Chưa bắt đầu</span><em>Có thể phù hợp</em></div>
-        <h3>Tôi có chuyên môn nhưng chưa từng xuất hiện nghiêm túc</h3>
-        <p class="mota">Bạn có nghề, có khách và có tình huống thật, nhưng chưa từng làm nội dung một cách có chủ đích.</p>
-        <div class="dinh"><b>Nếu đúng là bạn</b>Bạn vẫn vào được, với điều kiện làm xong phần chuẩn bị trước ngày khai giảng và chịu đăng bài ngay trong tuần đầu.</div>
-      </div>
-      <div class="cap-the chinh">
-        <div class="nhan-cap"><span>Làm rồi lại dừng</span><em>Đúng người</em></div>
-        <h3>Tôi làm được một thời gian rồi dừng</h3>
-        <p class="mota">Bạn đã đăng, đã quay, có khi đã thuê đội làm. Nhưng chạy được một hai tháng rồi dừng, bận một tuần là mất nhịp, và có những bài quay xong lại để đó vì thấy chưa ưng.</p>
-        <div class="dinh"><b>Nếu đúng là bạn</b>Chương trình viết cho đúng chỗ này. Bạn không thiếu kiến thức. Bạn thiếu một nhịp đủ chắc để không dừng lại lần nữa.</div>
-      </div>
-      <div class="cap-the">
-        <div class="nhan-cap"><span>Đang chạy khá ổn</span><em>Nên kiểm tra trước</em></div>
-        <h3>Tôi đã có kênh và một số kết quả</h3>
-        <p class="mota">Bạn có vị thế, có nhịp xuất bản và có khách đến từ nội dung tương đối ổn định.</p>
-        <div class="dinh"><b>Nếu đúng là bạn</b>Bạn chỉ nên vào khi còn một chỗ tắc rõ ràng. Nếu mọi thứ đã chạy trơn, chương trình có thể quá dễ với bạn. Làm Phiếu chẩn đoán, nó sẽ chỉ bước hợp hơn.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= BỐN TUẦN ================= -->
-<section class="phan" id="bon-tuan">
-  <div class="bao">
-    <div class="dau-phan hien">
-      <span class="nhan">Cách nó chạy</span>
-      <h2>Bốn tuần thay đổi cách bạn xuất hiện</h2>
-      <p class="dan">Mỗi tuần đóng lại bằng một việc bạn làm xong, không phải bằng cảm giác đã hiểu thêm. Bốn tuần cộng lại là một vòng đủ: người ta nhớ bạn vì cái gì, bạn có chuyện gì để kể, kể bằng giọng của chính bạn, chạy đều được với AI phụ việc, rồi từ đó ra được cuộc nói chuyện với khách.</p>
-    </div>
-    <div class="leo hien tre" role="img" aria-label="Sáu bậc của hành trình 30 ngày, mỗi tuần cao hơn tuần trước: trước khi bắt đầu xem bạn đang đứng ở đâu, tuần một làm rõ bạn là ai trong nghề, tuần hai gom kho chuyện để kể, tuần ba đặt nhịp làm chạy được khi bận, tuần bốn mở đường về khách hàng, cuối khóa đưa ra bằng chứng của chính bạn">
-      <div>
-        <div class="cot"><span class="so">0</span><div class="bac"></div></div>
-        <div class="chan"><b>Trước khi bắt đầu</b><span>Xem bạn đang đứng ở đâu</span></div>
-      </div>
+    <div class="leo nam hien tre" role="img" aria-label="Năm bậc tăng dần: đúng vị thế, có phong thái, đủ chất liệu, đều nhịp và có tín hiệu">
       <div>
         <div class="cot"><span class="so">1</span><div class="bac"></div></div>
-        <div class="chan"><b>Tuần 1</b><span>Rõ bạn là ai trong nghề</span><em>Hết cảnh khách hỏi bạn làm gì mà bạn kể mãi không xong.</em></div>
+        <div class="chan"><b>Đúng vị thế</b><span>Ai cần nghe bạn, bạn có quyền nói về điều gì, muốn được nhớ bằng quan điểm nào.</span><em>Chưa trả lời được thì chưa có gì để nói đều.</em></div>
       </div>
       <div>
         <div class="cot"><span class="so">2</span><div class="bac"></div></div>
-        <div class="chan"><b>Tuần 2</b><span>Kho chuyện để kể</span><em>Hết cảnh sáng nào cũng ngồi nghĩ hôm nay đăng gì.</em></div>
+        <div class="chan"><b>Có phong thái</b><span>Nói rõ ý, giọng và nhịp dừng tạo cảm giác vững, người trên nội dung giống người ngoài đời.</span><em>Không phải lớp hình thể. Đây là cách vị thế được cảm nhận.</em></div>
       </div>
       <div>
         <div class="cot"><span class="so">3</span><div class="bac"></div></div>
-        <div class="chan"><b>Tuần 3</b><span>Nhịp làm chạy được khi bận</span><em>Hết cảnh bận một tuần là mất nhịp rồi bỏ luôn.</em></div>
+        <div class="chan"><b>Đủ chất liệu</b><span>Câu hỏi khách hay hỏi, quyết định đã cân, câu chuyện có quyền kể, sai lầm và bài học.</span><em>Hết cảnh sáng nào cũng ngồi nghĩ hôm nay đăng gì.</em></div>
       </div>
       <div>
         <div class="cot"><span class="so">4</span><div class="bac"></div></div>
-        <div class="chan"><b>Tuần 4</b><span>Đường về khách hàng</span><em>Hết cảnh bài có người xem mà không ai nhắn tin.</em></div>
+        <div class="chan"><b>Đều nhịp</b><span>Thu chất liệu, chọn luận điểm, làm bài trụ cột, chuyển định dạng, đăng, xem tín hiệu, quyết định giữ hay bỏ.</span><em>Bạn giữ phần quan điểm. AI và đội ngũ đỡ phần lặp lại.</em></div>
       </div>
       <div>
         <div class="cot"><span class="so">5</span><div class="bac"></div></div>
-        <div class="chan" class="cuoi"><b>Cuối khóa</b><span>Đưa ra bằng chứng của chính bạn</span></div>
+        <div class="chan cuoi"><b>Có tín hiệu</b><span>Phản hồi có bối cảnh từ đúng tệp, tin nhắn cho thấy người xem hiểu đúng vấn đề.</span><em>Chương trình không lấy doanh thu làm chuẩn hoàn thành.</em></div>
       </div>
     </div>
-    <div class="nl the-ve-thay hien tre">
-      <div>
-        <span class="so">01</span>
-        <h3>Để thị trường nhớ đúng về bạn</h3>
-        <p>Bạn là ai trong nghề, bạn phục vụ ai, bạn nói mạnh nhất về chủ đề nào, bạn bảo vệ quan điểm gì, và khách tin bạn rồi thì tin tiếp vào đâu.</p>
-        <p class="dat">Xong tuần này: một trang giấy nói rõ bạn là ai trong nghề.</p>
-      </div>
-      <div>
-        <span class="so">02</span>
-        <h3>Biến công việc thật thành nội dung đáng nhớ</h3>
-        <p>Gom lại những chuyện thật trong nghề của bạn thành một kho dùng dần, rồi luyện kể lại bằng video và những cách trình bày hợp với khách.</p>
-        <p class="dat">Xong tuần này: một kho chuyện để kể của riêng bạn.</p>
-      </div>
-      <div>
-        <span class="so">03</span>
-        <h3>Xuất bản mà không lệ thuộc cảm hứng</h3>
-        <p>Một bảng theo dõi việc viết và đăng dành cho người làm một mình, mẫu đặt bài ghi rõ lấy chuyện từ đâu, AI phụ phần tra cứu và viết lại, và một nhịp làm khớp với quỹ thời gian thật của bạn.</p>
-        <p class="dat">Xong tuần này: một nhịp làm bạn vẫn chạy được khi bận.</p>
-      </div>
-      <div>
-        <span class="so">04</span>
-        <h3>Đưa sự chú ý về một bước có ý nghĩa</h3>
-        <p>Một tài liệu đáng để khách để lại số, một lời mời rõ ràng, cách giữ liên lạc sau đó, và một bảng số liệu đi từ bài đăng tới cuộc trao đổi.</p>
-        <p class="dat">Xong tuần này: một đường đi từ nội dung đến khách hàng.</p>
-      </div>
-    </div>
-    <div class="dong the-ve-thay hien">
-      <div><b>Trước ngày bắt đầu: xem bạn đang ở đâu</b><p>Xem bạn đang đứng chỗ nào và đang tắc ở đâu. Kiểm lại nội dung và kênh bạn đang có. Ghi lại mức hiện tại, để cuối khóa còn có cái mà so.</p></div>
-      <div><b>Cuối chương trình: đưa ra bằng chứng</b><p>Bạn trình bày bạn là ai trong nghề, những gì đã đăng, cách bạn đang chạy, chỗ khách để lại thông tin và những con số đầu tiên. Cuối cùng bạn nhìn thấy chính mình của 30 ngày trước, và thấy khoảng cách.</p></div>
-    </div>
-    <details class="gap hien">
-      <summary><i aria-hidden="true"></i>Xem cách một câu chuyện ra được bốn dạng bài <span>video, chuỗi ảnh, bài viết, buổi phát trực tiếp</span></summary>
-      <div class="noi-gap">
+    <ul class="vach the-ve-thay hien tre">
+      <li><b>01</b><p><strong>Đúng vị thế.</strong> Ai cần nghe bạn, bạn có quyền nói về điều gì, muốn được nhớ bằng quan điểm và tiêu chuẩn nào.</p></li>
+      <li><b>02</b><p><strong>Có phong thái.</strong> Nói rõ ý, giọng và nhịp dừng tạo cảm giác vững, người trên nội dung giống người ngoài đời.</p></li>
+      <li><b>03</b><p><strong>Đủ chất liệu.</strong> Câu hỏi khách hay hỏi, quyết định đã cân, câu chuyện có quyền kể, sai lầm và bài học nghề.</p></li>
+      <li><b>04</b><p><strong>Đều nhịp.</strong> Một vòng gọn từ thu chất liệu tới đăng và đọc tín hiệu. Bạn giữ quan điểm, AI và đội ngũ đỡ phần lặp lại.</p></li>
+      <li><b>05</b><p><strong>Có tín hiệu.</strong> Phản hồi có bối cảnh từ đúng tệp, tin nhắn cho thấy người xem hiểu đúng vấn đề.</p></li>
+    </ul>
+  </div>
+</section>
 
-        <p class="tuan-ghi hien" style="margin:14px 0 22px">Đây là chỗ chặng 3 và chặng 4 gặp nhau, và cũng là chỗ bạn tiết kiệm nhiều nhất. Bạn kể một lần, rồi cùng câu chuyện đó ra được bốn dạng bài, không phải nghĩ lại từ đầu bốn lần.</p>
-      <div class="one hien"><span><b>Một câu chuyện</b><i>bạn kể năm phút, sau một buổi làm nghề</i></span></div>
-      <div class="g4 hien tre">
-        <div class="fmt">
-          <div class="mv"><div class="ph"><i class="tm"></i><i class="pl"></i><span class="ic"><i></i><i></i><i></i></span><span class="sb"><i style="width:70%"></i><i style="width:48%"></i></span></div></div>
-          <b class="n">Video ngắn</b><span class="s">60 đến 90 giây</span>
-          <p class="w"><i class="y">Bạn</i> nói một lần trước điện thoại. <i class="m">Máy</i> cắt, chèn phụ đề, làm ảnh bìa.</p>
-        </div>
-        <div class="fmt">
-          <div class="mv"><div class="cs"><i></i><i></i><i><b></b><s style="width:100%"></s><s style="width:88%"></s><s style="width:60%"></s></i><span class="dots"><i class="on"></i><i></i><i></i><i></i><i></i></span></div></div>
-          <b class="n">Chuỗi ảnh có chữ</b><span class="s">7 đến 10 tấm</span>
-          <p class="w"><i class="m">Máy</i> dàn mỗi tấm một ý, đổ vào mẫu của bạn. <i class="y">Bạn</i> đọc lại rồi duyệt.</p>
-        </div>
-        <div class="fmt">
-          <div class="mv"><div class="po"><div class="hd"><span class="av"></span><span class="nm"><i></i><i></i></span></div><div class="ln"><i style="width:100%"></i><i style="width:94%"></i><i style="width:97%"></i><i style="width:72%"></i></div><div class="ft"><i></i><i></i><i></i></div></div></div>
-          <b class="n">Bài viết</b><span class="s">400 đến 800 chữ</span>
-          <p class="w"><i class="m">Máy</i> viết nháp bằng giọng bạn. <i class="y">Bạn</i> sửa chỗ nghe không phải mình.</p>
-        </div>
-        <div class="fmt">
-          <div class="mv"><div class="lv"><div class="sc"><span class="bd"><i></i><b></b></span><i class="pp"></i></div><div class="cl"><i></i><i></i><i></i><i></i></div></div></div>
-          <b class="n">Buổi phát trực tiếp</b><span class="s">một buổi, cắt thành nhiều clip</span>
-          <p class="w"><i class="y">Bạn</i> lên sóng theo dàn ý. <i class="m">Máy</i> cắt thành clip, viết chú thích.</p>
-        </div>
+
+<!-- ================= BA TUẦN ================= -->
+<section class="phan nen" id="ba-tuan">
+  <div class="bao">
+    <div class="dau-phan hien">
+      <span class="nhan">Ba tuần chạy thế nào</span>
+      <h2>Mỗi tuần đóng lại bằng một việc bạn làm xong, <span>không phải bằng cảm giác đã hiểu thêm</span></h2>
+      <p class="dan">Ba tuần đo bằng việc bạn làm xong, không phải bằng 21 ngày ngồi liên tục. Bạn vẫn đang điều hành doanh nghiệp, xử lý khách và ra quyết định, nên chương trình được thiết kế quanh khoảng <b>3 tới 4 giờ mỗi tuần</b>.</p>
+    </div>
+    <div class="nl ba hien tre">
+      <div>
+        <div class="so">1</div>
+        <h3>Đúng và có trọng lượng</h3>
+        <p>Thị trường hiểu được bạn đại diện cho điều gì, và cách bạn xuất hiện bắt đầu phản ánh đúng vị thế đó.</p>
+        <div class="dat">Nộp: bản định vị một trang, ba luận điểm bảo vệ được, tiêu chuẩn phong thái riêng, ba bài luyện và một nội dung công khai.</div>
       </div>
+      <div>
+        <div class="so">2</div>
+        <h3>Đủ chất liệu và đúng cách thể hiện</h3>
+        <p>Ngừng phụ thuộc vào cảm hứng. Công việc thật trở thành nguyên liệu dùng được ở nhiều định dạng.</p>
+        <div class="dat">Nộp: bản đồ lãnh địa nội dung, kho tối thiểu 30 chất liệu, ngân hàng 10 câu chuyện, một nội dung trụ cột và hai bài chuyển định dạng.</div>
+      </div>
+      <div>
+        <div class="so">3</div>
+        <h3>Đều nhịp và bắt đầu có tín hiệu</h3>
+        <p>Chạy trọn một vòng sản xuất, đăng, rồi xem lại đủ gọn để bạn tiếp tục được sau khi chương trình khép lại.</p>
+        <div class="dat">Nộp: nội dung trụ cột thứ hai, bốn bài tái sử dụng, quy trình một trang, một lời mời bước tiếp theo, bảng tín hiệu và kế hoạch bốn tuần.</div>
+      </div>
+    </div>
+    <details class="gap hien" style="margin-top:30px">
+      <summary><i aria-hidden="true"></i>Xem mười việc phải làm xong để được ghi nhận <span>đây là thước đo, không phải số buổi có mặt</span></summary>
+      <div class="noi-gap">
+        <ul class="ket6" style="margin-top:16px">
+          <li>Bản định vị một trang.</li>
+          <li>Ba luận điểm có thể bảo vệ.</li>
+          <li>Tiêu chuẩn phong thái cá nhân.</li>
+          <li>Bản đồ lãnh địa nội dung.</li>
+          <li>Kho chất liệu và câu chuyện.</li>
+          <li>Tối thiểu ba nội dung trụ cột hoặc công khai, trong đó có ít nhất một video.</li>
+          <li>Tối thiểu sáu nội dung tái sử dụng ở các định dạng phù hợp.</li>
+          <li>Quy trình phần bạn giữ, phần AI và đội ngũ đỡ.</li>
+          <li>Một bước tiếp theo rõ cho người vừa đọc bạn.</li>
+          <li>Bảng tín hiệu và kế hoạch bốn tuần.</li>
+        </ul>
+        <p class="tuan-ghi" style="margin:18px 0 0;max-width:80ch">Chỉ ghi nhận hoàn thành khi bạn nộp đủ và bài đạt tiêu chuẩn. Số buổi có mặt hay số lần điểm danh không thay được cho bài nộp.</p>
       </div>
     </details>
   </div>
 </section>
 
-<!-- ================= CÁCH HỌC ================= -->
-<section class="phan nen" id="cach-hoc">
+<!-- ================= CÁCH CHẠY ================= -->
+<section class="phan" id="cach-hoc">
   <div class="bao">
     <div class="dau-phan hien">
-      <span class="nhan">Cách vận hành 30 ngày</span>
+      <span class="nhan">Cách vận hành</span>
       <h2>Bạn sẽ làm, không chỉ nghe</h2>
-      <p class="dan">Đây là một thử thách 30 ngày, không phải một lớp học 30 ngày. Bạn làm thật mỗi ngày, có người soi bài, và bạn không làm một mình.</p>
+      <p class="dan">Đây là một thử thách ba tuần, không phải một lớp học ba tuần. Bạn làm thật, có người soi bài, và bạn không làm một mình.</p>
     </div>
     <div class="giu">
       <div class="bang-anh hien">
         <div class="chu">
-          <span class="nhan">Lò rèn 30 ngày</span>
+          <span class="nhan">Thử thách ba tuần</span>
           <h3>Chỉ hành động và rèn luyện mới tạo ra kết quả</h3>
-          <p>Bạn không ngồi nghe rồi về. Mỗi ngày bạn làm thật, luyện cùng đồng đội và báo lại. Cuối 30 ngày bạn có sản phẩm thật của mình, không phải một tập ghi chép.</p>
+          <p>Bạn không ngồi nghe rồi về. Mỗi tuần bạn làm thật, luyện cùng nhóm nhỏ và nộp lại. Hết ba tuần bạn có sản phẩm thật của mình, không phải một tập ghi chép.</p>
           <span class="nguon">Ảnh chụp tại một chương trình trước của Coach Duy Nguyễn.</span>
         </div>
         <div class="anh"><img src="img/cd-gio-tay.jpg" alt="Cả hội trường giơ tay nhận thử thách trong một chương trình của Coach Duy Nguyễn" loading="lazy" decoding="async"></div>
@@ -1034,7 +975,7 @@ figure{margin:0}
           <figcaption>
             <b>Bài của bạn được sửa ngay trước mặt</b>
             <ul>
-              <li>Tối thứ Năm, bài của bạn mở ra sửa trực tiếp.</li>
+              <li>Mỗi tuần có phòng phản hồi, bài của bạn mở ra sửa trực tiếp.</li>
               <li>Không phải một lời nhận xét chung cho cả nhóm.</li>
             </ul>
           </figcaption>
@@ -1042,20 +983,20 @@ figure{margin:0}
         <figure>
           <div class="khung"><img src="img/cd-dai-hoi.jpg?v=2" alt="Hội trường đông người trong một chương trình do Coach Duy Nguyễn dẫn" loading="lazy" decoding="async"></div>
           <figcaption>
-            <b>Cả nhóm cùng chạy một nhịp</b>
+            <b>Nhóm nhỏ kéo bạn lại khi trễ nhịp</b>
             <ul>
-              <li>Nhóm 6 đến 10 người, có tên và có nhóm trưởng giữ nhịp.</li>
-              <li>Họp nhóm mỗi tuần. Ai tụt lại thì cả nhóm biết và kéo lên.</li>
+              <li>Bạn nằm trong một nhóm nhỏ, không lẫn vào một lớp đông.</li>
+              <li>Trễ nhịp thì nhóm biết và kéo bạn quay lại.</li>
             </ul>
           </figcaption>
         </figure>
         <figure>
           <div class="khung"><img src="img/cd-networking.jpg" alt="Những người chủ doanh nghiệp trao đổi với nhau" loading="lazy" decoding="async"></div>
           <figcaption>
-            <b>Một người đồng đội của riêng bạn</b>
+            <b>Đóng lại bằng một buổi trình bày bằng chứng</b>
             <ul>
-              <li>Ghép cặp ngay trong ngày khởi động.</li>
-              <li>Luyện cùng nhau mỗi ngày, nói thẳng, rồi làm lại ngay.</li>
+              <li>Cuối ba tuần bạn đưa ra thứ mình đã làm được.</li>
+              <li>Không phải bài kiểm tra. Là chỗ bạn nhìn thấy mình đã đi tới đâu.</li>
             </ul>
           </figcaption>
         </figure>
@@ -1063,76 +1004,73 @@ figure{margin:0}
     </div>
     <div class="tien-do">
       <div class="tieu hien">
-        <h3>Tiến độ hiện thành con số, không phải cảm giác</h3>
-        <p>Không chấm điểm thi đua, không thẻ phạt. Mọi việc phải làm nằm trên một bảng chung, đi tới đâu mở khóa tới đó.</p>
+        <h3>Mười lăm lần điểm danh thực hành, không phải mười lăm buổi ngồi nghe</h3>
+        <p>Điểm danh chỉ được tính khi kèm một bằng chứng ngắn: ghi thêm một chất liệu thật, luyện một đoạn video, hoàn thành một luận điểm, đăng hoặc dùng lại một nội dung, trả lời phản hồi của đúng tệp, hoặc đọc một tín hiệu rồi ghi quyết định giữ, sửa hay bỏ.</p>
       </div>
       <div class="hien">
-        <div class="thanh" aria-hidden="true"><i class="dat" style="left:10%"></i><i class="dat" style="left:30%"></i><i class="" style="left:50%"></i><i class="" style="left:70%"></i><i class="" style="left:90%"></i></div>
-        <div class="moc5">
-          <div><b>20%</b><span>Mốc thứ nhất</span></div>
-          <div><b>40%</b><span>Mốc thứ hai</span></div>
-          <div><b>60%</b><span>Mốc thứ ba</span></div>
-          <div><b>80%</b><span>Mốc thứ tư</span></div>
-          <div><b>100%</b><span>Đi hết hành trình</span></div>
+        <div class="thanh" aria-hidden="true"><i class="dat" style="left:3.33%"></i><i class="dat" style="left:10.00%"></i><i class="dat" style="left:16.67%"></i><i class="dat" style="left:23.33%"></i><i class="dat" style="left:30.00%"></i><i class="dat" style="left:36.67%"></i><i class="dat" style="left:43.33%"></i><i class="dat" style="left:50.00%"></i><i class="dat" style="left:56.67%"></i><i class="dat" style="left:63.33%"></i><i class="dat" style="left:70.00%"></i><i class="dat" style="left:76.67%"></i><i class="" style="left:83.33%"></i><i class="" style="left:90.00%"></i><i class="" style="left:96.67%"></i></div>
+        <div class="so-day">
+          <div><b>15 lần</b><span><em>điểm danh thực hành</em>trải đều ba tuần, khoảng 5 lần mỗi tuần</span></div>
+          <div><b>12 lần</b><span><em>mức nhận phần quà</em>đạt tối thiểu 12 trên 15 là được nhận</span></div>
+          <div><b>3 tới 4 giờ</b><span><em>mỗi tuần</em>theo thiết kế hiện hành của chương trình</span></div>
         </div>
-        <!-- CHỖ ĐIỀN: khi Coach Duy chốt bộ phần thưởng riêng của The Trusted Creator,
-             thay năm dòng "Mốc thứ..." bằng tên phần thưởng thật. Không dùng lại bộ quà
-             của TTA vì đó là tài sản của chương trình khác. -->
-        <p class="ghi">Thanh này đo mức bạn thực sự làm. Danh sách phần thưởng từng mốc sẽ công bố cho người đã đăng ký trước ngày bắt đầu.</p>
+        <!-- CHỖ ĐIỀN: mục 37 của tài liệu yêu cầu khóa nội dung phần quà Challenge,
+             hình thức xác nhận điểm danh hợp lệ và người chịu trách nhiệm đối soát,
+             trước khi truyền thông. Chưa có thì không ghi tên phần quà lên trang. -->
+        <p class="ghi">Điểm danh không phải điều kiện để tiếp tục học hoặc được công nhận hoàn thành. Chuẩn hoàn thành vẫn là mười việc bạn nộp. Bỏ lỡ một ngày không làm mất phần bạn đã tích lũy, và bạn không phải đăng bài hay có mặt đủ 21 ngày liên tiếp. Phần quà là quyền lợi thêm cho hành vi thực hành, không phải phần kiến thức hay phản hồi cốt lõi đã tính trong học phí.</p>
       </div>
     </div>
     <details class="gap hien">
-      <summary><i aria-hidden="true"></i>Xem một tuần của bạn trông như thế nào <span>hai tối trực tuyến, còn lại là làm thật</span></summary>
+      <summary><i aria-hidden="true"></i>Xem nhịp tham gia theo thiết kế hiện hành <span>ba buổi lõi, hai khối làm việc riêng mỗi tuần</span></summary>
       <div class="noi-gap">
-        <div class="tuan hien tre">
-      <div class="buoi"><span class="ngay">Thứ 2</span><span class="viec">Buổi hướng dẫn</span><span class="gio">19:30 · 22:00</span></div>
-      <div><span class="ngay">Thứ 3</span><span class="viec">Làm thật, luyện với đồng đội</span><span class="gio"></span></div>
-      <div><span class="ngay">Thứ 4</span><span class="viec">Làm thật, cập nhật tiến độ</span><span class="gio"></span></div>
-      <div class="thuchanh"><span class="ngay">Thứ 5</span><span class="viec">Phòng thực hành</span><span class="gio">19:30 · 22:00</span></div>
-      <div><span class="ngay">Thứ 6</span><span class="viec">Đăng bài và báo lại</span><span class="gio"></span></div>
-      <div><span class="ngay">Thứ 7</span><span class="viec">Họp nhóm</span><span class="gio"></span></div>
-      <div class="nghi"><span class="ngay">Chủ nhật</span><span class="viec">Nghỉ</span><span class="gio"></span></div>
-    </div>
-    <p class="tuan-ghi hien">Một tuần lặp lại như vậy bốn lần. Chỉ hai tối là ngồi trước màn hình, buổi nào cũng có ghi hình. Những ngày còn lại là ngày bạn làm thật, luyện với đồng đội và báo lại.</p>
-        <div class="luu">
-        <b>Thời gian bạn cần dành</b>
-        <p>Theo thiết kế hiện tại, mỗi tuần bạn dành khoảng 5 giờ cho hai buổi trực tuyến, cộng 3 đến 5 giờ làm thật và báo lại. Nếu tuần nào bạn không dành nổi mức này, khóa đầu chưa phải thời điểm phù hợp.</p>
-        <p style="margin-top:16px;padding-top:16px;border-top:1px solid var(--line)"><b style="display:inline;font-size:inherit;letter-spacing:0;text-transform:none;color:var(--ink)">Đây là khóa đầu tiên.</b> Lịch từng buổi, số người trong nhóm và mức nhận xét bài sẽ được chốt và gửi cho người đã đăng ký trước ngày khai giảng. Nếu số bài vượt quá mức chấm kỹ được, chương trình giảm số người trong nhóm chứ không hứa chấm riêng rồi nhận xét chung.</p>
-      </div>
+        <ul class="ket6" style="margin-top:16px">
+          <li>Ba buổi lõi, mỗi buổi khoảng 120 phút.</li>
+          <li>Phòng phản hồi và thực hành, xem lại được nếu bạn lỡ.</li>
+          <li>Hai khối làm việc cá nhân từ 45 đến 60 phút mỗi tuần.</li>
+          <li>Một buổi trình bày bằng chứng cuối chương trình.</li>
+          <li>Nhóm nhỏ để phản hồi và kéo bạn lại khi trễ nhịp.</li>
+          <li>Bài luyện riêng tư trước khi phải xuất bản công khai.</li>
+        </ul>
+        <div class="luu" style="margin-top:20px">
+          <b>Đây là khóa đầu tiên</b>
+          <p>Ngày giờ từng buổi, nền tảng học, nơi nộp bài, thời hạn phản hồi và số bài mỗi người được nhận xét trực tiếp sẽ được chốt và gửi cho người đã đăng ký trước ngày khai giảng. Nếu số bài vượt quá mức nhận xét kỹ được, chương trình giảm số người trong nhóm chứ không hứa nhận xét riêng rồi trả lời chung.</p>
+        </div>
       </div>
     </details>
   </div>
 </section>
 
 <!-- ================= RANH GIỚI ================= -->
-<section class="phan" id="ranh-gioi">
+<section class="phan nen" id="ranh-gioi">
   <div class="bao">
     <div class="toi hien">
-      <h3>Không phải khóa học video. Cũng không phải khóa học AI.</h3>
+      <h3>Không phải khóa làm video. Cũng không phải khóa dùng AI để sản xuất thật nhiều.</h3>
       <div class="cot2">
         <div>
-          <p>Video là một phần rèn luyện, vì bạn cần học cách hiện diện và diễn đạt bằng chính giọng nói của mình. Nhưng thương hiệu không chỉ nằm trong video. <b>Một câu chuyện viết tốt, một chuỗi ảnh có góc nhìn, một lá thư đúng lúc hoặc một tài liệu giúp khách nghĩ rõ đều có thể tích lũy niềm tin.</b></p>
+          <p>Video là một phần cần luyện, vì khách hàng phải cảm nhận được con người phía sau chuyên môn. Nhưng bạn không cần trở thành một kênh giải trí. <b>Bài viết, chuỗi ảnh có chữ, kể chuyện, video nói trực diện và cả nội dung do đội ngũ triển khai đều có vai trò, miễn chúng cùng tích lũy về một vị thế.</b></p>
         </div>
         <div>
-          <p>AI cũng không phải nhân vật chính. Nó giúp bạn gom chuyện, tra cứu, viết bản nháp, dùng lại một ý cho nhiều bài và đọc số liệu nhanh hơn. <b>Nó không biết bạn đã trải qua điều gì, tiêu chuẩn nào bạn thật sự bảo vệ và điều gì bạn không sẵn sàng nói chỉ để có thêm lượt xem.</b></p>
+          <p>AI giúp bạn giảm việc lặp lại: ghi lại, gom chất liệu, viết bản đầu, dùng lại một ý cho nhiều bài, đọc số liệu nhanh hơn. <b>Nó không có quyền bịa trải nghiệm, chọn quan điểm hay chịu trách nhiệm thay bạn.</b></p>
         </div>
       </div>
-      <p class="chot">The Trusted Creator giúp bạn xây phần công cụ không thể làm thay, rồi dùng công cụ để vận hành phần còn lại gọn hơn.</p>
+      <p class="chot">Chương trình giúp bạn xây phần công cụ không thể làm thay, rồi dùng công cụ để vận hành phần còn lại gọn hơn.</p>
     </div>
     <div class="dau-phan hien" style="margin:56px 0 26px">
       <h2 style="font-size:clamp(22px,2.4vw,30px)">Và đây là chỗ nó khác một khóa nội dung thông thường</h2>
     </div>
     <ul class="vach hien tre">
-      <li><b>01</b><p><strong>Xây trên nền Cố vấn Tin cậy.</strong> Nội dung giúp người xem nghĩ rõ hơn, không chỉ giúp người nói trông giỏi hơn.</p></li>
-      <li><b>02</b><p><strong>Chất liệu thật đứng trước công cụ.</strong> Nguyên liệu chính là câu hỏi khách hay hỏi, quyết định bạn đã cân và việc bạn đã làm.</p></li>
-      <li><b>03</b><p><strong>Làm cho một người chạy được.</strong> Quy trình không giả định bạn có sẵn biên kịch, người quay và người phân tích số liệu. AI bớt việc lặp lại, bạn giữ phần quan điểm.</p></li>
-      <li><b>04</b><p><strong>Niềm tin phải chảy về đúng chỗ.</strong> Với một người chủ, khách tin bạn thôi chưa đủ. Niềm tin đó phải chuyển tiếp sang doanh nghiệp, sản phẩm và đội ngũ.</p></li>
+      <li><b>01</b><p><strong>Xây thương hiệu cho người sáng lập và chuyên gia.</strong> Không đào tạo người làm nội dung giải trí, cũng không dạy cách nuôi kênh.</p></li>
+      <li><b>02</b><p><strong>Phong thái được rèn như một phần của vị thế.</strong> Không phải một tiết trình diễn tách rời, mà là cách vị thế của bạn được người khác cảm nhận.</p></li>
+      <li><b>03</b><p><strong>Chất liệu thật đi trước công cụ và lịch đăng.</strong> Nguyên liệu chính là câu hỏi khách hay hỏi, quyết định bạn đã cân và việc bạn đã làm.</p></li>
+      <li><b>04</b><p><strong>Bài của bạn được phản hồi, đo và sửa.</strong> Bạn nộp bài chứ không chỉ nghe, và có người nhận xét thẳng vào bài của bạn.</p></li>
+      <li><b>05</b><p><strong>Thiết kế cho người vẫn phải điều hành doanh nghiệp.</strong> Ba tuần đo bằng việc làm xong, không bắt giữ chuỗi đăng bài mỗi ngày.</p></li>
+      <li><b>06</b><p><strong>Niềm tin phải chảy về đúng chỗ.</strong> Với người chủ, khách tin bạn thôi chưa đủ. Niềm tin đó phải chuyển tiếp sang doanh nghiệp, sản phẩm và đội ngũ.</p></li>
     </ul>
   </div>
 </section>
 
 <!-- ================= NGƯỜI DẠY VÀ BẰNG CHỨNG ================= -->
-<section class="phan nen" id="nguoi-day">
+<section class="phan" id="nguoi-day">
   <div class="bao">
     <div class="ai2">
       <figure class="anh-khung hien"><img src="img/cd-chua-bai.jpg" alt="Coach Duy Nguyễn đang trao đổi trực tiếp với một người tham gia trên sân khấu" width="525" height="700" loading="lazy" decoding="async"></figure>
@@ -1140,7 +1078,7 @@ figure{margin:0}
         <span class="nhan" style="display:block;margin-bottom:12px">Người thiết kế và dẫn chương trình</span>
         <h3>Coach Duy Nguyễn</h3>
         <p class="vai">Nhà sáng lập Next Step Group. Người xây TTA Sales System, hệ thống bán hàng dựa trên tinh thần Cố vấn Tin cậy, và đang phát triển hệ sinh thái Next Gen Founder.</p>
-        <p class="doan">The Trusted Creator không bắt đầu từ mẹo làm nội dung. Nó bắt đầu từ một câu hỏi Coach Duy gặp lại nhiều lần: <b>vì sao một người có chuyên môn thật vẫn không được thị trường nhớ đúng.</b></p>
+        <p class="doan">Trusted Founder Brand Challenge không bắt đầu từ mẹo làm nội dung. Nó bắt đầu từ một câu hỏi Coach Duy gặp lại nhiều lần: <b>vì sao một người có chuyên môn thật vẫn không được thị trường nhớ đúng.</b></p>
         <!-- CHỖ ĐIỀN SỐ: khi đội hoàn tất mục tiêu 130 cuộc trao đổi, thay câu dưới thành
              "Cấu trúc chương trình được chốt sau <SỐ> cuộc trao đổi trực tiếp, trong đó <SỐ> là chủ doanh nghiệp."
              Chỉ ghi số đã thật sự thực hiện, và ghi kèm bao nhiêu người trong số đó là chủ doanh nghiệp. -->
@@ -1157,50 +1095,37 @@ figure{margin:0}
         </div>
       </div>
     </div>
-    <div class="mua-truoc hien">
-      <span class="nhan">Một chương trình 30 ngày khác của Coach Duy</span>
-      <h4>50 người, 30 ngày. Đây là thứ họ làm ra.</h4>
-      <div class="so4">
-        <div><b>546</b><span>video được làm ra<em>trung bình 11 video một người</em></span></div>
-        <div><b>8,2 triệu</b><span>lượt xem từ những video đó</span></div>
-        <div><b>1.221</b><span>khách hàng chủ động liên hệ<em>trung bình 24 người một học viên</em></span></div>
-        <div><b>187</b><span>giao dịch đã chốt</span></div>
-      </div>
-      <p class="ro"><b>Đây là The Sales Warrior mùa 2, không phải The Trusted Creator.</b> Chương trình đó dạy người bán hàng xây kênh chuyên gia, chạy cùng một cách vận hành 30 ngày mà bạn thấy ở trên. Bốn con số này cho thấy cách vận hành đó khiến người ta thực sự làm, không cho thấy bạn sẽ đạt đúng những con số này.</p>
-    </div>
   </div>
 </section>
 
 <!-- ================= PHÙ HỢP VÀ CHƯA PHÙ HỢP ================= -->
-<section class="phan" id="phu-hop">
+<section class="phan nen" id="phu-hop">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Điều kiện tham gia</span>
       <h2>Chương trình này không phù hợp với tất cả mọi người</h2>
-      <p class="dan">Danh sách ngành ở đầu trang chỉ là ví dụ. Điều quyết định không phải bạn làm ngành nào, mà là <b>khách có cần tin người trước khi xuống tiền hay không</b>. Nếu khách mua chủ yếu vì giá hoặc vì tiện, chương trình này chưa phải chỗ của bạn.</p>
+      <p class="dan">Điều quyết định không phải bạn làm ngành nào, mà là <b>khách có cần tin người trước khi xuống tiền hay không</b>. Nếu khách mua chủ yếu vì giá hoặc vì tiện, chương trình này chưa phải chỗ của bạn.</p>
       <p class="dan" style="margin-top:14px">Đọc kỹ hai cột dưới đây trước khi đăng ký. Vào nhầm chương trình thì người chịu thiệt đầu tiên là chính bạn.</p>
     </div>
     <div class="hop hien tre">
       <div class="co">
         <h3>Chương trình phù hợp nếu</h3>
         <ul>
-          <li>Ngồi với khách thì bạn nói rất rõ, nhưng mở máy quay lên lại không biết bắt đầu từ đâu.</li>
-          <li>Bạn có sản phẩm và khách hàng thật, chỉ là thị trường chưa biết bạn đại diện cho điều gì.</li>
-          <li>Bạn từng đăng đều được một thời gian rồi dừng, và lần này chịu đăng ngay từ tuần đầu.</li>
-          <li>Bạn chán mẹo rồi. Bạn muốn một cách làm chạy được cả khi mình bận.</li>
-          <li>Bạn sẵn sàng nộp bài, nghe nhận xét thẳng và ngồi đọc lại số liệu.</li>
+          <li>Bạn có doanh nghiệp, sản phẩm và khách hàng thật.</li>
+          <li>Khách tin bạn khi gặp, nhưng thị trường chưa hiểu đủ về bạn trước cuộc gặp.</li>
+          <li>Bạn đã làm nội dung nhưng chưa có nhịp, hoặc chưa ra đúng tiếng nói của mình.</li>
+          <li>Bạn sẵn sàng dành khoảng 3 tới 4 giờ mỗi tuần để làm và nhận phản hồi.</li>
           <li>Bạn chịu trách nhiệm về những gì mình nói ra trước thị trường.</li>
         </ul>
       </div>
       <div class="chua">
         <h3>Chương trình chưa phù hợp nếu</h3>
         <ul>
-          <li>Bạn chỉ muốn tăng người theo dõi hoặc tìm công thức lan truyền.</li>
-          <li>Bạn muốn AI tự viết và đăng thay toàn bộ.</li>
-          <li>Bạn chưa có sản phẩm, chuyên môn hoặc trải nghiệm đủ rõ.</li>
-          <li>Bạn không sẵn sàng thực hành và xuất bản.</li>
+          <li>Bạn chưa có đề nghị hoặc trải nghiệm thật để thị trường kiểm chứng.</li>
+          <li>Bạn chỉ muốn tăng người theo dõi.</li>
+          <li>Bạn muốn AI hoặc đội ngũ làm toàn bộ, còn bạn không tham gia.</li>
+          <li>Bạn cần xây ngay một phễu bán hàng hoàn chỉnh.</li>
           <li>Bạn kỳ vọng nội dung bù cho một sản phẩm yếu hoặc quy trình tư vấn kém.</li>
-          <li>Bạn muốn đội ngũ làm thay mọi thứ còn bản thân không tham gia tạo tiếng nói.</li>
         </ul>
       </div>
     </div>
@@ -1208,7 +1133,7 @@ figure{margin:0}
 </section>
 
 <!-- ================= MỨC ĐẦU TƯ ================= -->
-<section class="phan nen" id="muc-dau-tu">
+<section class="phan" id="muc-dau-tu">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Mức đầu tư</span>
@@ -1242,15 +1167,16 @@ figure{margin:0}
     <div class="khong-bd hien tre">
       <p class="tieu">Điều chương trình không bảo đảm</p>
       <div>Không bảo đảm số lượt xem, người theo dõi, khách hàng hoặc doanh thu.</div>
-      <div>Không bảo đảm bạn xây xong một thương hiệu trưởng thành trong 30 ngày.</div>
+      <div>Không bảo đảm bạn xây xong một thương hiệu trưởng thành trong ba tuần.</div>
       <div>Không thay thế chất lượng sản phẩm, năng lực tư vấn hoặc cách bạn xử lý khách hàng.</div>
       <div>Không làm nội dung thay bạn.</div>
+      <div>Không bảo đảm có kết quả nếu bạn không dành thời gian thực hành.</div>
       <div>Không chịu trách nhiệm cho dữ kiện bạn công bố sai hoặc thiếu kiểm chứng.</div>
     </div>
     <div class="moi-giua hien">
       <p>Nếu con số này hợp với bạn, bước tiếp theo là điền phiếu đăng ký.</p>
       <div class="loi2">
-        <a class="nut" href="#dang-ky">Đăng ký The Trusted Creator 30 Days, khai giảng 28/09/2026 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="nut" href="#dang-ky">Đăng ký Trusted Founder Brand Challenge <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <p class="phu">Chưa chắc mình đúng là người chương trình phục vụ? <a href="phieu-chan-doan.html">Làm Phiếu chẩn đoán 7 phút</a>.</p>
       </div>
     </div>
@@ -1258,40 +1184,52 @@ figure{margin:0}
 </section>
 
 <!-- ================= HỎI ĐÁP ================= -->
-<section class="phan" id="hoi-dap">
+<section class="phan nen" id="hoi-dap">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Câu hỏi thường gặp</span>
-      <h2>Tám câu hay được hỏi</h2>
+      <h2>Mười câu hay được hỏi</h2>
     </div>
     <div class="faq hien" id="faq">
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>01</b><span>Tôi có bắt buộc phải làm video và lộ mặt không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Bạn còn dùng bài viết, chuỗi ảnh có chữ và bài kể chuyện, nên không phải mọi thứ đều là video. Nhưng luyện nói trước máy quay là một phần của chương trình, vì với người chủ thì đó là cách xây niềm tin nhanh nhất. Nếu bạn hoàn toàn không muốn xuất hiện, hãy nói trước với đội ngũ để cùng xem chương trình có phải bước phù hợp không.</p></div></div>
+        <button type="button" aria-expanded="false"><b>01</b><span>Có bắt buộc làm video không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Có ít nhất một bài luyện hoặc một nội dung video, để bạn nhận được phản hồi về phong thái. Nhưng chương trình không lấy video làm định dạng duy nhất. Bài viết, chuỗi ảnh có chữ và bài kể chuyện đều được tính khi đúng nhiệm vụ và đủ tiêu chuẩn.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>02</b><span>Tôi bận. Mỗi tuần cần bao nhiêu thời gian, và nếu lỡ buổi tối thì sao?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Khoảng 5 giờ cho hai buổi trực tuyến, cộng 3 đến 5 giờ làm thật và báo lại. Buổi nào cũng có ghi hình nên lỡ một buổi bạn vẫn xem lại được, nhưng phòng thực hành thì nên có mặt, vì đó là lúc bài của bạn được sửa. Nếu tuần nào bạn cũng không dành nổi mức này, khóa đầu chưa phải thời điểm phù hợp.</p></div></div>
+        <button type="button" aria-expanded="false"><b>02</b><span>Tôi rất bận. Có phải tham gia đủ 21 ngày không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Không. Chương trình có 15 lần điểm danh thực hành để tạo nhịp, đạt tối thiểu 12 lần thì nhận phần quà. Điểm danh không phải điều kiện để tiếp tục học hoặc được công nhận hoàn thành; chuẩn hoàn thành vẫn dựa trên việc bạn nộp đủ bài. Bạn không phải đăng bài hay có mặt đủ 21 ngày liên tiếp. Thiết kế hiện tại cần khoảng 3 tới 4 giờ mỗi tuần.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>03</b><span>Tôi đang học một chương trình khác của Coach Duy, có bị chồng chéo không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Không chồng chéo về nội dung. Chương trình bán hàng dạy bạn tư vấn tốt hơn khi đã ngồi với khách. Chương trình này lo phần trước đó, tức làm sao để đúng khách tìm tới bạn và tin bạn trước khi gặp. Nhưng có chồng chéo về thời gian. Nếu bạn đang học dở và chưa kịp áp dụng, hãy nói thẳng với đội ngũ để chọn khóa sau.</p></div></div>
+        <button type="button" aria-expanded="false"><b>03</b><span>Tôi chưa từng làm nội dung, có theo được không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Có thể, nếu bạn đã có chuyên môn, có đề nghị và có trải nghiệm thật, đồng thời làm xong phần chuẩn bị trước ngày khai giảng. Người chưa có những nền tảng này thì chưa phù hợp.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>04</b><span>Tôi đã có đội làm nội dung, còn cần học không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Đội giúp bạn làm ra bài, nhưng giọng nói, quan điểm và trải nghiệm vẫn phải đến từ bạn. Chương trình giúp bạn đưa cho đội một bản đặt bài rõ hơn, thay vì giao luôn cả thương hiệu cho họ.</p></div></div>
+        <button type="button" aria-expanded="false"><b>04</b><span>Tôi đã có đội làm nội dung thì sao?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Vẫn phù hợp, nếu đội đang phụ thuộc vào bạn, nội dung chưa đúng tiếng nói của bạn, hoặc chưa có tiêu chuẩn nào để đánh giá. Bạn không học để làm thay đội. Bạn học để sở hữu vị thế, chất liệu và tiêu chuẩn.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>05</b><span>Tôi đã dùng AI rồi. Chương trình có gì khác?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Nếu chỗ đứng của bạn còn mờ và chuyện bạn đưa vào cũng mờ, AI chỉ giúp bạn ra nội dung chung chung nhanh hơn. Đó là lý do nhiều người dùng AI xong đọc lại thấy bài mình giống mọi người. Chương trình bắt đầu từ chuyên môn và quyết định biên tập của bạn, sau đó mới dùng AI để bớt việc lặp lại.</p></div></div>
+        <button type="button" aria-expanded="false"><b>05</b><span>Tôi dùng AI rồi. Chương trình khác gì?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>AI là một phần của quy trình, không phải sản phẩm chính. Chương trình tập trung vào vị thế, phong thái, chất liệu, quyền được nói và cách đọc tín hiệu. Thiếu những phần này thì AI chỉ giúp bạn tạo nội dung chung chung nhanh hơn.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>06</b><span>Tôi có xây xong thương hiệu trong 30 ngày không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Không. Một thương hiệu đứng được cần thời gian và bằng chứng nhất quán. Trong 30 ngày, bạn dựng và chạy thử vòng đầu, rồi có số liệu để biết nên đi tiếp thế nào.</p></div></div>
+        <button type="button" aria-expanded="false"><b>06</b><span>Chương trình có xây hệ thu hút và nuôi dưỡng khách không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Không, và đây là ranh giới cố ý. Chương trình chỉ yêu cầu một bước tiếp theo đơn giản cho người vừa đọc bạn, cùng một bảng tín hiệu ban đầu. Quà tặng thu thông tin, chuỗi thư nuôi dưỡng, phần mềm quản lý khách hàng và phễu hoàn chỉnh thuộc giai đoạn sau trong Next Gen Founder.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>07</b><span>Chương trình có bảo đảm có khách hàng không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Không. Nội dung tạo thêm sự chú ý, niềm tin và những cuộc trao đổi. Còn ra được khách hay không phụ thuộc vào sản phẩm, giá, năng lực tư vấn và cách bạn tiếp người quan tâm.</p></div></div>
+        <button type="button" aria-expanded="false"><b>07</b><span>Sau ba tuần tôi có xây xong thương hiệu không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Không. Bạn cài đặt và chạy phiên bản đầu, tạo ra những bằng chứng ban đầu và có kế hoạch tiếp tục. Một thương hiệu được tin cần thời gian, cần chất lượng công việc và cần sự nhất quán mới trưởng thành.</p></div></div>
+      </div>
+      <div class="muc">
+        <button type="button" aria-expanded="false"><b>08</b><span>Chương trình có bảo đảm có khách hàng không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Không. Chương trình giúp bạn xuất hiện rõ hơn và đọc tín hiệu đúng hơn. Còn khách hàng thì phụ thuộc vào chất lượng đề nghị, đúng tệp, năng lực tư vấn, thị trường và mức bạn thực sự làm.</p></div></div>
+      </div>
+      <div class="muc">
+        <button type="button" aria-expanded="false"><b>09</b><span>Học phí có gồm Cộng đồng Thành viên Next Gen Founder không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Chưa mặc định. Chương trình mua riêng được. Gói kết hợp chỉ công bố khi quyền lợi, thời hạn, giá và chính sách của cộng đồng đã được duyệt.</p></div></div>
+      </div>
+      <div class="muc">
+        <button type="button" aria-expanded="false"><b>10</b><span>Đây có phải khóa đầu tiên không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Đúng. Vì chưa có kết quả của người học chính chương trình này, trang không mượn kết quả của chương trình khác để tạo cảm giác đã được kiểm chứng. Lúc này bạn chỉ có thể cân nhắc dựa trên cơ chế, những việc chương trình cam kết bạn làm xong và kinh nghiệm của người dạy.</p></div></div>
       </div>
     </div>
   </div>
@@ -1356,7 +1294,7 @@ figure{margin:0}
           </label>
           <label>Mục tiêu 90 ngày tới của bạn <small>không bắt buộc</small><textarea name="muctieu" placeholder="Viết ngắn gọn điều bạn muốn đạt được, ví dụ: có nhịp nội dung chạy được khi tôi bận và có 5 cuộc trao đổi đúng người mỗi tháng."></textarea></label>
           <label>Một ví dụ nội dung hoặc kênh hiện tại <small>không bắt buộc</small><input name="vidu" type="url" placeholder="Dán một đường dẫn"></label>
-          <label>Thời gian bạn dành được để thực hành trong 30 ngày <small>không bắt buộc</small>
+          <label>Thời gian bạn dành được để thực hành mỗi tuần <small>không bắt buộc</small>
             <select name="thoigian">
               <option value="">Chọn mức thời gian</option>
               <option>Dưới 3 giờ mỗi tuần</option>
@@ -1390,7 +1328,7 @@ figure{margin:0}
 <!-- ================= CHÂN TRANG ================= -->
 <footer class="chan-trang">
   <div class="bao-rong">
-    <div class="chan-hieu"><svg class="dau-hieu" viewBox="0 0 32 32" aria-hidden="true"><path d="M25.53 10.5A11 11 0 1 0 25.53 21.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="27" cy="16" r="3.4" fill="#D97757"/></svg><span><b>The Trusted Creator 30 Days</b> by Coach Duy Nguyễn<br>Một chương trình của Next Step Group · <a href="mailto:nextstepacademyvietnam@gmail.com">nextstepacademyvietnam@gmail.com</a></span></div>
+    <div class="chan-hieu"><svg class="dau-hieu" viewBox="0 0 32 32" aria-hidden="true"><path d="M25.53 10.5A11 11 0 1 0 25.53 21.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="27" cy="16" r="3.4" fill="#D97757"/></svg><span><b>Trusted Founder Brand Challenge</b> by Coach Duy Nguyễn<br>Một chương trình của Next Step Group · <a href="mailto:nextstepacademyvietnam@gmail.com">nextstepacademyvietnam@gmail.com</a></span></div>
     <div class="lk">
       <a href="#muc-dau-tu">Mức đầu tư và điều khoản</a>
       <a href="phieu-chan-doan.html">Phiếu chẩn đoán 7 phút</a>
@@ -1511,7 +1449,7 @@ figure{margin:0}
         +'Đồng ý được liên hệ: '+data.dongy+'\n'
         +'Mức giá áp dụng: '+data.muc_gia+'\n'
         +'Trang nguồn: '+data.trang_nguon+' · Phiên bản trang: '+data.phien_ban_trang+' · Nguồn chiến dịch: '+data.nguon_chien_dich+'\n';
-      location.href='mailto:'+DANG_KY.thu+'?subject='+encodeURIComponent('Đăng ký The Trusted Creator 30 Days: '+data.ten)+'&body='+encodeURIComponent(body);
+      location.href='mailto:'+DANG_KY.thu+'?subject='+encodeURIComponent('Đăng ký Trusted Founder Brand Challenge: '+data.ten)+'&body='+encodeURIComponent(body);
       xong('Ứng dụng thư của bạn vừa mở với nội dung đăng ký soạn sẵn. Bấm Gửi trong ứng dụng thư, rồi chuyển khoản theo thông tin bên dưới. Nếu thư không mở, gửi trực tiếp tới <a href="mailto:'+DANG_KY.thu+'">'+DANG_KY.thu+'</a>.');
     });
   }
