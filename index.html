@@ -568,14 +568,18 @@ figure{margin:0}
 @media (max-width:700px){.khong-bd{grid-template-columns:minmax(0,1fr)}}
 
 /* ============ BẰNG CHỨNG VÀ NGƯỜI DẠY ============ */
-.ai2{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:56px;align-items:start}
-.ai2 .anh-khung{aspect-ratio:3/4}
+.ai2{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;align-items:stretch}
+.ai2 .anh-khung{height:100%;min-height:440px}
 .ai2 .gioi h3{font-size:clamp(24px,2.6vw,32px);margin-bottom:6px}
 .ai2 .gioi .vai{font-size:15px;color:var(--ink-3);margin-bottom:20px}
 .ai2 .gioi p.doan{font-size:16.5px;line-height:1.65;color:var(--ink-2)}
 .ai2 .gioi p.doan + p.doan{margin-top:12px}
+.nguon{margin-top:12px;font-size:13px;line-height:1.5;color:var(--ink-3)}
+.xem-mau{margin-top:24px;padding:18px 0 0;border-top:1px solid var(--ink)}
+.xem-mau b{display:block;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cam-dam);margin-bottom:7px;text-wrap:balance}
+.xem-mau p{font-size:15.5px;line-height:1.55;color:var(--ink-2)}
 .ai2 .gioi p.doan b{color:var(--ink);font-weight:600}
-.so-day{margin:26px 0 4px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
+.so-day{margin:28px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
 .so-day > div{padding:16px 14px 0 0}
 .so-day > div + div{padding-left:16px;border-left:1px solid var(--line)}
 .so-day b{display:block;font-family:var(--f-tit);font-size:28px;letter-spacing:-.03em;line-height:1;color:var(--ink)}
@@ -585,15 +589,11 @@ figure{margin:0}
 @supports (grid-template-rows: subgrid){.so-day{grid-template-rows:auto 1fr}.so-day > div{display:grid;grid-template-rows:subgrid;grid-row:span 2}}
 @media (max-width:600px){@supports (grid-template-rows: subgrid){.so-day > div{grid-row:auto;grid-template-rows:none;display:block}}}
 
-.lop{margin-top:26px;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
-.lop > div{padding:16px 0;border-bottom:1px solid var(--line)}
-.lop b{display:block;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cam-dam);margin-bottom:5px}
-.lop p{font-size:15.5px;line-height:1.55;color:var(--ink-2)}
-@media (max-width:900px){.ai2{grid-template-columns:minmax(0,1fr);gap:24px}.ai2 .anh-khung{max-width:320px;aspect-ratio:3/4}}
+@media (max-width:900px){.ai2{grid-template-columns:minmax(0,1fr);gap:26px}.ai2 .anh-khung{max-width:340px;height:auto;min-height:0;aspect-ratio:3/4}}
 
 
 /* ============ KHỐI TỐI: kết quả một chương trình 30 ngày khác ============ */
-.mua-truoc{margin:32px 0 8px;border-radius:var(--r);background-color:var(--ink);background-image:linear-gradient(150deg,#1A202C 0%,#0F1218 100%);box-shadow:var(--shadow);padding:32px 30px 28px;overflow:hidden}
+.mua-truoc{margin:52px 0 0;border-radius:var(--r);background-color:var(--ink);background-image:linear-gradient(150deg,#1A202C 0%,#0F1218 100%);box-shadow:var(--shadow);padding:32px 30px 28px;overflow:hidden}
 .mua-truoc .nhan{color:var(--cam);display:flex;align-items:center;gap:10px;margin-bottom:12px}
 .mua-truoc .nhan::before{content:'';width:18px;height:2px;background:var(--cam);flex:none}
 .mua-truoc h4{color:#fff;font-family:var(--f-tit);font-size:clamp(22px,2.5vw,30px);letter-spacing:-.025em;line-height:1.12;margin-bottom:22px;max-width:26ch;text-wrap:balance}
@@ -1138,7 +1138,6 @@ figure{margin:0}
         <h3>Coach Duy Nguyễn</h3>
         <p class="vai">Nhà sáng lập Next Step Group. Người xây TTA Sales System, hệ thống bán hàng dựa trên tinh thần Cố vấn Tin cậy, và đang phát triển hệ sinh thái Next Gen Founder.</p>
         <p class="doan">The Trusted Creator không bắt đầu từ mẹo làm nội dung. Nó bắt đầu từ một câu hỏi Coach Duy gặp lại nhiều lần: <b>vì sao một người có chuyên môn thật vẫn không được thị trường nhớ đúng.</b></p>
-        
         <!-- CHỖ ĐIỀN SỐ: khi đội hoàn tất mục tiêu 130 cuộc trao đổi, thay câu dưới thành
              "Cấu trúc chương trình được chốt sau <SỐ> cuộc trao đổi trực tiếp, trong đó <SỐ> là chủ doanh nghiệp."
              Chỉ ghi số đã thật sự thực hiện, và ghi kèm bao nhiêu người trong số đó là chủ doanh nghiệp. -->
@@ -1148,34 +1147,23 @@ figure{margin:0}
           <div><b>2.000+</b><span><em>học viên chính thức</em>của các chương trình đào tạo</span></div>
           <div><b>30.000+</b><span><em>người tham gia</em>qua các chương trình khác nhau</span></div>
         </div>
-        <div class="lop">
-          <div>
-            <b>Vì sao Coach Duy dẫn chương trình này</b>
-            <p>Trải nghiệm của Coach Duy trong đào tạo và tư vấn theo phương pháp Cố vấn Tin cậy, trong xây thương hiệu cá nhân, trong thiết kế chương trình và trong vận hành một hệ thống nội dung.</p>
-          </div>
-          <div>
-            <b>Bạn sẽ được xem cơ chế chạy thật một lần</b>
-            <p>Một tình huống có thật, đi từ đầu tới cuối: thành video, thành bài viết, thành chuỗi ảnh có chữ, thành chỗ để khách để lại số và thành một bảng số liệu. Bạn xem nó chạy trước, rồi mới tự chạy.</p>
-          </div>
-        </div>
-        <div class="mua-truoc hien">
-          <span class="nhan">Một chương trình 30 ngày khác của Coach Duy</span>
-          <h4>50 người, 30 ngày. Đây là thứ họ làm ra.</h4>
-          <div class="so4">
-            <div><b>546</b><span>video được làm ra<em>trung bình 11 video một người</em></span></div>
-            <div><b>8,2 triệu</b><span>lượt xem từ những video đó</span></div>
-            <div><b>1.221</b><span>khách hàng chủ động liên hệ<em>trung bình 24 người một học viên</em></span></div>
-            <div><b>187</b><span>giao dịch đã chốt</span></div>
-          </div>
-          <p class="ro"><b>Đây là The Sales Warrior mùa 2, không phải The Trusted Creator.</b> Chương trình đó dạy người bán hàng xây kênh chuyên gia, chạy cùng một cách vận hành 30 ngày mà bạn thấy ở trên. Bốn con số này cho thấy cách vận hành đó khiến người ta thực sự làm, không cho thấy bạn sẽ đạt đúng những con số này.</p>
-        </div>
-        <div class="lop">
-          <div>
-            <b>Điều chương trình chưa có, nói thẳng ở đây</b>
-            <p>Ba con số phía trên đến từ các chương trình đào tạo và tư vấn trước đây của Coach Duy, không phải kết quả của The Trusted Creator. Khóa này là khóa đầu tiên, nên chưa có ai đi qua chương trình để kể lại kết quả, và chương trình sẽ không mượn kết quả của khóa khác lấp vào chỗ đó. Lúc này bạn chỉ có thể cân nhắc dựa trên cơ chế, chương trình, những kết quả đã cam kết và kinh nghiệm của người dạy.</p>
-          </div>
+        <p class="nguon">Số cộng dồn từ các chương trình đào tạo và tư vấn trước đây của Coach Duy.</p>
+        <div class="xem-mau">
+          <b>Bạn sẽ được xem cơ chế chạy thật một lần</b>
+          <p>Một tình huống có thật, đi từ đầu tới cuối: thành video, thành bài viết, thành chuỗi ảnh có chữ, thành chỗ để khách để lại số và thành một bảng số liệu. Bạn xem nó chạy trước, rồi mới tự chạy.</p>
         </div>
       </div>
+    </div>
+    <div class="mua-truoc hien">
+      <span class="nhan">Một chương trình 30 ngày khác của Coach Duy</span>
+      <h4>50 người, 30 ngày. Đây là thứ họ làm ra.</h4>
+      <div class="so4">
+        <div><b>546</b><span>video được làm ra<em>trung bình 11 video một người</em></span></div>
+        <div><b>8,2 triệu</b><span>lượt xem từ những video đó</span></div>
+        <div><b>1.221</b><span>khách hàng chủ động liên hệ<em>trung bình 24 người một học viên</em></span></div>
+        <div><b>187</b><span>giao dịch đã chốt</span></div>
+      </div>
+      <p class="ro"><b>Đây là The Sales Warrior mùa 2, không phải The Trusted Creator.</b> Chương trình đó dạy người bán hàng xây kênh chuyên gia, chạy cùng một cách vận hành 30 ngày mà bạn thấy ở trên. Bốn con số này cho thấy cách vận hành đó khiến người ta thực sự làm, không cho thấy bạn sẽ đạt đúng những con số này.</p>
     </div>
   </div>
 </section>

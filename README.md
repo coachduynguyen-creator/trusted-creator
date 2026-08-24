@@ -352,3 +352,27 @@ Trang còn ba khối gập: một câu chuyện ra bốn dạng bài, điều kh
 **Đổi ảnh phần Người dạy** từ ảnh chân dung phòng chụp sang `cd-chua-bai.jpg`, cắt từ ảnh Coach Duy đang trao đổi trực tiếp với một người trên sân khấu. Ảnh chân dung tách nền đặt trong khung 3:4 bị cắt ngang đùi, nhìn như lỗi. Ảnh mới có tương tác, có người, và slide phía sau tình cờ ghi đúng "THIẾT LẬP VỊ THẾ" và "MỐI QUAN HỆ TIN TƯỞNG".
 
 Tệp `cd-portrait-760.png` đã gỡ khỏi kho vì không còn chỗ dùng. Thư mục ảnh còn 1,3MB.
+
+### Dựng lại bố cục phần Người dạy và bỏ đoạn thanh minh, ngày 24/08/2026
+
+Coach Duy nói bố cục phần này "có vẻ không hợp lý". Đo lại thì đúng: cột ảnh cao 495px trong khi cột chữ cao hơn 1.100px, nên hụt một mảng trắng lớn dưới ảnh; và khối tối "50 người, 30 ngày" bị nhét trong cột phải rộng 589px làm bốn con số vỡ dòng.
+
+Ba việc đã sửa:
+
+1. **Hai cột bằng nhau.** Đổi tỉ lệ cột từ `.72fr / 1.28fr` sang `.85fr / 1.15fr`, đổi `align-items` từ `start` sang `stretch`, và bỏ `aspect-ratio` cố định của khung ảnh để nó cao bằng cột chữ. Ở khổ 1400, hai cột nay cao đúng 676px, lệch 0. Khung ảnh ra tỉ lệ 0,644 so với ảnh gốc 0,75, tức cắt 14 phần trăm chiều ngang, dưới ngưỡng 22 của `kiem-anh.js`.
+2. **Khối tối chạy hết chiều ngang**, đưa ra ngoài lưới hai cột. Bốn con số nay nằm một hàng, không còn vỡ dòng.
+3. **Bỏ hai khối chữ nhỏ chồng ở cuối cột phải.** Khối "Vì sao Coach Duy dẫn chương trình này" chỉ liệt kê năng lực chung chung, không có gì người đọc kiểm chứng được, nên cắt hẳn. Khối "Bạn sẽ được xem cơ chế chạy thật một lần" giữ lại, đổi thành một mục có vạch đậm ở cuối cột.
+
+**Bỏ đoạn "Điều chương trình chưa có, nói thẳng ở đây".** Coach Duy hỏi có nên nói kiểu đó trên trang bán hàng không. Không nên. Đoạn đó tự bào chữa dài hơn cả phần nói về người dạy, và câu cuối cùng đọng lại ngay trước phần giá là "chưa có ai đi qua chương trình để kể lại kết quả".
+
+Nguyên tắc đằng sau thì giữ nguyên: không mượn số của chương trình khác gán cho chương trình này. Cách xử lý đúng là ghi nguồn ngay tại chỗ đặt số, bằng một dòng chú thích nhỏ dưới ba con số: "Số cộng dồn từ các chương trình đào tạo và tư vấn trước đây của Coach Duy." Người đọc không cần đoạn giải thích vì họ không hề hiểu nhầm ngay từ đầu.
+
+Còn chuyện khóa đầu tiên thì trang đã nói rồi, ở đúng chỗ và theo hướng có lợi: ô ghi chú dưới bảng giá giải thích mức 10 triệu thấp hơn giá chính thức gần 5 triệu "vì khóa đầu chưa có kết quả của người đi trước để trưng ra và người vào lúc này chấp nhận đi cùng chương trình từ vòng chạy đầu". Ở đó nó là lý do vào sớm, không phải lời xin lỗi.
+
+Trang còn 4.668 chữ, bớt 77 chữ. Sáu bài kiểm chạy ở 1400, 1000, 768 và 375 đều ra 0 lỗi, không có kéo ngang.
+
+### Sửa lỗi trong chính bài kiểm `kiem-lop.js`, ngày 24/08/2026
+
+Bài kiểm báo cả 158 lớp đều thiếu luật, tức báo sai toàn bộ. Lỗi nằm trong bài kiểm chứ không nằm ở trang: Chrome nay gắn một danh sách `cssRules` rỗng cho cả luật kiểu thường, để đỡ luật lồng nhau. Vòng đệ quy cũ viết `if (r.cssRules) return di(r.cssRules)` nên gặp luật nào cũng chui vào danh sách rỗng rồi thoát, không bao giờ đọc tới `selectorText`.
+
+Đã sửa trong `.claude/skills/thiet-ke-trang/kiem-lop.js`: đọc `selectorText` trước, đệ quy sau, và chỉ đệ quy khi danh sách con có phần tử. Chạy lại ra 158 lớp dùng, 192 lớp có luật, thiếu 0.
