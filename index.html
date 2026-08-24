@@ -304,6 +304,26 @@ figure{margin:0}
 @supports (grid-template-rows: subgrid){.g4{grid-template-rows:auto auto auto 1fr}.fmt{display:grid;grid-template-rows:subgrid;grid-row:span 4;gap:8px}}
 @media (max-width:1040px){@supports (grid-template-rows: subgrid){.fmt{grid-row:auto;grid-template-rows:none;display:flex;flex-direction:column}}}
 
+
+/* ============ LEO DỐC 30 NGÀY: mỗi tuần một bậc cao hơn ============ */
+.leo{display:none;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-top:8px}
+.leo > div{display:flex;flex-direction:column}
+.leo .cot{height:250px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:10px}
+.leo .so{width:44px;height:44px;flex:none;border-radius:50%;background-color:var(--ink);background-image:var(--chip);color:#fff;font-family:var(--f-mono);font-size:16px;font-weight:600;display:grid;place-items:center;box-shadow:0 8px 18px -8px rgba(15,18,24,.5)}
+.leo .bac{width:100%;border-radius:12px 12px 0 0;border:1px solid var(--line);border-bottom:0;box-shadow:inset 0 1px 0 rgba(255,255,255,.7)}
+.leo > div:nth-child(1) .bac{height:52px;background:color-mix(in srgb,var(--cam) 16%,#fff)}
+.leo > div:nth-child(2) .bac{height:82px;background:color-mix(in srgb,var(--cam) 30%,#fff)}
+.leo > div:nth-child(3) .bac{height:112px;background:color-mix(in srgb,var(--cam) 46%,#fff)}
+.leo > div:nth-child(4) .bac{height:142px;background:color-mix(in srgb,var(--cam) 62%,#fff)}
+.leo > div:nth-child(5) .bac{height:172px;background:color-mix(in srgb,var(--cam) 80%,#fff)}
+.leo > div:nth-child(6) .bac{height:202px;background-color:var(--ink);background-image:var(--chip);border-color:var(--ink)}
+.leo .chan{padding-top:16px;border-top:2px solid var(--ink);display:flex;flex-direction:column;gap:6px}
+.leo b{font-size:16px;font-weight:700;color:var(--ink);letter-spacing:-.01em;line-height:1.25}
+.leo span{font-size:14px;line-height:1.45;color:var(--ink-2)}
+.leo .cuoi b{color:var(--cam-sau)}
+@media (min-width:820px){.leo{display:grid}.nl.the-ve-thay,.dong.the-ve-thay{display:none}}
+@media (max-width:1100px){.leo .cot{height:210px}.leo > div:nth-child(6) .bac{height:168px}.leo > div:nth-child(5) .bac{height:145px}.leo > div:nth-child(4) .bac{height:122px}.leo > div:nth-child(3) .bac{height:99px}.leo > div:nth-child(2) .bac{height:76px}.leo > div:nth-child(1) .bac{height:53px}.leo b{font-size:15px}.leo span{font-size:13.5px}}
+
 /* ============ BỐN TUẦN ============ */
 .nl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--ink)}
 .nl > div{padding:24px 22px 26px 0;display:flex;flex-direction:column;gap:8px;position:relative}
@@ -863,10 +883,32 @@ figure{margin:0}
       <h2>Bốn tuần thay đổi cách bạn xuất hiện</h2>
       <p class="dan">Mỗi tuần đóng lại bằng một việc bạn làm xong, không phải bằng cảm giác đã hiểu thêm.</p>
     </div>
-    <figure class="ve hien" style="margin:0 0 8px">
-      <div class="thanh"><span class="cham"><i></i><i></i><i></i></span><b>hanh-trinh-30-ngay</b></div>
-      <div class="than-ve"><svg viewBox="0 0 1140 210" role="img" aria-label="Hành trình sáu mốc: trước khi bắt đầu xem bạn đang đứng ở đâu, tuần một làm rõ bạn là ai trong nghề, tuần hai xây kho chất liệu và câu chuyện, tuần ba đặt nhịp làm chạy được khi bận, tuần bốn mở đường về khách hàng, cuối khóa đưa ra bằng chứng"><defs><marker id="mj" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="var(--line-2)"/></marker></defs><rect class="sv-band" x="256" y="8" width="418" height="26" rx="13"/><text class="sv-bandtext" x="465" y="26" text-anchor="middle">BỐN TUẦN HỌC VÀ LÀM</text><path class="sv-line" d="M125 66 H251" marker-end="url(#mj)"/><path class="sv-line" d="M315 66 H441" marker-end="url(#mj)"/><path class="sv-line" d="M505 66 H631" marker-end="url(#mj)"/><path class="sv-line" d="M695 66 H821" marker-end="url(#mj)"/><path class="sv-line" d="M885 66 H1011" marker-end="url(#mj)"/><circle class="sv-node" cx="95" cy="66" r="23" style="fill:var(--cam-dam)"/><text class="sv-num" x="95" y="72" text-anchor="middle">0</text><text class="sv-name" x="95" y="118" text-anchor="middle">Trước khi bắt đầu</text><text class="sv-desc" x="95" y="142" text-anchor="middle">Xem bạn đang</text><text class="sv-desc" x="95" y="161" text-anchor="middle">đứng ở đâu</text><circle class="sv-node" cx="285" cy="66" r="23"/><text class="sv-num" x="285" y="72" text-anchor="middle">1</text><text class="sv-name" x="285" y="118" text-anchor="middle">Tuần 1</text><text class="sv-desc" x="285" y="142" text-anchor="middle">Rõ bạn là ai</text><text class="sv-desc" x="285" y="161" text-anchor="middle">trong nghề</text><circle class="sv-node" cx="475" cy="66" r="23"/><text class="sv-num" x="475" y="72" text-anchor="middle">2</text><text class="sv-name" x="475" y="118" text-anchor="middle">Tuần 2</text><text class="sv-desc" x="475" y="142" text-anchor="middle">Kho chất liệu</text><text class="sv-desc" x="475" y="161" text-anchor="middle">và câu chuyện</text><circle class="sv-node" cx="665" cy="66" r="23"/><text class="sv-num" x="665" y="72" text-anchor="middle">3</text><text class="sv-name" x="665" y="118" text-anchor="middle">Tuần 3</text><text class="sv-desc" x="665" y="142" text-anchor="middle">Nhịp làm</text><text class="sv-desc" x="665" y="161" text-anchor="middle">chạy được khi bận</text><circle class="sv-node" cx="855" cy="66" r="23"/><text class="sv-num" x="855" y="72" text-anchor="middle">4</text><text class="sv-name" x="855" y="118" text-anchor="middle">Tuần 4</text><text class="sv-desc" x="855" y="142" text-anchor="middle">Đường về</text><text class="sv-desc" x="855" y="161" text-anchor="middle">khách hàng</text><circle class="sv-node" cx="1045" cy="66" r="23" style="fill:var(--cam-dam)"/><text class="sv-num" x="1045" y="72" text-anchor="middle">5</text><text class="sv-name" x="1045" y="118" text-anchor="middle">Cuối khóa</text><text class="sv-desc" x="1045" y="142" text-anchor="middle">Đưa ra</text><text class="sv-desc" x="1045" y="161" text-anchor="middle">bằng chứng</text></svg></div>
-    </figure>
+    <div class="leo hien tre" role="img" aria-label="Sáu bậc của hành trình 30 ngày, mỗi tuần cao hơn tuần trước: trước khi bắt đầu xem bạn đang đứng ở đâu, tuần một làm rõ bạn là ai trong nghề, tuần hai xây kho chất liệu và câu chuyện, tuần ba đặt nhịp làm chạy được khi bận, tuần bốn mở đường về khách hàng, cuối khóa đưa ra bằng chứng của chính bạn">
+      <div>
+        <div class="cot"><span class="so">0</span><div class="bac"></div></div>
+        <div class="chan"><b>Trước khi bắt đầu</b><span>Xem bạn đang đứng ở đâu</span></div>
+      </div>
+      <div>
+        <div class="cot"><span class="so">1</span><div class="bac"></div></div>
+        <div class="chan"><b>Tuần 1</b><span>Rõ bạn là ai trong nghề</span></div>
+      </div>
+      <div>
+        <div class="cot"><span class="so">2</span><div class="bac"></div></div>
+        <div class="chan"><b>Tuần 2</b><span>Kho chất liệu và câu chuyện</span></div>
+      </div>
+      <div>
+        <div class="cot"><span class="so">3</span><div class="bac"></div></div>
+        <div class="chan"><b>Tuần 3</b><span>Nhịp làm chạy được khi bận</span></div>
+      </div>
+      <div>
+        <div class="cot"><span class="so">4</span><div class="bac"></div></div>
+        <div class="chan"><b>Tuần 4</b><span>Đường về khách hàng</span></div>
+      </div>
+      <div>
+        <div class="cot"><span class="so">5</span><div class="bac"></div></div>
+        <div class="chan" class="cuoi"><b>Cuối khóa</b><span>Đưa ra bằng chứng của chính bạn</span></div>
+      </div>
+    </div>
     <div class="nl the-ve-thay hien tre">
       <div>
         <span class="so">01</span>
