@@ -180,6 +180,17 @@ figure{margin:0}
 .ke-thu li{position:relative;padding-left:18px;font-size:15px;line-height:1.5;color:var(--ink-2)}
 .ke-thu li::before{content:'';position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--cam-dam)}
 
+
+/* ============ SÁU CÂU HAY ĐƯỢC NÓI ============ */
+.noi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:44px;border-top:1px solid var(--line);margin-top:44px}
+.noi > div{display:grid;grid-template-columns:26px minmax(0,1fr);gap:12px;align-items:start;padding:18px 0;border-bottom:1px solid var(--line);transition:transform .2s var(--ease)}
+@media (hover:hover){.noi > div:hover{transform:translateX(2px)}}
+.noi i{display:block;font-family:var(--f-tit);font-size:30px;line-height:.9;color:var(--cam);font-style:normal;font-weight:800;user-select:none}
+.noi p{font-size:18.5px;line-height:1.4;color:var(--ink);font-weight:500;letter-spacing:-.01em;text-wrap:balance}
+@media (max-width:1040px){.noi{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}}
+@media (max-width:620px){.noi{grid-template-columns:minmax(0,1fr);column-gap:0}.noi p{font-size:17.5px}}
+@media (max-width:520px){.noi > div{grid-template-columns:22px minmax(0,1fr);gap:10px}.noi i{font-size:26px}.noi p{font-size:16.5px}}
+
 /* ============ BẠN ĐANG Ở ĐÂU ============ */
 .cap3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .cap-the{height:100%;display:flex;flex-direction:column;gap:12px;padding:24px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper);background-color:#fff;box-shadow:var(--shadow-s);transition:transform .2s var(--ease),box-shadow .2s var(--ease),border-color .2s}
@@ -362,6 +373,23 @@ figure{margin:0}
 @media (max-width:820px){.vach.hai{grid-template-columns:minmax(0,1fr);column-gap:0}}
 
 
+
+
+/* ============ KHỐI GẬP: chi tiết cho người muốn xem kỹ ============ */
+.gap{margin-top:44px;border:1px solid var(--line);border-radius:var(--r);background-color:#fff;background-image:var(--paper);box-shadow:var(--shadow-s);overflow:hidden}
+.gap > summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:18px 22px;font-size:16.5px;font-weight:600;color:var(--ink);transition:background .2s}
+.gap > summary::-webkit-details-marker{display:none}
+.gap > summary:hover{background:var(--bg-2)}
+.gap > summary:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.gap > summary i{flex:none;width:24px;height:24px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;position:relative;transition:background .2s,border-color .2s}
+.gap > summary i::before,.gap > summary i::after{content:'';position:absolute;background:var(--ink);width:11px;height:1.5px;left:6px;top:11px;transition:transform .28s var(--ease)}
+.gap > summary i::after{transform:rotate(90deg)}
+.gap[open] > summary i{background:var(--ink);border-color:var(--ink)}
+.gap[open] > summary i::before,.gap[open] > summary i::after{background:#fff}
+.gap[open] > summary i::after{transform:rotate(0)}
+.gap > summary span{color:var(--ink-3);font-weight:400;font-size:15px}
+.gap .noi-gap{padding:4px 22px 24px;border-top:1px solid var(--line)}
+@media (max-width:560px){.gap > summary{padding:16px 18px;font-size:15.5px;flex-wrap:wrap}.gap .noi-gap{padding:4px 18px 20px}}
 
 /* ============ CƠ CHẾ GIỮ NHỊP ============ */
 .giu{margin-top:56px;padding-top:36px;border-top:1px solid var(--line-2)}
@@ -636,7 +664,7 @@ figure{margin:0}
       <div class="hero-chu">
         <span class="vien"><i></i>The Trusted Creator 30 Days dành cho nhà sáng lập</span>
         <h1>Biến tiếng nói của người chủ thành một thương hiệu được tin, <span>giúp đúng khách hàng hiểu và đến gần doanh nghiệp hơn.</span></h1>
-        <p class="dan">Dành cho người chủ mà <b>khách tin bạn trước rồi mới tin công ty</b>: đào tạo, tư vấn, dịch vụ chuyên môn, phòng khám và thẩm mỹ, bất động sản, tài chính. Bạn đã có sản phẩm và khách thật, chỉ là nội dung vẫn còn rời rạc.</p>
+        <p class="dan">Dành cho <b>chủ doanh nghiệp và chuyên gia muốn thu hút khách hàng bằng thương hiệu của chính mình.</b> Bạn đã có sản phẩm, có khách thật, chỉ là nội dung vẫn còn rời rạc.</p>
         <ul class="hero-ket">
           <li class="tieu" style="padding-left:0">Sau 30 ngày, bạn có</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một câu nói rõ bạn là ai trong nghề, khách nghe một lần là hiểu.</li>
@@ -670,15 +698,7 @@ figure{margin:0}
       <div class="hien">
         <span class="nhan" style="display:block;margin-bottom:14px">Vấn đề cần gọi đúng</span>
         <h2>Doanh nghiệp đã có giá trị. <span>Nhưng phần lớn điều khiến khách hàng tin vẫn nằm trong đầu người chủ.</span></h2>
-        <ul class="khong-phai">
-          <li>Chuyên môn thì nhiều, nhưng chưa biến được thành nội dung. Biết rất nhiều thứ đáng nói mà không biết sắp xếp thế nào.</li>
-          <li>Ngày nào cũng phải nghĩ hôm nay đăng gì. Nghĩ mãi rồi thôi.</li>
-          <li>Đã chạy được một hai tháng rồi dừng. Bận một tuần là mất nhịp, mất nhịp rồi rất khó quay lại.</li>
-          <li>Có bài quay xong, dựng xong, thấy chưa ưng nên để đó, không đăng.</li>
-          <li>Đội làm nội dung ra bài chỉn chu, nhưng chưa truyền được cách bạn suy nghĩ và giữ tiêu chuẩn.</li>
-          <li>Đã thử AI. Ra bài nhanh hơn thật, nhưng đọc lên thấy giống mọi người.</li>
-        </ul>
-        <p class="dan" style="margin-top:26px">Vấn đề không phải nhà sáng lập cần trở thành người sáng tạo nội dung toàn thời gian. Doanh nghiệp đang thiếu một cách lấy chuyên môn thật của người chủ, chuyển thành nội dung đáng tin và đưa niềm tin về đúng tài sản kinh doanh.</p>
+        <p class="dan" style="margin-top:26px">Bạn không cần trở thành người làm nội dung toàn thời gian. Bạn cần một cách lấy chuyên môn sẵn có của mình, chuyển thành nội dung đáng tin, rồi đưa niềm tin đó về đúng doanh nghiệp.</p>
       </div>
       <div class="ke-thu hien">
         <b>Điều đang làm hỏng nhịp</b>
@@ -691,6 +711,14 @@ figure{margin:0}
           <li>Không có đường đưa sự chú ý về một quan hệ có thể tiếp tục.</li>
         </ul>
       </div>
+    </div>
+    <div class="noi hien tre">
+      <div><i>&ldquo;</i><p>Biết nhiều thứ đáng nói, mà không biết sắp thế nào.</p></div>
+      <div><i>&ldquo;</i><p>Ngày nào cũng phải nghĩ hôm nay đăng gì.</p></div>
+      <div><i>&ldquo;</i><p>Chạy được một hai tháng rồi dừng.</p></div>
+      <div><i>&ldquo;</i><p>Quay xong, dựng xong, thấy chưa ưng nên để đó.</p></div>
+      <div><i>&ldquo;</i><p>Đội làm ra bài chỉn chu, nhưng không giống mình.</p></div>
+      <div><i>&ldquo;</i><p>Đã thử AI. Nhanh hơn, nhưng đọc lên giống mọi người.</p></div>
     </div>
   </div>
 </section>
@@ -924,11 +952,10 @@ figure{margin:0}
         <div><span class="so">04</span><b>Một nhóm cùng chạy một nhịp</b><p>Bạn không phải là người duy nhất đang cố giữ nhịp trong 30 ngày đó.</p></div>
       </div>
     </div>
-    <div class="khoi-luong">
-      <div class="tieu hien">
-        <h3>Khối lượng thực hành trong 30 ngày</h3>
-        <p>Mức này đặt riêng cho khóa đầu tiên, tính theo số bài mà người hướng dẫn chấm kỹ được.</p>
-      </div>
+    <details class="gap hien">
+      <summary><i aria-hidden="true"></i>Xem khối lượng thực hành trong 30 ngày <span>12 bài luyện, 4 bài chính, 8 bài phát triển tiếp</span></summary>
+      <div class="noi-gap">
+        <p class="tuan-ghi hien" style="margin:16px 0 20px">Mức này đặt riêng cho khóa đầu tiên, tính theo số bài mà người hướng dẫn chấm kỹ được.</p>
       <div class="sl hien tre">
         <div><b>12</b><p>bài luyện diễn đạt hoặc luyện trước máy quay, có thể riêng tư hoặc công khai.</p></div>
         <div><b>4</b><p>bài chính đăng thật, trong đó ít nhất 2 video và 2 bài viết, chuỗi ảnh có chữ hoặc bài kể chuyện.</p></div>
@@ -938,7 +965,8 @@ figure{margin:0}
         <div><b>1</b><p>bảng số liệu, cộng một buổi ngồi đọc lại số để quyết định giữ, sửa hay dừng.</p></div>
       </div>
       <div class="ket hien"><b>Vì sao đặt mức này</b><p>Mục tiêu không phải ép bạn đăng cho nhiều. Mục tiêu là bạn tự chứng minh được: nghĩ ra một ý của riêng mình, nói nó bằng giọng thật, dùng lại nó có chủ đích, và dẫn người quan tâm sang bước tiếp theo.</p></div>
-    </div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -1258,7 +1286,7 @@ figure{margin:0}
     var items=[].slice.call(hero.querySelectorAll('.hero-chu > *, .hero-anh > *'));
     items.forEach(function(e,i){ e.style.transitionDelay=(noanim||reduce?0:i*70)+'ms'; });
     hero.classList.add('len'); }
-  if(noanim){ hero.classList.add('len'); } else { setTimeout(lenHero,40); }
+  if(noanim){ hero.classList.add('len'); [].forEach.call(d.querySelectorAll('details.gap'),function(e){e.open=true}); } else { setTimeout(lenHero,40); }
 
   /* hiện khi cuộn tới, có lưới an toàn 2,5 giây */
   var hien=[].slice.call(d.querySelectorAll('.hien'));
