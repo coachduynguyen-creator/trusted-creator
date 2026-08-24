@@ -94,3 +94,37 @@ Cách kiểm: chạy `python3 "05 Skills/scripts/kiem_van_dich.py"` trên tệp.
 Điều thứ tư, neo giá, nay tự có: mức 10 triệu đứng cạnh giá chính thức 14,9 triệu, chênh gần 5 triệu đồng, và trang nói rõ vì sao có mức chênh đó.
 
 Không lấy của họ: cách tạo cảm giác lỡ chuyến bằng câu "đợt trước đã đóng". Khóa này là khóa đầu, không có gì để đóng, và tài liệu nguồn cấm khan hiếm giả.
+
+## Vòng hình ảnh ngày 24/08/2026
+
+Coach Duy: trang quá nhiều chữ, cần trực quan hơn như trang Cỗ máy Nội dung, và Cỗ máy Nội dung chính là hệ thống sẽ cài đặt cho học viên.
+
+Đã làm: chuyển khối **một câu chuyện, bốn dạng bài** từ trang Cỗ máy Nội dung sang, đặt cuối phần Chu trình. Khối này vẽ bằng CSS thuần, không dùng ảnh: một chip nguồn màu cam, một thanh ngang màu xanh than, bốn nhánh rơi xuống bốn thẻ có mô phỏng điện thoại, chuỗi ảnh, bài đăng và buổi phát trực tiếp.
+
+Đổi màu theo bảng của trang này, giữ đúng nghĩa của trang gốc:
+
+- **Bạn** dùng cam `--cam-dam`, nền tô dùng `--cam`.
+- **Máy** dùng xanh than `--ink`, thay cho xanh dương `--machine` của trang Cỗ máy.
+- Thêm hai biến: `--chip` cho ô tối có ánh, `--cam-sau` `#9E4229` cho chữ cam đặt trên nền cam nhạt. Dùng `--cam-dam` ở đó chỉ đạt 4.30:1, không qua bài kiểm tương phản.
+
+Cũng tìm ra một lỗi im lặng: lớp `.lk` ở chân trang được viết trong HTML mà không có luật nào trong bảng kiểu, nên nhóm đường dẫn không xếp thành hàng. Đã thêm luật. Đây đúng loại lỗi mà `kiem-lop.js` sinh ra để bắt.
+
+Số chữ theo phần, để biết chỗ nào cần cắt tiếp:
+
+| Phần | Số chữ |
+| --- | --- |
+| Đăng ký | 690 |
+| Hỏi đáp | 578 |
+| Cách học | 504 |
+| Chu trình | 433 |
+| Kết quả | 397 |
+| Người dạy | 353 |
+| Bốn tuần | 351 |
+| Mức đầu tư | 330 |
+| Bạn đang ở đâu | 275 |
+| Hero | 257 |
+| Vấn đề | 234 |
+| Phù hợp | 228 |
+| Khác gì | 216 |
+| Ranh giới | 159 |
+| **Tổng** | **5.073** |
