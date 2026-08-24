@@ -331,3 +331,14 @@ Câu mới gộp hai nhóm mạnh nhất và trùng đúng Big Idea ở mục 18
 > **Bạn thiếu một cách để nói đều, và nói ra đúng chất của mình.**
 
 Hai câu dự phòng nếu Coach Duy muốn đổi hướng: nhấn vào trì hoãn thì dùng "Bạn biết mình cần xuất hiện. Đã lâu rồi vẫn chưa bắt đầu."; nhấn vào chuyển đổi thì dùng "Bài có người xem. Nhưng chưa ai nhắn tin cho bạn."
+
+### Đổi chỗ hai ảnh, ngày 24/08/2026
+
+Coach Duy bắt lỗi ảnh hero: ảnh chân dung chụp trong phòng là ảnh tĩnh nhất trong kho, đặt ở hero của một trang nói về lò rèn thì lệch hẳn tinh thần.
+
+Đã đổi chỗ:
+
+- **Hero** dùng `cd-ca-phong.jpg`: Coach Duy trên sân khấu, cả hội trường đứng phía sau. Ảnh có người thật, có không khí, đúng thứ hero cần.
+- **Phần Người dạy** dùng `cd-portrait-760.png`, tức ảnh chân dung. Đây mới là chỗ hợp của một ảnh chân dung trang trọng, vì phần đó trả lời câu "người thiết kế và dẫn chương trình là ai".
+
+Cả hai khung đều khớp tỉ lệ ảnh, `kiem-anh.js` trả về danh sách rỗng ở cả hai khổ.
