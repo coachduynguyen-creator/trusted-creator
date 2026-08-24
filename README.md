@@ -152,3 +152,23 @@ Coach Duy chốt chạy cả bảng đề xuất. Đã làm đủ bảy việc.
 - Nhãn thanh cửa sổ 12.5px và nhãn dải trong SVG 13px đều rơi dưới sàn sau khi thu. Nâng lên 13px và 14.5px.
 
 Kiểm ở 375, 768, 1000 và 1400: cỡ chữ, tương phản, chữ chồng, chữ mồ côi, ảnh cắt sai, lớp thiếu luật và văn dịch đều **0 lỗi**, không khổ nào tràn ngang.
+
+## Vòng dùng dữ liệu khảo sát, ngày 24/08/2026
+
+Đội bán hàng gọi 29 người, đợt đầu của mục tiêu 130. Bản phân tích đầy đủ nằm ở `02 Projects/The Trusted Creator/[C] Phân tích khảo sát 29 cuộc gọi - Đợt 1.md` trong vault.
+
+Năm việc đã sửa trên trang theo dữ liệu thật:
+
+1. **Thêm khối "Thứ giữ bạn không bỏ giữa chừng"** trong phần Cách học. Đây là chỗ hụt lớn nhất của bản cũ: nhu cầu lặp lại nhiều nhất trong khảo sát không phải thiếu kiến thức mà là biết mà không làm đều. Bốn cơ chế: nộp bài có hạn, bảng theo dõi chung, bài được sửa trực tiếp, nhóm cùng chạy một nhịp.
+2. **Sửa mô tả trạng thái thứ hai** từ "đã làm nhưng rời rạc" thành "làm được một thời gian rồi dừng". Dữ liệu cho thấy mẫu phổ biến là chạy một hai tháng rồi mất nhịp, không phải đăng đều mà loãng.
+3. **Viết lại sáu gạch đầu dòng phần Vấn đề** bằng đúng ngôn từ khách dùng trong khảo sát.
+4. **Sửa lại câu hỏi thường gặp**: gộp hai câu trùng ý, thêm câu về chồng chéo với khóa đang học, làm rõ chuyện lỡ buổi tối và chuyện ngại lộ mặt. Ba rào cản này đều lấy từ khảo sát.
+5. **Thêm câu chương trình được chốt sau các cuộc trao đổi trực tiếp**, đặt ở phần Người dạy, **chưa gắn con số**.
+
+### Quy tắc về con số khảo sát
+
+Trong `index.html`, phần Người dạy có một ghi chú HTML đánh dấu chỗ điền số. Ba điều kiện trước khi điền:
+
+1. Chỉ ghi số cuộc **đã thật sự thực hiện**. Không ghi số mục tiêu.
+2. Ghi kèm bao nhiêu người trong đó **là chủ doanh nghiệp**, vì đây là trang dành cho nhà sáng lập.
+3. Chưa nên ghi con số của đợt 1. Xem mục 4 của bản phân tích: mẫu 29 phiếu chưa bão hòa (chủ đề mới còn xuất hiện tới phiếu 26) và lệch nguồn nặng (16 trên 18 phiếu có ghi nguồn là học viên cũ).

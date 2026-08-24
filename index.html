@@ -360,6 +360,23 @@ figure{margin:0}
 @media (max-width:820px){.vach.hai{grid-template-columns:minmax(0,1fr);column-gap:0}}
 
 
+
+/* ============ CƠ CHẾ GIỮ NHỊP ============ */
+.giu{margin-top:56px;padding-top:36px;border-top:1px solid var(--line-2)}
+.giu .tieu{max-width:66ch;margin-bottom:26px}
+.giu .tieu h3{font-size:clamp(21px,2.3vw,28px);margin-bottom:10px}
+.giu .tieu p{font-size:15.5px;color:var(--ink-2)}
+.giu-o{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.giu-o > div{padding:20px 20px 22px;border:1px solid var(--line);border-radius:var(--r);background-color:#fff;background-image:var(--paper);box-shadow:var(--shadow-s);display:flex;flex-direction:column;gap:8px;transition:transform .2s var(--ease),box-shadow .2s var(--ease),border-color .2s}
+@media (hover:hover){.giu-o > div:hover{transform:translateY(-4px);box-shadow:var(--shadow-h);border-color:var(--line-2)}}
+.giu-o .so{width:30px;height:30px;border-radius:9px;background-color:var(--ink);background-image:var(--chip);color:#fff;font-family:var(--f-mono);font-size:14px;font-weight:600;display:grid;place-items:center}
+.giu-o b{font-size:16.5px;font-weight:700;color:var(--ink);letter-spacing:-.01em;line-height:1.3}
+.giu-o p{font-size:14.5px;line-height:1.5;color:var(--ink-2)}
+@media (max-width:1040px){.giu-o{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.giu-o{grid-template-columns:minmax(0,1fr)}}
+@supports (grid-template-rows: subgrid){.giu-o{grid-template-rows:auto auto 1fr}.giu-o > div{display:grid;grid-template-rows:subgrid;grid-row:span 3;gap:8px}}
+@media (max-width:1040px){@supports (grid-template-rows: subgrid){.giu-o > div{grid-row:auto;grid-template-rows:none;display:flex;flex-direction:column}}}
+
 /* ============ LỊCH MỘT TUẦN ============ */
 .tuan{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-bottom:26px}
 .tuan > div{border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 8px 12px;text-align:center;display:flex;flex-direction:column;gap:8px;min-height:104px}
@@ -652,11 +669,12 @@ figure{margin:0}
         <span class="nhan" style="display:block;margin-bottom:14px">Vấn đề cần gọi đúng</span>
         <h2>Doanh nghiệp đã có giá trị. <span>Nhưng phần lớn điều khiến khách hàng tin vẫn nằm trong đầu người chủ.</span></h2>
         <ul class="khong-phai">
-          <li>Bạn nói rất rõ trong cuộc họp hoặc trước mặt khách, nhưng không biết nên nói gì khi xuất hiện công khai.</li>
-          <li>Đội làm nội dung tạo được bài chỉn chu, nhưng chưa truyền được cách bạn suy nghĩ, ra quyết định và giữ tiêu chuẩn.</li>
-          <li>Nội dung ngừng lại mỗi khi bạn bận.</li>
-          <li>Sự chú ý dành cho cá nhân bạn chưa chảy về sản phẩm, đội ngũ và doanh nghiệp.</li>
-          <li>Bài có lượt xem, nhưng ít người thuộc đúng nhóm khách hàng của bạn tiến thêm một bước.</li>
+          <li>Chuyên môn thì nhiều, nhưng chưa biến được thành nội dung. Biết rất nhiều thứ đáng nói mà không biết sắp xếp thế nào.</li>
+          <li>Ngày nào cũng phải nghĩ hôm nay đăng gì. Nghĩ mãi rồi thôi.</li>
+          <li>Đã chạy được một hai tháng rồi dừng. Bận một tuần là mất nhịp, mất nhịp rồi rất khó quay lại.</li>
+          <li>Có bài quay xong, dựng xong, thấy chưa ưng nên để đó, không đăng.</li>
+          <li>Đội làm nội dung ra bài chỉn chu, nhưng chưa truyền được cách bạn suy nghĩ và giữ tiêu chuẩn.</li>
+          <li>Đã thử AI. Ra bài nhanh hơn thật, nhưng đọc lên thấy giống mọi người.</li>
         </ul>
         <p class="dan" style="margin-top:26px">Vấn đề không phải nhà sáng lập cần trở thành người sáng tạo nội dung toàn thời gian. Doanh nghiệp đang thiếu một cách lấy chuyên môn thật của người chủ, chuyển thành nội dung đáng tin và đưa niềm tin về đúng tài sản kinh doanh.</p>
       </div>
@@ -691,10 +709,10 @@ figure{margin:0}
         <div class="dinh"><b>Nếu đúng là bạn</b>Bạn vẫn vào được, với điều kiện làm xong phần chuẩn bị trước ngày khai giảng và chịu đăng bài ngay trong tuần đầu.</div>
       </div>
       <div class="cap-the chinh">
-        <div class="nhan-cap"><span>Đã bắt đầu, còn rời rạc</span><em>Đúng người</em></div>
-        <h3>Tôi đã làm nội dung nhưng mọi thứ còn rời rạc</h3>
-        <p class="mota">Bạn đã đăng, đã quay hoặc đã thuê đội làm, nhưng nội dung không đều, thông điệp mờ, thiếu tiếng nói riêng, chưa đúng nhóm khách hoặc chưa tạo được bước tiếp theo.</p>
-        <div class="dinh"><b>Nếu đúng là bạn</b>Chương trình viết cho đúng chỗ này. Bạn đã thử đủ nhiều để biết cách đang làm không ổn, nhưng chưa đi xa tới mức 30 ngày thành ra quá dễ.</div>
+        <div class="nhan-cap"><span>Làm rồi, chưa giữ được nhịp</span><em>Đúng người</em></div>
+        <h3>Tôi làm được một thời gian rồi dừng</h3>
+        <p class="mota">Bạn đã đăng, đã quay, có khi đã thuê đội làm. Nhưng chạy được một hai tháng rồi dừng, bận một tuần là mất nhịp, và có những bài quay xong lại để đó vì thấy chưa ưng.</p>
+        <div class="dinh"><b>Nếu đúng là bạn</b>Chương trình viết cho đúng chỗ này. Bạn không thiếu kiến thức. Bạn thiếu một nhịp đủ chắc để không dừng lại lần nữa.</div>
       </div>
       <div class="cap-the">
         <div class="nhan-cap"><span>Đang chạy khá ổn</span><em>Nên kiểm tra trước</em></div>
@@ -892,6 +910,18 @@ figure{margin:0}
         <p style="margin-top:12px">Nếu số bài vượt quá mức chấm kỹ được, chương trình sẽ giảm số người trong lớp hoặc nói rõ chỉ nhận xét một phần. Chương trình không hứa chấm riêng từng bài rồi thực tế chỉ nhận xét chung.</p>
       </div>
     </div>
+    <div class="giu">
+      <div class="tieu hien">
+        <h3>Thứ giữ bạn không bỏ giữa chừng</h3>
+        <p>Phần lớn người đã biết mình cần làm gì. Chỗ hỏng nằm ở chỗ làm được hai tuần rồi dừng, rồi không quay lại nữa. Bốn thứ dưới đây có mặt để chặn đúng chỗ đó.</p>
+      </div>
+      <div class="giu-o hien tre">
+        <div><span class="so">01</span><b>Nộp bài có ngày chốt</b><p>Mỗi tuần có bài phải nộp và có hạn, không phải làm lúc nào cũng được.</p></div>
+        <div><span class="so">02</span><b>Bảng theo dõi chung</b><p>Ai đang tới đâu đều hiện trên một bảng. Bạn và người hướng dẫn cùng nhìn thấy.</p></div>
+        <div><span class="so">03</span><b>Bài của bạn được sửa trực tiếp</b><p>Tối thứ Năm mở bài ra sửa ngay trên chất liệu của bạn, không phải nhận xét chung chung.</p></div>
+        <div><span class="so">04</span><b>Một nhóm cùng chạy một nhịp</b><p>Bạn không phải là người duy nhất đang cố giữ nhịp trong 30 ngày đó.</p></div>
+      </div>
+    </div>
     <div class="khoi-luong">
       <div class="tieu hien">
         <h3>Khối lượng thực hành trong 30 ngày</h3>
@@ -955,6 +985,10 @@ figure{margin:0}
         <p class="vai">Nhà sáng lập Next Step Group. Người xây TTA Sales System, hệ thống bán hàng dựa trên tinh thần Cố vấn Tin cậy, và đang phát triển hệ sinh thái Next Gen Founder.</p>
         <p class="doan">The Trusted Creator không bắt đầu từ mẹo làm nội dung. Nó bắt đầu từ một câu hỏi Coach Duy gặp lại nhiều lần trong các chương trình bán hàng và tư vấn: <b>vì sao một người có chuyên môn thật vẫn không được thị trường nhớ đúng.</b></p>
         <p class="doan">Chương trình lấy nền từ Cố vấn Tin cậy, tức cách làm cho người nghe nghĩ rõ hơn trước khi ra quyết định, rồi chuyển nền đó sang cách một nhà sáng lập xuất hiện trước thị trường.</p>
+        <!-- CHỖ ĐIỀN SỐ: khi đội hoàn tất mục tiêu 130 cuộc trao đổi, thay câu dưới thành
+             "Cấu trúc chương trình được chốt sau <SỐ> cuộc trao đổi trực tiếp, trong đó <SỐ> là chủ doanh nghiệp."
+             Chỉ ghi số đã thật sự thực hiện, và ghi kèm bao nhiêu người trong số đó là chủ doanh nghiệp. -->
+        <p class="doan">Chương trình này không dựng từ bàn giấy. Cấu trúc và nội dung được chốt sau những cuộc trao đổi trực tiếp với chủ doanh nghiệp và người bán hàng cao cấp, hỏi thẳng họ đang tắc ở đâu và cần được hỗ trợ điều gì.</p>
         <div class="so-day">
           <div><b>30+</b><span><em>doanh nghiệp</em>đã trực tiếp tư vấn và đào tạo</span></div>
           <div><b>2.000+</b><span><em>học viên chính thức</em>của các chương trình đào tạo</span></div>
@@ -1060,27 +1094,31 @@ figure{margin:0}
     </div>
     <div class="faq hien" id="faq">
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>01</b><span>Tôi có bắt buộc phải làm video không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Không bắt buộc chỉ làm video. Bạn còn dùng bài viết, chuỗi ảnh có chữ và bài kể chuyện. Nhưng luyện nói trước máy quay là một phần của chương trình. Nếu bạn không muốn xuất hiện, chương trình chưa phù hợp.</p></div></div>
+        <button type="button" aria-expanded="false"><b>01</b><span>Tôi có bắt buộc phải làm video và lộ mặt không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Bạn còn dùng bài viết, chuỗi ảnh có chữ và bài kể chuyện, nên không phải mọi thứ đều là video. Nhưng luyện nói trước máy quay là một phần của chương trình, vì với người chủ thì đó là cách xây niềm tin nhanh nhất. Nếu bạn hoàn toàn không muốn xuất hiện, hãy nói trước với đội ngũ để cùng xem chương trình có phải bước phù hợp không.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>02</b><span>Tôi đã có đội làm nội dung, còn cần học không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Đội giúp bạn làm ra bài, nhưng giọng nói và quan điểm vẫn phải đến từ bạn. Chương trình giúp bạn đưa cho đội một bản đặt bài rõ hơn, thay vì giao luôn cả thương hiệu cho họ.</p></div></div>
+        <button type="button" aria-expanded="false"><b>02</b><span>Tôi bận. Mỗi tuần cần bao nhiêu thời gian, và nếu lỡ buổi tối thì sao?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Khoảng 5 giờ cho buổi học và phòng thực hành, cộng 3 đến 5 giờ tự làm. Buổi nào cũng có ghi hình nên lỡ một buổi bạn vẫn xem lại được, nhưng phòng thực hành thì nên có mặt, vì đó là lúc bài của bạn được sửa. Nếu tuần nào bạn cũng không dành nổi mức này, khóa đầu chưa phải thời điểm phù hợp.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>03</b><span>Tôi đã dùng AI rồi. Chương trình có gì khác?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Nếu chỗ đứng của bạn còn mờ, AI chỉ giúp ra nội dung chung chung nhanh hơn. Chương trình bắt đầu từ chuyên môn và quyết định biên tập của bạn, sau đó mới dùng AI để bớt việc lặp lại.</p></div></div>
+        <button type="button" aria-expanded="false"><b>03</b><span>Tôi đang học một chương trình khác của Coach Duy, có bị chồng chéo không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Không chồng chéo về nội dung. Chương trình bán hàng dạy bạn tư vấn tốt hơn khi đã ngồi với khách. Chương trình này lo phần trước đó, tức làm sao để đúng khách tìm tới bạn và tin bạn trước khi gặp. Nhưng có chồng chéo về thời gian. Nếu bạn đang học dở và chưa kịp áp dụng, hãy nói thẳng với đội ngũ để chọn khóa sau.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>04</b><span>Mỗi tuần tôi phải bỏ ra bao nhiêu thời gian?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Khoảng 5 giờ cho buổi học và phòng thực hành, cộng 3 đến 5 giờ tự làm. Nếu tuần nào bạn không dành nổi mức này, khóa đầu chưa phải thời điểm phù hợp.</p></div></div>
+        <button type="button" aria-expanded="false"><b>04</b><span>Tôi đã có đội làm nội dung, còn cần học không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Đội giúp bạn làm ra bài, nhưng giọng nói, quan điểm và trải nghiệm vẫn phải đến từ bạn. Chương trình giúp bạn đưa cho đội một bản đặt bài rõ hơn, thay vì giao luôn cả thương hiệu cho họ.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>05</b><span>Tôi có xây xong thương hiệu trong 30 ngày không?</span><i aria-hidden="true"></i></button>
+        <button type="button" aria-expanded="false"><b>05</b><span>Tôi đã dùng AI rồi. Chương trình có gì khác?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Nếu chỗ đứng của bạn còn mờ và chất liệu đưa vào cũng mờ, AI chỉ giúp bạn ra nội dung chung chung nhanh hơn. Đó là lý do nhiều người dùng AI xong đọc lại thấy bài mình giống mọi người. Chương trình bắt đầu từ chuyên môn và quyết định biên tập của bạn, sau đó mới dùng AI để bớt việc lặp lại.</p></div></div>
+      </div>
+      <div class="muc">
+        <button type="button" aria-expanded="false"><b>06</b><span>Tôi có xây xong thương hiệu trong 30 ngày không?</span><i aria-hidden="true"></i></button>
         <div class="than"><div><p>Không. Một thương hiệu đứng được cần thời gian và bằng chứng nhất quán. Trong 30 ngày, bạn dựng và chạy thử vòng đầu, rồi có số liệu để biết nên đi tiếp thế nào.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>06</b><span>Chương trình có bảo đảm có khách hàng không?</span><i aria-hidden="true"></i></button>
+        <button type="button" aria-expanded="false"><b>07</b><span>Chương trình có bảo đảm có khách hàng không?</span><i aria-hidden="true"></i></button>
         <div class="than"><div><p>Không. Nội dung tạo thêm sự chú ý, niềm tin và những cuộc trao đổi. Còn ra được khách hay không phụ thuộc vào sản phẩm, giá, năng lực tư vấn và cách bạn tiếp người quan tâm.</p></div></div>
       </div>
     </div>
