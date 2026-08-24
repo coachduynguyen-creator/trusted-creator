@@ -128,3 +128,27 @@ Số chữ theo phần, để biết chỗ nào cần cắt tiếp:
 | Khác gì | 216 |
 | Ranh giới | 159 |
 | **Tổng** | **5.073** |
+
+## Vòng trực quan hóa ngày 24/08/2026
+
+Coach Duy chốt chạy cả bảng đề xuất. Đã làm đủ bảy việc.
+
+**Bốn chỗ đổi chữ thành hình:**
+
+1. **Chu trình năm chặng**: năm thẻ chữ đổi thành một vòng lặp vẽ bằng SVG, năm nút nối bằng mũi tên, cộng một đường nét đứt màu cam quay về nút một mang nhãn "phản hồi của thị trường thành chất liệu vòng sau". Đặt trong khung bản vẽ có thanh cửa sổ và nền lưới chấm.
+2. **Bốn tuần**: bốn cột chữ đổi thành sơ đồ hành trình sáu mốc, từ trước khi bắt đầu tới cuối khóa, có dải "BỐN TUẦN HỌC VÀ LÀM" ôm bốn mốc giữa. Hai mốc đầu cuối tô cam, bốn mốc tuần tô xanh than.
+3. **Mười kết quả**: danh sách mười dòng đổi thành bốn kệ, mỗi kệ một hình mô phỏng vẽ bằng CSS (trang giấy, chồng thẻ, lịch, phễu) và các thứ thuộc kệ đó. Vẫn đủ mười, nhưng đọc theo nhóm.
+4. **Cách học**: sáu gạch đầu dòng đổi thành lịch một tuần bảy ô, ô thứ Hai tô đậm là buổi học, ô thứ Năm tô cam là phòng thực hành, hai ô cuối tuần viền nét đứt. Còn lại rút xuống ba dòng.
+
+**Ba chỗ cắt chữ:** hỏi đáp 8 câu còn 6, đăng ký 5 bước còn 3, khác gì 7 điểm còn 4. Đoạn giá dày trong hero cũng bỏ, chỉ còn một dòng dẫn xuống phần Mức đầu tư.
+
+**Quy tắc hai bản:** mỗi bản vẽ SVG chỉ hiện từ 1100px. Dưới mức đó, bản vẽ ẩn và lưới chữ hiện lại, vì chữ trong SVG khi thu nhỏ sẽ rơi dưới sàn 12px. Lưới chữ mang lớp `the-ve-thay`.
+
+**Kết quả đo:** chữ người đọc thật sự thấy trên máy tính giảm từ 4.816 xuống **3.973**, tức bớt gần 18 phần trăm, trong khi chiều cao trang gần như không đổi và có thêm bốn hình.
+
+**Hai lỗi bắt được khi kiểm:**
+
+- Lớp `.hoc` bị dùng cho hai việc: lưới hai cột của phần Cách học và ô ngày trong lịch tuần. Ô thứ Hai vì thế bị xếp thành hai cột. Đổi tên thành `.buoi`.
+- Nhãn thanh cửa sổ 12.5px và nhãn dải trong SVG 13px đều rơi dưới sàn sau khi thu. Nâng lên 13px và 14.5px.
+
+Kiểm ở 375, 768, 1000 và 1400: cỡ chữ, tương phản, chữ chồng, chữ mồ côi, ảnh cắt sai, lớp thiếu luật và văn dịch đều **0 lỗi**, không khổ nào tràn ngang.

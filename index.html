@@ -193,6 +193,27 @@ figure{margin:0}
 .cap-the .dinh b{display:block;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px}
 @media (max-width:960px){.cap3{grid-template-columns:minmax(0,1fr)}}
 
+
+/* ============ BẢN VẼ CHUNG ============ */
+.ve{border:1px solid var(--line);border-radius:var(--r);background-color:#fff;background-image:var(--paper);box-shadow:var(--shadow);overflow:hidden;display:none}
+.ve .thanh{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid var(--line);background:var(--bg-2)}
+.ve .thanh .cham{display:flex;gap:5px}
+.ve .thanh .cham i{width:9px;height:9px;border-radius:50%;background:var(--line-2)}
+.ve .thanh b{font-family:var(--f-mono);font-size:13px;font-weight:500;color:var(--ink-3);letter-spacing:.04em}
+.ve .than-ve{padding:22px 20px 18px;background-image:radial-gradient(circle at 1px 1px,rgba(15,18,24,.06) 1px,transparent 0);background-size:22px 22px}
+.ve svg{width:100%;height:auto;display:block;font-family:var(--f-than)}
+.sv-node{fill:var(--ink)}
+.sv-num{fill:#fff;font-family:var(--f-mono);font-size:15px;font-weight:600}
+.sv-line{fill:none;stroke:var(--line-2);stroke-width:2}
+.sv-back{fill:none;stroke:var(--cam-dam);stroke-width:2;stroke-dasharray:7 7}
+.sv-name{fill:var(--ink);font-size:14.5px;font-weight:700}
+.sv-desc{fill:var(--ink-2);font-size:13.5px}
+.sv-chip{fill:#fff;stroke:var(--cam-dam);stroke-opacity:.45}
+.sv-chiptext{fill:var(--cam-sau);font-size:13.5px;font-weight:600}
+.sv-band{fill:var(--bg-3)}
+.sv-bandtext{fill:var(--ink-3);font-size:14.5px;font-weight:600;letter-spacing:.06em}
+@media (min-width:1100px){.ve{display:block}.nam5.the-ve-thay,.nl.the-ve-thay,.dong.the-ve-thay{display:none}}
+
 /* ============ NĂM CHẶNG ============ */
 .nam5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
 .nam5 > div{position:relative;padding-top:74px;border-top:1px solid var(--line);transition:transform .2s var(--ease)}
@@ -286,6 +307,43 @@ figure{margin:0}
 .dong p{font-size:14.5px;color:var(--ink-2);line-height:1.5}
 @media (max-width:620px){.dong{grid-template-columns:minmax(0,1fr)}}
 
+
+/* ============ KỆ HIỆN VẬT: bạn cầm về gì ============ */
+.ke{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.ke > div{display:flex;flex-direction:column;gap:12px;padding:16px 18px 18px;border:1px solid var(--line);border-radius:var(--r);background-color:#fff;background-image:var(--paper);box-shadow:var(--shadow-s);transition:transform .2s var(--ease),box-shadow .2s var(--ease),border-color .2s}
+@media (hover:hover){.ke > div:hover{transform:translateY(-4px);box-shadow:var(--shadow-h);border-color:var(--line-2)}}
+.ke h3{font-family:var(--f-than);font-size:17.5px;font-weight:700;letter-spacing:-.015em;line-height:1.3}
+.ke ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.ke li{position:relative;padding-left:18px;font-size:14.5px;line-height:1.5;color:var(--ink-2)}
+.ke li::before{content:'';position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:2px;background:var(--cam-dam)}
+.mk{height:118px;border-radius:12px;background:linear-gradient(180deg,var(--bg-2),var(--bg-3));border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.mk i,.mk b,.mk s{display:block}
+.mk-trang{width:86px;height:94px;border-radius:8px;background:#fff;border:1px solid var(--line-2);box-shadow:var(--shadow-s);padding:12px;display:flex;flex-direction:column;gap:7px}
+.mk-trang b{width:70%;height:9px;border-radius:4px;background:var(--ink)}
+.mk-trang i{height:5px;border-radius:3px;background:var(--line-2)}
+.mk-trang i:nth-of-type(1){width:100%}.mk-trang i:nth-of-type(2){width:88%}.mk-trang i:nth-of-type(3){width:94%}.mk-trang i:nth-of-type(4){width:60%}
+.mk-chong{position:relative;width:104px;height:94px}
+.mk-chong i{position:absolute;left:0;top:0;width:80px;height:80px;border-radius:8px;background:#fff;border:1px solid var(--line-2);box-shadow:var(--shadow-s)}
+.mk-chong i:nth-child(1){transform:translate(22px,12px) rotate(4deg);opacity:.5}
+.mk-chong i:nth-child(2){transform:translate(11px,6px);opacity:.8}
+.mk-chong i:nth-child(3){padding:10px;display:flex;flex-direction:column;gap:6px}
+.mk-chong i:nth-child(3) s{height:5px;border-radius:3px;background:var(--line-2)}
+.mk-chong i:nth-child(3) s:first-child{background:var(--ink);width:60%}
+.mk-lich{width:104px;display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
+.mk-lich i{aspect-ratio:1;border-radius:3px;background:#fff;border:1px solid var(--line-2)}
+.mk-lich i.on{background:var(--ink);border-color:var(--ink)}
+.mk-lich i.y{background:var(--cam);border-color:var(--cam-dam)}
+.mk-pheu{width:104px;display:flex;flex-direction:column;align-items:center;gap:7px}
+.mk-pheu i{height:15px;border-radius:4px;background:#fff;border:1px solid var(--line-2)}
+.mk-pheu i:nth-child(1){width:100%}
+.mk-pheu i:nth-child(2){width:74%}
+.mk-pheu i:nth-child(3){width:48%}
+.mk-pheu i:nth-child(4){width:26px;height:26px;border-radius:50%;background:var(--cam);border-color:var(--cam-dam)}
+@media (max-width:1040px){.ke{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.ke{grid-template-columns:minmax(0,1fr)}.mk{height:100px}}
+@supports (grid-template-rows: subgrid){.ke{grid-template-rows:auto auto 1fr}.ke > div{display:grid;grid-template-rows:subgrid;grid-row:span 3;gap:12px}}
+@media (max-width:1040px){@supports (grid-template-rows: subgrid){.ke > div{grid-row:auto;grid-template-rows:none;display:flex;flex-direction:column}}}
+
 /* ============ KẾT QUẢ ============ */
 .ket-cap{margin-top:32px;padding:4px 0 4px 18px;border-left:3px solid var(--cam);max-width:80ch}
 .ket-cap b{display:block;font-size:17px;color:var(--ink);font-weight:700;letter-spacing:-.01em;line-height:1.45}
@@ -300,6 +358,28 @@ figure{margin:0}
 /* danh sách mười kết quả xếp hai cột */
 .vach.hai{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px}
 @media (max-width:820px){.vach.hai{grid-template-columns:minmax(0,1fr);column-gap:0}}
+
+
+/* ============ LỊCH MỘT TUẦN ============ */
+.tuan{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-bottom:26px}
+.tuan > div{border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 8px 12px;text-align:center;display:flex;flex-direction:column;gap:8px;min-height:104px}
+.tuan .ngay{font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.tuan .viec{font-size:13.5px;line-height:1.35;color:var(--ink-2);font-weight:500}
+.tuan .gio{font-size:13px;color:var(--ink-3);margin-top:auto}
+.tuan > div.buoi{background-color:var(--ink);background-image:var(--chip);border-color:var(--ink)}
+.tuan > div.buoi .ngay{color:rgba(255,255,255,.72)}
+.tuan > div.buoi .viec{color:#fff;font-weight:700}
+.tuan > div.buoi .gio{color:rgba(255,255,255,.72)}
+.tuan > div.thuchanh{background:var(--cam-mo);border-color:var(--cam-dam)}
+.tuan > div.thuchanh .ngay{color:var(--cam-sau)}
+.tuan > div.thuchanh .viec{color:var(--cam-sau);font-weight:700}
+.tuan > div.thuchanh .gio{color:var(--cam-sau)}
+.tuan > div.nghi{background:var(--bg-2);border-style:dashed;border-color:var(--line-2)}
+.tuan-ghi{font-size:14.5px;color:var(--ink-3);margin-bottom:26px;max-width:74ch}
+@media (max-width:900px){.tuan{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:520px){.tuan{grid-template-columns:repeat(2,minmax(0,1fr))}.tuan > div{min-height:92px}}
+@supports (grid-template-rows: subgrid){.tuan{grid-template-rows:auto auto 1fr}.tuan > div{display:grid;grid-template-rows:subgrid;grid-row:span 3;gap:8px}.tuan .gio{margin-top:0}}
+@media (max-width:900px){@supports (grid-template-rows: subgrid){.tuan > div{grid-row:auto;grid-template-rows:none;display:flex;flex-direction:column}.tuan .gio{margin-top:auto}}}
 
 /* ============ CÁCH HỌC ============ */
 .hoc{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:start}
@@ -550,7 +630,7 @@ figure{margin:0}
           <a class="nut" href="#dang-ky">Đăng ký The Trusted Creator 30 Days, khai giảng 28/09/2026 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <p class="phu">Chưa chắc mình đúng là người chương trình phục vụ? <a href="phieu-chan-doan.html">Làm Phiếu chẩn đoán 7 phút</a>.</p>
         </div>
-        <p class="gia-dong" id="gia-hero"><b>Khóa đầu tiên, học trong 30 ngày.</b> Đăng ký sớm đến hết ngày 20/09/2026: 10 triệu đồng chưa thuế, tức 10.800.000 đồng đã gồm thuế giá trị gia tăng 8 phần trăm. Từ ngày 21/09/2026 là giá chính thức 14,9 triệu đồng chưa thuế, tức 16.092.000 đồng đã thuế.</p>
+        <p class="gia-dong"><b>Khóa đầu tiên, học trong 30 ngày, khai giảng 28/09/2026.</b> Mức đầu tư và điều khoản ghi đầy đủ ở <a class="lien" href="#muc-dau-tu">phần Mức đầu tư</a>.</p>
       </div>
       <div class="hero-anh">
         <div class="so3">
@@ -634,12 +714,16 @@ figure{margin:0}
       <h2>Chu trình Trusted Creator, <span>năm chặng theo đúng thứ tự</span></h2>
       <p class="dan">Được nhớ đúng, có chuyện đáng nói, nói bằng giọng thật của mình, tự chạy được với AI, rồi biến niềm tin thành quan hệ. Không đảo thứ tự, vì chặng trước là điều kiện của chặng sau.</p>
     </div>
-    <div class="nam5 hien tre">
-      <div data-so="1"><b>Được nhớ đúng</b><p>Làm rõ bạn nói với ai, chủ đề nào bạn có đủ trải nghiệm để nói, bạn muốn người ta nhớ mình vì điều gì, bạn bảo vệ quan điểm nào, và khách tin bạn rồi thì phải tin tiếp vào đâu.</p></div>
-      <div data-so="2"><b>Có chuyện đáng nói</b><p>Lấy câu hỏi khách hay hỏi, quyết định khó, lần làm sai và những gì bạn đã đi qua, gom thành một kho chuyện về bạn, về sản phẩm và về khách.</p></div>
-      <div data-so="3"><b>Xuất hiện bằng tiếng nói thật</b><p>Rèn video nói trực tiếp, viết bài, làm chuỗi ảnh có chữ (carousel) và kể chuyện. Một ý tưởng đi qua nhiều định dạng mà vẫn giữ cùng quan điểm và tiêu chuẩn.</p></div>
-      <div data-so="4"><b>Tự chạy được với AI</b><p>Đặt một nhịp gom chất liệu đều đặn, viết bản đặt bài ghi rõ lấy từ đâu, để AI tra cứu và viết bản nháp, rồi bạn sửa lại bằng quan điểm và trải nghiệm của chính mình.</p></div>
-      <div data-so="5"><b>Biến niềm tin thành quan hệ</b><p>Nối bài đăng với trang giới thiệu của bạn, với một tài liệu đáng để khách để lại số, với lời xin phép liên lạc, cách giữ liên lạc sau đó và một cuộc trao đổi đúng lúc.</p></div>
+    <figure class="ve hien" style="margin:0">
+      <div class="thanh"><span class="cham"><i></i><i></i><i></i></span><b>chu-trinh-trusted-creator</b></div>
+      <div class="than-ve"><svg viewBox="0 0 1140 292" role="img" aria-label="Vòng lặp năm chặng: được nhớ đúng, có chuyện đáng nói, nói bằng giọng thật, tự chạy với AI, thành quan hệ, rồi phản hồi của thị trường quay lại thành chất liệu cho vòng sau"><defs><marker id="mt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="var(--line-2)"/></marker><marker id="mc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="var(--cam-dam)"/></marker></defs><path class="sv-line" d="M148 70 H304" marker-end="url(#mt)"/><path class="sv-line" d="M376 70 H532" marker-end="url(#mt)"/><path class="sv-line" d="M604 70 H760" marker-end="url(#mt)"/><path class="sv-line" d="M832 70 H988" marker-end="url(#mt)"/><path class="sv-back" d="M1026 101 V222 Q1026 240 1008 240 H132 Q114 240 114 222 V107" marker-end="url(#mc)"/><rect class="sv-chip" x="386" y="226" width="368" height="28" rx="14"/><text class="sv-chiptext" x="570" y="245" text-anchor="middle">Phản hồi của thị trường thành chất liệu vòng sau</text><circle class="sv-node" cx="114" cy="70" r="27"/><text class="sv-num" x="114" y="76" text-anchor="middle">1</text><text class="sv-name" x="114" y="130" text-anchor="middle">Được nhớ đúng</text><text class="sv-desc" x="114" y="154" text-anchor="middle">Rõ bạn là ai,</text><text class="sv-desc" x="114" y="173" text-anchor="middle">và nói với ai</text><circle class="sv-node" cx="342" cy="70" r="27"/><text class="sv-num" x="342" y="76" text-anchor="middle">2</text><text class="sv-name" x="342" y="130" text-anchor="middle">Có chuyện đáng nói</text><text class="sv-desc" x="342" y="154" text-anchor="middle">Kho chất liệu</text><text class="sv-desc" x="342" y="173" text-anchor="middle">lấy từ việc thật</text><circle class="sv-node" cx="570" cy="70" r="27"/><text class="sv-num" x="570" y="76" text-anchor="middle">3</text><text class="sv-name" x="570" y="130" text-anchor="middle">Nói bằng giọng thật</text><text class="sv-desc" x="570" y="154" text-anchor="middle">Video, bài viết,</text><text class="sv-desc" x="570" y="173" text-anchor="middle">chuỗi ảnh có chữ</text><circle class="sv-node" cx="798" cy="70" r="27"/><text class="sv-num" x="798" y="76" text-anchor="middle">4</text><text class="sv-name" x="798" y="130" text-anchor="middle">Tự chạy với AI</text><text class="sv-desc" x="798" y="154" text-anchor="middle">Nhịp làm đều,</text><text class="sv-desc" x="798" y="173" text-anchor="middle">AI phụ việc lặp</text><circle class="sv-node" cx="1026" cy="70" r="27"/><text class="sv-num" x="1026" y="76" text-anchor="middle">5</text><text class="sv-name" x="1026" y="130" text-anchor="middle">Thành quan hệ</text><text class="sv-desc" x="1026" y="154" text-anchor="middle">Từ bài đăng tới</text><text class="sv-desc" x="1026" y="173" text-anchor="middle">cuộc trao đổi</text></svg></div>
+    </figure>
+    <div class="nam5 the-ve-thay hien tre">
+      <div data-so="1"><b>Được nhớ đúng</b><p>Rõ bạn nói với ai, nói mạnh nhất về chủ đề gì, và muốn người ta nhớ mình vì điều gì.</p></div>
+      <div data-so="2"><b>Có chuyện đáng nói</b><p>Gom câu hỏi khách hay hỏi, quyết định khó và lần làm sai thành một kho chuyện dùng dần.</p></div>
+      <div data-so="3"><b>Nói bằng giọng thật</b><p>Luyện video, bài viết và chuỗi ảnh có chữ. Một ý đi qua nhiều dạng mà vẫn là giọng bạn.</p></div>
+      <div data-so="4"><b>Tự chạy với AI</b><p>Đặt nhịp gom chất liệu và đặt bài. AI viết nháp, bạn sửa lại bằng quan điểm của mình.</p></div>
+      <div data-so="5"><b>Thành quan hệ</b><p>Nối bài đăng với một tài liệu đáng để khách để lại số, rồi giữ liên lạc tới lúc nói chuyện.</p></div>
     </div>
     <div class="xuong">
       <div class="tieu hien">
@@ -682,7 +766,11 @@ figure{margin:0}
       <h2>Bốn tuần thay đổi cách bạn xuất hiện</h2>
       <p class="dan">Mỗi tuần đóng lại bằng một việc bạn làm xong, không phải bằng cảm giác đã hiểu thêm.</p>
     </div>
-    <div class="nl hien tre">
+    <figure class="ve hien" style="margin:0 0 8px">
+      <div class="thanh"><span class="cham"><i></i><i></i><i></i></span><b>hanh-trinh-30-ngay</b></div>
+      <div class="than-ve"><svg viewBox="0 0 1140 210" role="img" aria-label="Hành trình sáu mốc: trước khi bắt đầu xem bạn đang đứng ở đâu, tuần một làm rõ bạn là ai trong nghề, tuần hai xây kho chất liệu và câu chuyện, tuần ba đặt nhịp làm chạy được khi bận, tuần bốn mở đường về khách hàng, cuối khóa đưa ra bằng chứng"><defs><marker id="mj" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="var(--line-2)"/></marker></defs><rect class="sv-band" x="256" y="8" width="418" height="26" rx="13"/><text class="sv-bandtext" x="465" y="26" text-anchor="middle">BỐN TUẦN HỌC VÀ LÀM</text><path class="sv-line" d="M125 66 H251" marker-end="url(#mj)"/><path class="sv-line" d="M315 66 H441" marker-end="url(#mj)"/><path class="sv-line" d="M505 66 H631" marker-end="url(#mj)"/><path class="sv-line" d="M695 66 H821" marker-end="url(#mj)"/><path class="sv-line" d="M885 66 H1011" marker-end="url(#mj)"/><circle class="sv-node" cx="95" cy="66" r="23" style="fill:var(--cam-dam)"/><text class="sv-num" x="95" y="72" text-anchor="middle">0</text><text class="sv-name" x="95" y="118" text-anchor="middle">Trước khi bắt đầu</text><text class="sv-desc" x="95" y="142" text-anchor="middle">Xem bạn đang</text><text class="sv-desc" x="95" y="161" text-anchor="middle">đứng ở đâu</text><circle class="sv-node" cx="285" cy="66" r="23"/><text class="sv-num" x="285" y="72" text-anchor="middle">1</text><text class="sv-name" x="285" y="118" text-anchor="middle">Tuần 1</text><text class="sv-desc" x="285" y="142" text-anchor="middle">Rõ bạn là ai</text><text class="sv-desc" x="285" y="161" text-anchor="middle">trong nghề</text><circle class="sv-node" cx="475" cy="66" r="23"/><text class="sv-num" x="475" y="72" text-anchor="middle">2</text><text class="sv-name" x="475" y="118" text-anchor="middle">Tuần 2</text><text class="sv-desc" x="475" y="142" text-anchor="middle">Kho chất liệu</text><text class="sv-desc" x="475" y="161" text-anchor="middle">và câu chuyện</text><circle class="sv-node" cx="665" cy="66" r="23"/><text class="sv-num" x="665" y="72" text-anchor="middle">3</text><text class="sv-name" x="665" y="118" text-anchor="middle">Tuần 3</text><text class="sv-desc" x="665" y="142" text-anchor="middle">Nhịp làm</text><text class="sv-desc" x="665" y="161" text-anchor="middle">chạy được khi bận</text><circle class="sv-node" cx="855" cy="66" r="23"/><text class="sv-num" x="855" y="72" text-anchor="middle">4</text><text class="sv-name" x="855" y="118" text-anchor="middle">Tuần 4</text><text class="sv-desc" x="855" y="142" text-anchor="middle">Đường về</text><text class="sv-desc" x="855" y="161" text-anchor="middle">khách hàng</text><circle class="sv-node" cx="1045" cy="66" r="23" style="fill:var(--cam-dam)"/><text class="sv-num" x="1045" y="72" text-anchor="middle">5</text><text class="sv-name" x="1045" y="118" text-anchor="middle">Cuối khóa</text><text class="sv-desc" x="1045" y="142" text-anchor="middle">Đưa ra</text><text class="sv-desc" x="1045" y="161" text-anchor="middle">bằng chứng</text></svg></div>
+    </figure>
+    <div class="nl the-ve-thay hien tre">
       <div>
         <span class="so">01</span>
         <h3>Để thị trường nhớ đúng về bạn</h3>
@@ -708,7 +796,7 @@ figure{margin:0}
         <p class="dat">Xong tuần này: một đường đi từ nội dung đến khách hàng.</p>
       </div>
     </div>
-    <div class="dong hien">
+    <div class="dong the-ve-thay hien">
       <div><b>Trước ngày bắt đầu: xem bạn đang ở đâu</b><p>Xem bạn đang đứng chỗ nào và đang tắc ở đâu. Kiểm lại nội dung và kênh bạn đang có. Ghi lại mức hiện tại, để cuối khóa còn có cái mà so.</p></div>
       <div><b>Cuối chương trình: đưa ra bằng chứng</b><p>Bạn trình bày bạn là ai trong nghề, những gì đã đăng, cách bạn đang chạy, chỗ khách để lại thông tin và những con số đầu tiên. Chỉ tính kết quả có bằng chứng, không lấy cảm giác tiến bộ thay cho việc làm được.</p></div>
     </div>
@@ -723,18 +811,42 @@ figure{margin:0}
       <h2>Bạn cầm về một bản chạy thật, <span>không phải một tập tài liệu</span></h2>
       <p class="dan">Ba mươi ngày đủ để cài đặt và chạy thử một vòng. Chương trình không nói rằng sau đó thương hiệu của bạn đã xong.</p>
     </div>
-    <ol class="vach hai hien tre">
-      <li><b>01</b><p><strong>Một trang giấy nói rõ bạn là ai trong nghề</strong>, gắn với doanh nghiệp, để thị trường hiểu bạn đại diện cho điều gì.</p></li>
-      <li><b>02</b><p><strong>Những chủ đề bạn nói và cách bạn nhìn chúng</strong>, khác với người cùng ngành ở chỗ nào.</p></li>
-      <li><b>03</b><p><strong>Kho chất liệu và kho câu chuyện</strong> về bạn, về sản phẩm, về khách và về những quyết định bạn đã phải cân.</p></li>
-      <li><b>04</b><p><strong>Nội dung thật của bạn đã đăng công khai</strong>, ở nhiều dạng khác nhau: video, bài viết, chuỗi ảnh có chữ hoặc bài kể chuyện.</p></li>
-      <li><b>05</b><p><strong>Bảng theo dõi việc viết và đăng</strong>, làm cho người chạy một mình, vẫn dùng được khi bạn phối hợp cùng đội.</p></li>
-      <li><b>06</b><p><strong>Bộ mẫu đặt bài và câu lệnh cho trợ lý AI</strong>, để bớt phần việc lặp lại mà không giao giọng nói của mình cho máy.</p></li>
-      <li><b>07</b><p><strong>Một tài liệu hoặc bài kiểm tra ngắn đáng để khách để lại số</strong>, bản đầu tiên, gắn với doanh nghiệp của bạn.</p></li>
-      <li><b>08</b><p><strong>Cách giữ liên lạc với người vừa để lại thông tin</strong>, để họ không rơi mất sau lần đầu quan tâm.</p></li>
-      <li><b>09</b><p><strong>Bảng số liệu đi từ bài đăng tới cuộc trao đổi</strong>, phân biệt được người chỉ xem, người bắt đầu tin, người thật sự quan tâm và người đã ngồi nói chuyện.</p></li>
-      <li><b>10</b><p><strong>Kế hoạch cho vòng chạy tiếp theo</strong>, để bạn biết nên giữ, nên sửa hay nên dừng điều gì.</p></li>
-    </ol>
+    <div class="ke hien tre">
+      <div>
+        <div class="mk"><div class="mk-trang"><b></b><i></i><i></i><i></i><i></i></div></div>
+        <h3>Bạn là ai trong nghề</h3>
+        <ul>
+          <li>Một trang giấy nói rõ bạn đại diện cho điều gì.</li>
+          <li>Những chủ đề bạn nói, và cách bạn nhìn chúng khác người cùng ngành.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="mk"><div class="mk-chong"><i></i><i></i><i><s></s><s></s><s></s></i></div></div>
+        <h3>Kho để không bí ý</h3>
+        <ul>
+          <li>Kho chất liệu và kho câu chuyện lấy từ việc thật.</li>
+          <li>Nội dung thật của bạn đã đăng công khai, ở nhiều dạng.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="mk"><div class="mk-lich"><i></i><i class="on"></i><i></i><i></i><i class="y"></i><i></i><i class="on"></i><i></i><i></i><i class="y"></i><i></i><i class="on"></i><i></i><i></i><i class="y"></i></div></div>
+        <h3>Bộ máy chạy đều</h3>
+        <ul>
+          <li>Bảng theo dõi việc viết và đăng, làm cho người chạy một mình.</li>
+          <li>Bộ mẫu đặt bài và câu lệnh cho trợ lý AI.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="mk"><div class="mk-pheu"><i></i><i></i><i></i><i></i></div></div>
+        <h3>Đường về khách</h3>
+        <ul>
+          <li>Một tài liệu hoặc bài kiểm tra ngắn đáng để khách để lại số.</li>
+          <li>Cách giữ liên lạc với người vừa để lại thông tin.</li>
+          <li>Bảng số liệu đi từ bài đăng tới cuộc trao đổi.</li>
+          <li>Kế hoạch cho vòng chạy tiếp theo.</li>
+        </ul>
+      </div>
+    </div>
     <div class="ket-cap hien">
       <b>Điều bạn thật sự muốn: khách tin bạn, rồi từ đó hiểu và quan tâm tới doanh nghiệp, sản phẩm, đội ngũ và cách bạn phục vụ họ.</b>
       <span>Đó là lý do chương trình không dừng ở việc bạn nói hay hơn trước máy quay.</span>
@@ -757,14 +869,21 @@ figure{margin:0}
       <h2>Bạn sẽ làm, không chỉ nghe</h2>
       <p class="dan">Chương trình có buổi học, có phòng thực hành, có nộp bài và có phản hồi. Phần lớn thời gian của bạn nằm ở việc làm thật, không nằm ở việc ngồi nghe.</p>
     </div>
+<div class="tuan hien tre">
+      <div class="buoi"><span class="ngay">Thứ 2</span><span class="viec">Buổi học</span><span class="gio">19:30 · 22:00</span></div>
+      <div><span class="ngay">Thứ 3</span><span class="viec">Bạn tự làm</span><span class="gio"></span></div>
+      <div><span class="ngay">Thứ 4</span><span class="viec">Bạn tự làm</span><span class="gio"></span></div>
+      <div class="thuchanh"><span class="ngay">Thứ 5</span><span class="viec">Phòng thực hành</span><span class="gio">19:30 · 22:00</span></div>
+      <div><span class="ngay">Thứ 6</span><span class="viec">Nộp bài</span><span class="gio"></span></div>
+      <div class="nghi"><span class="ngay">Thứ 7</span><span class="viec">Nghỉ</span><span class="gio"></span></div>
+      <div class="nghi"><span class="ngay">Chủ nhật</span><span class="viec">Nghỉ</span><span class="gio"></span></div>
+    </div>
+    <p class="tuan-ghi hien">Một tuần lặp lại như vậy bốn lần. Học trực tuyến qua Zoom, buổi nào cũng có ghi hình.</p>
     <div class="hoc">
       <ul class="dsach hien tre">
-        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><span><b>Một buổi chẩn đoán và khởi động</b> trước ngày khai giảng, để xem bạn đang đứng ở đâu, đang tắc chỗ nào và mức hiện tại của bạn ra sao.</span></li>
-        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><span><b>Bốn buổi học và làm theo tuần</b>, học trực tuyến qua Zoom, tối thứ Hai từ 19:30 đến 22:00.</span></li>
-        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><span><b>Bốn phòng thực hành và phản hồi nhóm</b>, tối thứ Năm từ 19:30 đến 22:00, để bạn sửa bài ngay trên chất liệu của mình.</span></li>
-        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><span><b>Một nơi để nộp bài và một bảng theo dõi chung</b>, để bạn và người hướng dẫn cùng nhìn thấy bạn đang tới đâu.</span></li>
-        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><span><b>Bộ mẫu, câu lệnh cho trợ lý AI và phiếu tự xem lại</b>, để bạn tiếp tục chạy sau khi khóa kết thúc.</span></li>
-        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><span><b>Một buổi tổng kết</b>, nơi bạn đưa ra bằng chứng của 30 ngày và chốt kế hoạch cho vòng chạy tiếp theo.</span></li>
+          <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><span><b>Một buổi chẩn đoán và khởi động</b> trước ngày khai giảng, để xem bạn đang đứng ở đâu và đang tắc chỗ nào.</span></li>
+          <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><span><b>Một nơi nộp bài và một bảng theo dõi chung</b>, kèm bộ mẫu, câu lệnh cho trợ lý AI và phiếu tự xem lại.</span></li>
+          <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><span><b>Một buổi tổng kết</b>, nơi bạn đưa ra bằng chứng của 30 ngày và chốt kế hoạch cho vòng chạy tiếp theo.</span></li>
       </ul>
       <div class="luu hien">
         <b>Thời gian bạn cần dành</b>
@@ -818,12 +937,9 @@ figure{margin:0}
     </div>
     <ul class="vach hien tre">
       <li><b>01</b><p><strong>Xây trên nền Cố vấn Tin cậy.</strong> Nội dung giúp người xem nghĩ rõ hơn, không chỉ giúp người nói trông giỏi hơn.</p></li>
-      <li><b>02</b><p><strong>Chất liệu thật đứng trước công cụ.</strong> Nguyên liệu chính là câu hỏi khách hay hỏi, quyết định bạn đã cân, việc bạn đã làm và bằng chứng bạn có trong tay.</p></li>
-      <li><b>03</b><p><strong>Đa định dạng, có rèn video.</strong> Chương trình không đồng nhất thương hiệu với video, nhưng cũng không né việc luyện sự hiện diện.</p></li>
-      <li><b>04</b><p><strong>Thiết kế cho một người vận hành.</strong> Quy trình không giả định bạn có sẵn biên kịch, người quay, người thiết kế và người phân tích dữ liệu.</p></li>
-      <li><b>05</b><p><strong>AI không sở hữu tiếng nói.</strong> AI giảm việc lặp lại, con người chịu trách nhiệm về sự thật và quan điểm.</p></li>
-      <li><b>06</b><p><strong>Nội dung có đường về khách hàng.</strong> Chương trình không kết thúc ở lịch đăng bài mà nối sự chú ý với một bước tiếp theo có thể đo.</p></li>
-      <li><b>07</b><p><strong>Niềm tin phải chảy về đúng chỗ.</strong> Với một người chủ, khách tin bạn thôi chưa đủ. Niềm tin đó phải chuyển tiếp được sang doanh nghiệp, sản phẩm, đội ngũ và cách bạn phục vụ.</p></li>
+      <li><b>02</b><p><strong>Chất liệu thật đứng trước công cụ.</strong> Nguyên liệu chính là câu hỏi khách hay hỏi, quyết định bạn đã cân và việc bạn đã làm.</p></li>
+      <li><b>03</b><p><strong>Làm cho một người chạy được.</strong> Quy trình không giả định bạn có sẵn biên kịch, người quay và người phân tích số liệu. AI bớt việc lặp lại, bạn giữ phần quan điểm.</p></li>
+      <li><b>04</b><p><strong>Niềm tin phải chảy về đúng chỗ.</strong> Với một người chủ, khách tin bạn thôi chưa đủ. Niềm tin đó phải chuyển tiếp sang doanh nghiệp, sản phẩm và đội ngũ.</p></li>
     </ul>
   </div>
 </section>
@@ -945,35 +1061,27 @@ figure{margin:0}
     <div class="faq hien" id="faq">
       <div class="muc">
         <button type="button" aria-expanded="false"><b>01</b><span>Tôi có bắt buộc phải làm video không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Chương trình không xây thương hiệu chỉ bằng video. Bạn sẽ dùng bài viết, chuỗi ảnh có chữ, kể chuyện và các định dạng phù hợp với khách hàng của bạn. Tuy nhiên, video là một phần rèn luyện quan trọng. Nếu bạn hoàn toàn không muốn xuất hiện hoặc không muốn luyện cách nói trước máy quay, chương trình có thể chưa phù hợp.</p></div></div>
+        <div class="than"><div><p>Không bắt buộc chỉ làm video. Bạn còn dùng bài viết, chuỗi ảnh có chữ và bài kể chuyện. Nhưng luyện nói trước máy quay là một phần của chương trình. Nếu bạn không muốn xuất hiện, chương trình chưa phù hợp.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>02</b><span>Tôi chưa từng làm nội dung, có theo được không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Có thể, nếu bạn đã có chuyên môn, sản phẩm và khách hàng thật, đồng thời hoàn thành phần chuẩn bị trước chương trình. Chương trình không dành toàn bộ thời gian để dạy thao tác cơ bản từ đầu.</p></div></div>
+        <button type="button" aria-expanded="false"><b>02</b><span>Tôi đã có đội làm nội dung, còn cần học không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Đội giúp bạn làm ra bài, nhưng giọng nói và quan điểm vẫn phải đến từ bạn. Chương trình giúp bạn đưa cho đội một bản đặt bài rõ hơn, thay vì giao luôn cả thương hiệu cho họ.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>03</b><span>Tôi đã có đội làm nội dung, chương trình còn phù hợp không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Có thể phù hợp. Đội giúp bạn làm ra bài, nhưng giọng nói, quan điểm và trải nghiệm vẫn phải đến từ bạn. Chương trình giúp bạn đưa cho đội một bản đặt bài rõ ràng hơn, thay vì giao luôn cả thương hiệu cho họ.</p></div></div>
+        <button type="button" aria-expanded="false"><b>03</b><span>Tôi đã dùng AI rồi. Chương trình có gì khác?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Nếu chỗ đứng của bạn còn mờ, AI chỉ giúp ra nội dung chung chung nhanh hơn. Chương trình bắt đầu từ chuyên môn và quyết định biên tập của bạn, sau đó mới dùng AI để bớt việc lặp lại.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>04</b><span>Tôi đã dùng AI rồi. Chương trình có gì khác?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Biết dùng công cụ không có nghĩa là đã có hệ thống. Nếu bạn còn mờ về chỗ đứng của mình và chất liệu đưa vào cũng mờ, AI chỉ giúp bạn ra nội dung chung chung nhanh hơn. The Trusted Creator bắt đầu từ chuyên môn, trải nghiệm và quyết định biên tập của bạn, sau đó mới dùng AI để bớt phần việc lặp lại.</p></div></div>
+        <button type="button" aria-expanded="false"><b>04</b><span>Mỗi tuần tôi phải bỏ ra bao nhiêu thời gian?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Khoảng 5 giờ cho buổi học và phòng thực hành, cộng 3 đến 5 giờ tự làm. Nếu tuần nào bạn không dành nổi mức này, khóa đầu chưa phải thời điểm phù hợp.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>05</b><span>Tôi đang làm nội dung khá tốt. Chương trình có quá cơ bản không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Nếu bạn đã rõ chỗ đứng, đăng đều, có khách đến từ nội dung và đang đo được, chương trình có thể quá dễ với bạn. Nhưng nếu còn một chỗ tắc rõ, chẳng hạn bài không ra đúng nhóm khách, mọi thứ vẫn dừng khi bạn bận hoặc khi đội đổi người, chưa có cách lấy chất liệu đều, hoặc chưa có cách giữ liên lạc với người quan tâm, hãy làm Phiếu chẩn đoán để biết mình hợp tới đâu.</p></div></div>
+        <button type="button" aria-expanded="false"><b>05</b><span>Tôi có xây xong thương hiệu trong 30 ngày không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Không. Một thương hiệu đứng được cần thời gian và bằng chứng nhất quán. Trong 30 ngày, bạn dựng và chạy thử vòng đầu, rồi có số liệu để biết nên đi tiếp thế nào.</p></div></div>
       </div>
       <div class="muc">
-        <button type="button" aria-expanded="false"><b>06</b><span>Tôi có xây xong thương hiệu trong 30 ngày không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Không. Một thương hiệu đứng được cần thời gian và bằng chứng nhất quán. Trong 30 ngày, bạn dựng và chạy thử vòng đầu: chỗ đứng của bạn, nội dung thật đã đăng, cách chạy đều, chỗ khách để lại thông tin và những con số đầu tiên.</p></div></div>
-      </div>
-      <div class="muc">
-        <button type="button" aria-expanded="false"><b>07</b><span>Chương trình có bảo đảm có khách hàng không?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Không. Nội dung tạo thêm sự chú ý, niềm tin và những cuộc trao đổi. Còn ra được khách hay không phụ thuộc vào sản phẩm, thị trường, giá và điều kiện bạn đưa ra, năng lực tư vấn, mức bạn thật sự làm, và cách bạn tiếp người quan tâm.</p></div></div>
-      </div>
-      <div class="muc">
-        <button type="button" aria-expanded="false"><b>08</b><span>Chương trình học khi nào và mức đầu tư bao nhiêu?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Khóa đầu tiên khai giảng ngày 28/09/2026 và kéo dài 30 ngày. Nếu bạn đăng ký từ nay đến hết ngày 20/09/2026, mức đầu tư là 10 triệu đồng. Từ ngày 21/09/2026 là giá chính thức 14,9 triệu đồng. Hai mức này chưa gồm thuế giá trị gia tăng 8 phần trăm, tính đủ thuế là 10.800.000 đồng và 16.092.000 đồng. Lịch buổi học, hình thức và điều khoản đầy đủ được ghi trong trang đăng ký.</p></div></div>
+        <button type="button" aria-expanded="false"><b>06</b><span>Chương trình có bảo đảm có khách hàng không?</span><i aria-hidden="true"></i></button>
+        <div class="than"><div><p>Không. Nội dung tạo thêm sự chú ý, niềm tin và những cuộc trao đổi. Còn ra được khách hay không phụ thuộc vào sản phẩm, giá, năng lực tư vấn và cách bạn tiếp người quan tâm.</p></div></div>
       </div>
     </div>
   </div>
@@ -988,13 +1096,10 @@ figure{margin:0}
         <h2 style="margin-top:14px">Chuyên môn của bạn đã có. <span>Điều còn thiếu có thể là một cách để thị trường nhìn thấy, tin và tiếp tục kết nối với nó.</span></h2>
         <p class="dan">Điền phiếu đăng ký bên cạnh. Sau khi gửi, bạn sẽ thấy ngay thông tin chuyển khoản và các bước tiếp theo.</p>
         <ol class="dk-buoc">
-          <li><b>1</b><span><strong>Bạn gửi phiếu đăng ký.</strong> Các câu hỏi trong phiếu để biết bạn đang đứng ở đâu và tắc chỗ nào, không phải hỏi cho đủ thủ tục.</span></li>
-          <li><b>2</b><span><strong>Bạn chuyển khoản mức đầu tư.</strong> Thông tin tài khoản hiện ngay sau khi gửi phiếu.</span></li>
-          <li><b>3</b><span><strong>Đội ngũ liên hệ trong 24 giờ làm việc</strong> để xác nhận, gửi hóa đơn và gửi điều khoản đầy đủ.</span></li>
-          <li><b>4</b><span><strong>Trong 3 ngày làm việc, đội ngũ đọc lại hồ sơ của bạn.</strong> Nếu bạn chưa phải người chương trình phục vụ, chúng tôi chủ động hoàn tiền đầy đủ và nói rõ vì sao.</span></li>
-          <li><b>5</b><span><strong>Bạn làm buổi chẩn đoán và phần chuẩn bị</strong> trước ngày khai giảng 28/09/2026.</span></li>
+          <li><b>1</b><span><strong>Gửi phiếu, rồi chuyển khoản.</strong> Thông tin tài khoản hiện ngay sau khi bạn gửi phiếu.</span></li>
+          <li><b>2</b><span><strong>Đội ngũ liên hệ trong 24 giờ làm việc</strong> để xác nhận, gửi hóa đơn và gửi điều khoản đầy đủ.</span></li>
+          <li><b>3</b><span><strong>Trong 3 ngày làm việc, đội ngũ đọc lại hồ sơ của bạn.</strong> Nếu bạn chưa phải người chương trình phục vụ, chúng tôi chủ động hoàn tiền đầy đủ và nói rõ vì sao.</span></li>
         </ol>
-        <p class="dan" style="margin-top:24px;font-size:15px;color:var(--ink-3)">Chưa chắc mình đúng là người chương trình phục vụ? <a class="lien" href="phieu-chan-doan.html">Làm Phiếu chẩn đoán 7 phút</a>. Hoàn thành phiếu không phải đăng ký học và không phát sinh thanh toán.</p>
       </div>
 
       <form class="form hien" id="form" novalidate>
@@ -1102,7 +1207,6 @@ figure{margin:0}
     var som=d.getElementById('muc-som'); if(som) som.remove();
     var bang=d.getElementById('bang-gia'); if(bang) bang.style.gridTemplateColumns='minmax(0,1fr)';
     var cuoi=d.getElementById('muc-cuoi'); if(cuoi){ cuoi.classList.add('dang'); cuoi.querySelector('.khi').textContent='Mức đang áp dụng'; cuoi.querySelector('.khi-ap').textContent='Áp dụng đến khi đóng đăng ký cho khóa khai giảng ngày 28/09/2026.'; }
-    var gh=d.getElementById('gia-hero'); if(gh) gh.innerHTML='<b>Khóa đầu tiên, học trong 30 ngày.</b> Mức đầu tư 14,9 triệu đồng chưa gồm thuế, tức 16.092.000 đồng đã gồm thuế giá trị gia tăng 8 phần trăm.';
     var ct=d.getElementById('ck-tien'); if(ct) ct.textContent='16.092.000 đồng';
     var gf=d.getElementById('gia-form'); if(gf) gf.innerHTML='<b>Mức đang áp dụng: giá chính thức 14,9 triệu đồng chưa thuế, tức 16.092.000 đồng đã gồm thuế giá trị gia tăng 8 phần trăm.</b> Áp dụng đến khi đóng đăng ký cho khóa khai giảng ngày 28/09/2026.';
   }
