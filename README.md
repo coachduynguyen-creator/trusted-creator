@@ -237,3 +237,19 @@ Cùng lúc phát hiện khung ảnh ở khổ dưới 900px đang đặt 4:3 nga
 ### Phần chưa làm, chờ Coach Duy quyết
 
 Tài liệu TTA có bảy cơ chế mà trang chưa nói, và tất cả đều là lời hứa về cách giao hàng nên không được tự đưa lên: nhóm 6 tới 10 người có nhóm trưởng, cặp đồng đội, phần trăm hoàn thành hành trình với năm mốc mở khóa, ứng dụng theo dõi tiến độ, luyện tập đóng vai hằng ngày, hồ sơ trước và sau, buổi vinh danh cuối hành trình. Xem phần đề xuất trong tin nhắn ngày 24/08.
+
+## Kết quả mùa trước, ngày 24/08/2026
+
+Coach Duy gửi hai ảnh kết quả của **The Sales Warrior mùa 2**, chương trình 30 ngày trước đây tập trung xây kênh chuyên gia cho người bán hàng. Quy mô: **50 người, 30 ngày**.
+
+**Đã dùng bốn con số về kênh và nội dung:** 546 video, 8,2 triệu lượt xem, 1.221 khách chủ động liên hệ, 187 giao dịch. Đặt trong một khối tối ở phần Người dạy, ngay trên đoạn nói khóa đầu chưa có ai đi qua. Có thêm hai con số trung bình suy ra từ mẫu số 50 người: 11 video và 24 người liên hệ mỗi học viên.
+
+**Không dùng con số 289 tỷ doanh số.** Ba lý do:
+
+1. Cách đó vài màn hình trang có khối "Điều chương trình không bảo đảm", dòng đầu ghi không bảo đảm khách hàng hoặc doanh thu. Đặt 289 tỷ lên trang là tự mâu thuẫn.
+2. Doanh số đó đến từ sản phẩm học viên bán, không đến từ nội dung. Ghép vào một chương trình thương hiệu cá nhân là gán nhân quả sai.
+3. Con số đó kéo về nhóm muốn kiếm tiền nhanh, đúng nhóm Voice DNA mục 22 bảo phải tránh.
+
+**Không bê thiết kế của poster gốc.** Poster dùng chữ 3D nền lửa cam đỏ, phá hoàn toàn giao diện trang. Chỉ lấy con số, trình bày bằng ngôn ngữ của trang: khối tối, số lớn màu vàng kim `--vang-toi` `#E9C46A` đạt 11.2:1 trên nền than.
+
+**Câu gắn nhãn bắt buộc giữ nguyên khi sửa nội dung:** "Đây là The Sales Warrior mùa 2, không phải The Trusted Creator... Bốn con số này cho thấy cách vận hành đó khiến người ta thực sự làm, không cho thấy bạn sẽ đạt đúng những con số này." Bỏ câu này là vi phạm mục 34 tài liệu nguồn.
