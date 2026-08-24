@@ -375,6 +375,54 @@ figure{margin:0}
 
 
 
+
+
+/* ============ DẢI ẢNH LÒ RÈN: chữ nằm trên nền đặc, ảnh nằm cạnh ============ */
+.bang-anh{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);background-color:var(--ink);margin-bottom:22px}
+.bang-anh .chu{background-color:var(--ink);background-image:linear-gradient(160deg,#1A202C 0%,#0F1218 100%);padding:38px 34px 34px;display:flex;flex-direction:column;justify-content:center}
+.bang-anh .nhan{color:var(--cam);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.bang-anh .nhan::before{content:'';width:18px;height:2px;background:var(--cam);flex:none}
+.bang-anh h3{color:#fff;font-size:clamp(25px,2.9vw,36px);line-height:1.1;margin-bottom:14px}
+.bang-anh p{color:#D7DBE2;font-size:16.5px;line-height:1.6}
+.bang-anh .nguon{display:block;margin-top:18px;font-size:13px;color:#9AA2AF}
+.bang-anh .anh{position:relative;min-height:330px;background:var(--bg-3)}
+.bang-anh .anh img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+@media (max-width:860px){.bang-anh{grid-template-columns:minmax(0,1fr)}.bang-anh .anh{min-height:0;aspect-ratio:2.5;order:-1}}
+@media (max-width:640px){.bang-anh .chu{padding:26px 20px 24px}.bang-anh p{font-size:15.5px}}
+
+/* ba thẻ ảnh: ảnh lớn, chữ ít */
+.the-anh{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.the-anh > figure{margin:0;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background-color:#fff;background-image:var(--paper);box-shadow:var(--shadow-s);display:flex;flex-direction:column;transition:transform .2s var(--ease),box-shadow .2s var(--ease),border-color .2s}
+@media (hover:hover){.the-anh > figure:hover{transform:translateY(-4px);box-shadow:var(--shadow-h);border-color:var(--line-2)}}
+.the-anh .khung{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--bg-3)}
+.the-anh .khung img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s var(--ease)}
+@media (hover:hover){.the-anh > figure:hover .khung img{transform:scale(1.04)}}
+.the-anh figcaption{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px}
+.the-anh b{font-size:18px;font-weight:700;color:var(--ink);letter-spacing:-.015em;line-height:1.3}
+.the-anh ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.the-anh li{position:relative;padding-left:18px;font-size:14.5px;line-height:1.5;color:var(--ink-2)}
+.the-anh li::before{content:'';position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:2px;background:var(--cam-dam)}
+@media (max-width:900px){.the-anh{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.the-anh{grid-template-columns:minmax(0,1fr)}}
+@supports (grid-template-rows: subgrid){.the-anh{grid-template-rows:auto auto 1fr}.the-anh > figure{display:grid;grid-template-rows:subgrid;grid-row:span 3}.the-anh figcaption{display:contents}.the-anh b{padding:18px 20px 0}.the-anh ul{padding:8px 20px 20px}}
+@media (max-width:900px){@supports (grid-template-rows: subgrid){.the-anh > figure{grid-row:auto;grid-template-rows:none;display:flex;flex-direction:column}.the-anh figcaption{display:flex}.the-anh b{padding:0}.the-anh ul{padding:0}}}
+
+/* ============ THANH TIẾN ĐỘ NĂM MỐC ============ */
+.tien-do{margin-top:56px;padding-top:36px;border-top:1px solid var(--line-2)}
+.tien-do .tieu{max-width:68ch;margin-bottom:34px}
+.tien-do .tieu h3{font-size:clamp(21px,2.3vw,28px);margin-bottom:10px}
+.tien-do .tieu p{font-size:15.5px;color:var(--ink-2)}
+.thanh{position:relative;height:10px;border-radius:5px;background:var(--bg-3);border:1px solid var(--line);margin:0 0 14px}
+.thanh i{position:absolute;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:#fff;border:2px solid var(--ink)}
+.thanh i.dat{background:var(--cam-dam);border-color:var(--cam-dam)}
+.moc5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.moc5 > div{padding-top:6px}
+.moc5 b{display:block;font-family:var(--f-tit);font-size:22px;letter-spacing:-.02em;color:var(--ink);line-height:1}
+.moc5 span{display:block;font-size:13.5px;color:var(--ink-3);margin-top:7px;line-height:1.45}
+.tien-do .ghi{margin-top:22px;font-size:14.5px;color:var(--ink-2);line-height:1.6;max-width:78ch;padding-left:16px;border-left:3px solid var(--cam)}
+@media (max-width:760px){.thanh{display:none}.moc5{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.moc5 > div{padding:14px 0;border-top:1px solid var(--line)}}
+@media (max-width:420px){.moc5{grid-template-columns:minmax(0,1fr)}}
+
 /* ============ KHỐI GẬP: chi tiết cho người muốn xem kỹ ============ */
 .gap{margin-top:44px;border:1px solid var(--line);border-radius:var(--r);background-color:#fff;background-image:var(--paper);box-shadow:var(--shadow-s);overflow:hidden}
 .gap > summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:18px 22px;font-size:16.5px;font-weight:600;color:var(--ink);transition:background .2s}
@@ -920,14 +968,14 @@ figure{margin:0}
     </div>
 <div class="tuan hien tre">
       <div class="buoi"><span class="ngay">Thứ 2</span><span class="viec">Buổi hướng dẫn</span><span class="gio">19:30 · 22:00</span></div>
-      <div><span class="ngay">Thứ 3</span><span class="viec">Bạn tự làm</span><span class="gio"></span></div>
-      <div><span class="ngay">Thứ 4</span><span class="viec">Bạn tự làm</span><span class="gio"></span></div>
+      <div><span class="ngay">Thứ 3</span><span class="viec">Làm thật, luyện với đồng đội</span><span class="gio"></span></div>
+      <div><span class="ngay">Thứ 4</span><span class="viec">Làm thật, cập nhật tiến độ</span><span class="gio"></span></div>
       <div class="thuchanh"><span class="ngay">Thứ 5</span><span class="viec">Phòng thực hành</span><span class="gio">19:30 · 22:00</span></div>
-      <div><span class="ngay">Thứ 6</span><span class="viec">Nộp bài</span><span class="gio"></span></div>
-      <div class="nghi"><span class="ngay">Thứ 7</span><span class="viec">Nghỉ</span><span class="gio"></span></div>
+      <div><span class="ngay">Thứ 6</span><span class="viec">Đăng bài và báo lại</span><span class="gio"></span></div>
+      <div><span class="ngay">Thứ 7</span><span class="viec">Họp nhóm</span><span class="gio"></span></div>
       <div class="nghi"><span class="ngay">Chủ nhật</span><span class="viec">Nghỉ</span><span class="gio"></span></div>
     </div>
-    <p class="tuan-ghi hien">Một tuần lặp lại như vậy bốn lần. Hai buổi trực tuyến qua Zoom, buổi nào cũng có ghi hình. Ba ngày còn lại là ngày bạn làm thật và báo lại.</p>
+    <p class="tuan-ghi hien">Một tuần lặp lại như vậy bốn lần. Chỉ hai tối là ngồi trước màn hình, buổi nào cũng có ghi hình. Những ngày còn lại là ngày bạn làm thật, luyện với đồng đội và báo lại.</p>
     <div class="hoc">
       <ul class="dsach hien tre">
           <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><span><b>Một buổi chẩn đoán và khởi động</b> trước ngày khai giảng, để xem bạn đang đứng ở đâu và đang tắc chỗ nào.</span></li>
@@ -941,15 +989,66 @@ figure{margin:0}
       </div>
     </div>
     <div class="giu">
-      <div class="tieu hien">
-        <h3>Thứ giữ bạn không bỏ giữa chừng</h3>
-        <p>Phần lớn người đã biết mình cần làm gì. Chỗ hỏng nằm ở chỗ làm được hai tuần rồi dừng, rồi không quay lại nữa. Bốn thứ dưới đây có mặt để chặn đúng chỗ đó.</p>
+      <div class="bang-anh hien">
+        <div class="chu">
+          <span class="nhan">Lò rèn 30 ngày</span>
+          <h3>Chỉ hành động và rèn luyện mới tạo ra kết quả</h3>
+          <p>Bạn không ngồi nghe rồi về. Mỗi ngày bạn làm thật, luyện cùng đồng đội và báo lại. Cuối 30 ngày bạn có sản phẩm thật của mình, không phải một tập ghi chép.</p>
+          <span class="nguon">Ảnh chụp tại một chương trình trước của Coach Duy Nguyễn.</span>
+        </div>
+        <div class="anh"><img src="img/cd-dai-hoi.jpg" alt="Hội trường đông người trong một chương trình do Coach Duy Nguyễn dẫn" loading="lazy" decoding="async"></div>
       </div>
-      <div class="giu-o hien tre">
-        <div><span class="so">01</span><b>Nộp bài có ngày chốt</b><p>Mỗi tuần có bài phải nộp và có hạn, không phải làm lúc nào cũng được.</p></div>
-        <div><span class="so">02</span><b>Bảng theo dõi chung</b><p>Ai đang tới đâu đều hiện trên một bảng. Bạn và người hướng dẫn cùng nhìn thấy.</p></div>
-        <div><span class="so">03</span><b>Bài của bạn được sửa trực tiếp</b><p>Tối thứ Năm mở bài ra sửa ngay trên chất liệu của bạn, không phải nhận xét chung chung.</p></div>
-        <div><span class="so">04</span><b>Một nhóm cùng chạy một nhịp</b><p>Bạn không phải là người duy nhất đang cố giữ nhịp trong 30 ngày đó.</p></div>
+      <div class="the-anh hien tre">
+        <figure>
+          <div class="khung"><img src="img/cd-tuong-tac.jpg" alt="Coach Duy Nguyễn sửa bài trực tiếp cho hai người trên sân khấu" loading="lazy" decoding="async"></div>
+          <figcaption>
+            <b>Bài của bạn được sửa ngay trước mặt</b>
+            <ul>
+              <li>Tối thứ Năm, bài của bạn mở ra sửa trực tiếp.</li>
+              <li>Không phải một lời nhận xét chung cho cả nhóm.</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="khung"><img src="img/cd-gio-tay.jpg" alt="Cả hội trường giơ tay nhận thử thách" loading="lazy" decoding="async"></div>
+          <figcaption>
+            <b>Cả nhóm cùng chạy một nhịp</b>
+            <ul>
+              <li>Nhóm 6 đến 10 người, có tên và có nhóm trưởng giữ nhịp.</li>
+              <li>Họp nhóm mỗi tuần. Ai tụt lại thì cả nhóm biết và kéo lên.</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="khung"><img src="img/cd-networking.jpg" alt="Những người chủ doanh nghiệp trao đổi với nhau" loading="lazy" decoding="async"></div>
+          <figcaption>
+            <b>Một người đồng đội của riêng bạn</b>
+            <ul>
+              <li>Ghép cặp ngay trong ngày khởi động.</li>
+              <li>Luyện cùng nhau mỗi ngày, nói thẳng, rồi làm lại ngay.</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="tien-do">
+      <div class="tieu hien">
+        <h3>Tiến độ của bạn hiện thành con số, không phải cảm giác</h3>
+        <p>Chương trình không chấm điểm thi đua và không có thẻ phạt. Mọi việc phải làm được ghi nhận trên một bảng chung, cộng lại thành phần trăm hành trình bạn đã đi. Đi tới đâu mở khóa tới đó.</p>
+      </div>
+      <div class="hien">
+        <div class="thanh" aria-hidden="true"><i class="dat" style="left:10%"></i><i class="dat" style="left:30%"></i><i class="" style="left:50%"></i><i class="" style="left:70%"></i><i class="" style="left:90%"></i></div>
+        <div class="moc5">
+          <div><b>20%</b><span>Mốc thứ nhất</span></div>
+          <div><b>40%</b><span>Mốc thứ hai</span></div>
+          <div><b>60%</b><span>Mốc thứ ba</span></div>
+          <div><b>80%</b><span>Mốc thứ tư</span></div>
+          <div><b>100%</b><span>Đi hết hành trình</span></div>
+        </div>
+        <!-- CHỖ ĐIỀN: khi Coach Duy chốt bộ phần thưởng riêng của The Trusted Creator,
+             thay năm dòng "Mốc thứ..." bằng tên phần thưởng thật. Không dùng lại bộ quà
+             của TTA vì đó là tài sản của chương trình khác. -->
+        <p class="ghi">Phần trăm hoàn thành đo mức bạn thực sự làm, không đo năng lực. Năng lực nhìn qua bài bạn đăng, phản hồi bạn nhận và hồ sơ trước sau của chính bạn. Danh sách phần thưởng từng mốc sẽ công bố cho người đã đăng ký trước ngày bắt đầu.</p>
       </div>
     </div>
     <details class="gap hien">
