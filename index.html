@@ -395,6 +395,31 @@ figure{margin:0}
 .mk-pheu i:nth-child(2){width:74%}
 .mk-pheu i:nth-child(3){width:48%}
 .mk-pheu i:nth-child(4){width:26px;height:26px;border-radius:50%;background:var(--cam);border-color:var(--cam-dam)}
+/* Mô phỏng bằng khối CSS, chỉ dùng vạch và hình, không dùng chữ giả.
+   Đây là hình minh họa thứ học viên làm ra, không phải ảnh chụp màn hình.
+   CHỖ THAY: khi có ảnh chụp bản mẫu thật (bản định vị, bảng tín hiệu, bộ mẫu
+   đặt bài), thay từng khối .mk bằng <img> đúng tỉ lệ 1/1 và giữ nguyên phần chữ. */
+.mk-video{width:62px;height:94px;border-radius:10px;background-color:var(--ink);background-image:var(--chip);border:1px solid var(--ink);position:relative;box-shadow:var(--shadow-s)}
+.mk-video b{position:absolute;left:50%;top:50%;transform:translate(-40%,-50%);width:0;height:0;border-left:15px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;background:none;border-radius:0}
+.mk-video i{position:absolute;left:10px;right:10px;bottom:10px;height:4px;border-radius:2px;background:rgba(255,255,255,.34)}
+.mk-video i:nth-of-type(2){right:34px;background:var(--cam)}
+.mk-dang{display:flex;align-items:flex-end;gap:9px}
+.mk-dang i{background:#fff;border:1px solid var(--line-2);border-radius:7px;box-shadow:var(--shadow-s)}
+.mk-dang i:nth-child(1){width:38px;height:64px}
+.mk-dang i:nth-child(2){width:52px;height:52px}
+.mk-dang i:nth-child(3){width:44px;height:34px}
+.mk-bang{width:106px;height:94px;border-radius:8px;background:#fff;border:1px solid var(--line-2);box-shadow:var(--shadow-s);padding:11px;display:flex;flex-direction:column;justify-content:space-between}
+.mk-bang b{height:5px;width:56%;border-radius:3px;background:var(--ink)}
+.mk-bang i{display:flex;align-items:flex-end;gap:5px;height:46px}
+.mk-bang i s{flex:1;border-radius:3px 3px 0 0;background:var(--cam)}
+.mk-bang i s:nth-child(1){height:34%}
+.mk-bang i s:nth-child(2){height:52%}
+.mk-bang i s:nth-child(3){height:44%}
+.mk-bang i s:nth-child(4){height:74%}
+.mk-bang i s:nth-child(5){height:96%;background:var(--cam-dam)}
+/* Luật ghi đè .a.b bắt buộc nằm trong câu truy vấn khổ màn hình, nếu không nó
+   thắng cả các luật thu cột của lớp gốc. Đã mắc lỗi này ngày 24/08/2026. */
+@media (min-width:1041px){.ke.sau{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:1040px){.ke{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:600px){.ke{grid-template-columns:minmax(0,1fr)}.mk{height:100px}}
 @supports (grid-template-rows: subgrid){.ke{grid-template-rows:auto auto 1fr}.ke > div{display:grid;grid-template-rows:subgrid;grid-row:span 3;gap:12px}}
@@ -844,14 +869,38 @@ figure{margin:0}
       <b>Thị trường nhìn bạn như một người cố vấn đáng tin trong nghề của mình, không phải một người đang chào hàng.</b>
       <span>Sáu thứ bạn cầm về sau ba tuần:</span>
     </div>
-    <ul class="ket6 hien tre">
-      <li>Một vị thế và ba luận điểm bảo vệ được.</li>
-      <li>Một tiêu chuẩn phong thái để tự soi lại.</li>
-      <li>Kho chất liệu từ khách hàng và việc thật.</li>
-      <li>Nội dung đã đăng, có video và nhiều định dạng.</li>
-      <li>Quy trình rõ phần bạn giữ, phần AI đỡ.</li>
-      <li>Bảng tín hiệu và kế hoạch bốn tuần tiếp.</li>
-    </ul>
+    <div class="ke sau hien tre">
+      <div>
+        <div class="mk"><div class="mk-trang"><b></b><i></i><i></i><i></i><i></i></div></div>
+        <h3>Bản định vị một trang</h3>
+        <ul><li>Bạn là ai trong nghề, và ai cần nghe bạn.</li><li>Ba luận điểm bạn bảo vệ được.</li></ul>
+      </div>
+      <div>
+        <div class="mk"><div class="mk-video"><b></b><i></i><i></i></div></div>
+        <h3>Tiêu chuẩn phong thái của riêng bạn</h3>
+        <ul><li>Một bản tự soi mỗi lần bạn xuất hiện.</li><li>Luyện trước, có người nhận xét, rồi mới đăng.</li></ul>
+      </div>
+      <div>
+        <div class="mk"><div class="mk-chong"><i></i><i></i><i><s></s><s></s><s></s></i></div></div>
+        <h3>Kho chất liệu lấy từ việc thật</h3>
+        <ul><li>Câu hỏi khách hay hỏi, quyết định bạn đã cân.</li><li>Mười câu chuyện bạn có quyền kể.</li></ul>
+      </div>
+      <div>
+        <div class="mk"><div class="mk-dang"><i></i><i></i><i></i></div></div>
+        <h3>Nội dung thật đã đăng công khai</h3>
+        <ul><li>Ít nhất ba bài trụ cột, trong đó có video.</li><li>Sáu bài dùng lại ở định dạng khác.</li></ul>
+      </div>
+      <div>
+        <div class="mk"><div class="mk-lich"><i></i><i class="on"></i><i></i><i></i><i class="y"></i><i></i><i class="on"></i><i></i><i></i><i class="y"></i><i></i><i class="on"></i><i></i><i></i><i class="y"></i></div></div>
+        <h3>Quy trình một trang</h3>
+        <ul><li>Phần bạn giữ, phần AI và đội ngũ đỡ.</li><li>Chạy được cả khi bạn bận.</li></ul>
+      </div>
+      <div>
+        <div class="mk"><div class="mk-bang"><b></b><i><s></s><s></s><s></s><s></s><s></s></i></div></div>
+        <h3>Bảng tín hiệu và kế hoạch bốn tuần</h3>
+        <ul><li>Đọc được ai đang thật sự nghe.</li><li>Biết nên giữ, sửa hay bỏ điều gì.</li></ul>
+      </div>
+    </div>
     <div class="moi-giua hien">
       <p>Nếu đọc tới đây bạn thấy đúng chỗ mình đang đứng, phần dưới là ba tuần chạy thế nào và mức đầu tư.</p>
       <div class="loi2">
@@ -989,6 +1038,15 @@ figure{margin:0}
       <p class="dan">Đây là một thử thách ba tuần, không phải một lớp học ba tuần. Bạn làm thật, có người soi bài, và bạn không làm một mình.</p>
     </div>
     <div class="giu">
+      <div class="bang-anh hien">
+        <div class="chu">
+          <span class="nhan">Thử thách ba tuần</span>
+          <h3>Chỉ hành động và rèn luyện mới tạo ra kết quả</h3>
+          <p>Bạn không ngồi nghe rồi về. Mỗi tuần bạn làm thật, luyện cùng nhóm nhỏ và nộp lại.</p>
+          <span class="nguon">Ảnh chụp tại một chương trình trước của Coach Duy Nguyễn.</span>
+        </div>
+        <div class="anh"><img src="img/cd-gio-tay.jpg" alt="Cả hội trường giơ tay nhận thử thách trong một chương trình của Coach Duy Nguyễn" loading="lazy" decoding="async"></div>
+      </div>
       <div class="the-anh hien tre">
         <figure>
           <div class="khung"><img src="img/cd-tuong-tac.jpg" alt="Coach Duy Nguyễn sửa bài trực tiếp cho hai người trên sân khấu" loading="lazy" decoding="async"></div>
