@@ -100,6 +100,12 @@ button,input,select,textarea{font:inherit;color:inherit}
 .hero .dan{font-size:17px;line-height:1.6;color:var(--ink-2);max-width:56ch}
 .hero .gia-dong{font-size:14.5px;color:var(--ink-3);line-height:1.55;max-width:56ch;padding-top:14px;border-top:1px solid var(--line)}
 .hero .gia-dong b{color:var(--ink);font-weight:600}
+.hero-ket{list-style:none;margin:2px 0 0;padding:16px 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:9px;max-width:56ch}
+.hero-ket .tieu{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin-bottom:2px}
+.hero-ket li{position:relative;padding-left:26px;font-size:15.5px;line-height:1.5;color:var(--ink)}
+.hero-ket li svg{position:absolute;left:0;top:4px;width:15px;height:15px;color:var(--cam-dam)}
+@media (max-width:640px){.hero-ket li{font-size:15px;padding-left:24px}}
+
 .hero-anh{position:relative;display:flex;flex-direction:column;gap:16px}
 .hero-anh .anh-khung{aspect-ratio:4/5}
 .hero-anh .anh-khung img{object-position:50% 8%}
@@ -297,6 +303,16 @@ figure{margin:0}
 .ai2 .gioi p.doan{font-size:16.5px;line-height:1.65;color:var(--ink-2)}
 .ai2 .gioi p.doan + p.doan{margin-top:12px}
 .ai2 .gioi p.doan b{color:var(--ink);font-weight:600}
+.so-day{margin:26px 0 4px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
+.so-day > div{padding:16px 14px 0 0}
+.so-day > div + div{padding-left:16px;border-left:1px solid var(--line)}
+.so-day b{display:block;font-family:var(--f-tit);font-size:28px;letter-spacing:-.03em;line-height:1;color:var(--ink)}
+.so-day span{display:block;font-size:13.5px;color:var(--ink-3);margin-top:7px;line-height:1.4}
+.so-day span em{font-style:normal;display:block;color:var(--ink-2);font-weight:600;margin-bottom:2px}
+@media (max-width:600px){.so-day{grid-template-columns:minmax(0,1fr)}.so-day > div{padding:14px 0;border-left:0!important;border-bottom:1px solid var(--line)}.so-day > div + div{padding-left:0}.so-day > div:last-child{border-bottom:0}}
+@supports (grid-template-rows: subgrid){.so-day{grid-template-rows:auto 1fr}.so-day > div{display:grid;grid-template-rows:subgrid;grid-row:span 2}}
+@media (max-width:600px){@supports (grid-template-rows: subgrid){.so-day > div{grid-row:auto;grid-template-rows:none;display:block}}}
+
 .lop{margin-top:26px;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
 .lop > div{padding:16px 0;border-bottom:1px solid var(--line)}
 .lop b{display:block;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cam-dam);margin-bottom:5px}
@@ -451,12 +467,20 @@ figure{margin:0}
       <div class="hero-chu">
         <span class="vien"><i></i>The Trusted Creator 30 Days dành cho nhà sáng lập</span>
         <h1>Biến tiếng nói của người chủ thành một thương hiệu được tin, <span>giúp đúng khách hàng hiểu và đến gần doanh nghiệp hơn.</span></h1>
-        <p class="dan">Dành cho nhà sáng lập hoặc chủ doanh nghiệp chuyên môn đã có sản phẩm, khách hàng và trải nghiệm thật, đã bắt đầu xuất hiện nhưng nội dung còn rời rạc, phụ thuộc cảm hứng hoặc chưa chuyển được niềm tin cá nhân về doanh nghiệp.</p>
+        <p class="dan">Dành cho nhà sáng lập hoặc chủ doanh nghiệp chuyên môn đã có sản phẩm, khách hàng và trải nghiệm thật, nhưng nội dung vẫn còn rời rạc và phụ thuộc cảm hứng.</p>
+        <ul class="hero-ket">
+          <li class="tieu" style="padding-left:0">Sau 30 ngày, bạn có</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một câu nói rõ bạn là ai trong nghề, khách nghe một lần là hiểu.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một kho chất liệu, để không sáng nào cũng phải nghĩ hôm nay đăng gì.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Nội dung thật đã đăng, ở nhiều dạng, bằng giọng của chính bạn.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một nhịp làm bạn vẫn chạy được cả khi bận.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một đường đi từ bài đăng tới cuộc trao đổi với đúng khách.</li>
+        </ul>
         <div class="loi2">
           <a class="nut" href="#dang-ky">Đăng ký The Trusted Creator 30 Days, khai giảng 28/09/2026 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <p class="phu">Chưa chắc mình đúng là người chương trình phục vụ? <a href="phieu-chan-doan.html">Làm Phiếu chẩn đoán 7 phút</a>.</p>
         </div>
-        <p class="gia-dong" id="gia-hero"><b>Khóa đầu tiên, học trong 30 ngày.</b> Mức đầu tư 10 triệu đồng chưa gồm thuế, tức 10,8 triệu đồng đã gồm thuế giá trị gia tăng 8 phần trăm, áp dụng đến hết ngày 20/09/2026. Từ ngày 21/09/2026 là 14 triệu đồng chưa thuế, tức 15,12 triệu đồng đã thuế.</p>
+        <p class="gia-dong" id="gia-hero"><b>Khóa đầu tiên, học trong 30 ngày.</b> Đăng ký sớm đến hết ngày 20/09/2026: 10 triệu đồng chưa thuế, tức 10.800.000 đồng đã gồm thuế giá trị gia tăng 8 phần trăm. Từ ngày 21/09/2026 là giá chính thức 14,9 triệu đồng chưa thuế, tức 16.092.000 đồng đã thuế.</p>
       </div>
       <div class="hero-anh">
         <div class="so3">
@@ -716,6 +740,11 @@ figure{margin:0}
         <p class="vai">Nhà sáng lập Next Step Group. Người xây TTA Sales System, hệ thống bán hàng dựa trên tinh thần Cố vấn Tin cậy, và đang phát triển hệ sinh thái Next Gen Founder.</p>
         <p class="doan">The Trusted Creator không bắt đầu từ mẹo làm nội dung. Nó bắt đầu từ một câu hỏi Coach Duy gặp lại nhiều lần trong các chương trình bán hàng và tư vấn: <b>vì sao một người có chuyên môn thật vẫn không được thị trường nhớ đúng.</b></p>
         <p class="doan">Chương trình lấy nền từ Cố vấn Tin cậy, tức cách làm cho người nghe nghĩ rõ hơn trước khi ra quyết định, rồi chuyển nền đó sang cách một nhà sáng lập xuất hiện trước thị trường.</p>
+        <div class="so-day">
+          <div><b>30+</b><span><em>doanh nghiệp</em>đã trực tiếp tư vấn và đào tạo</span></div>
+          <div><b>2.000+</b><span><em>học viên chính thức</em>của các chương trình đào tạo</span></div>
+          <div><b>30.000+</b><span><em>người tham gia</em>qua các chương trình khác nhau</span></div>
+        </div>
         <div class="lop">
           <div>
             <b>Vì sao Coach Duy đứng lớp này</b>
@@ -727,7 +756,7 @@ figure{margin:0}
           </div>
           <div>
             <b>Điều chương trình chưa có, nói thẳng ở đây</b>
-            <p>Khóa này là khóa đầu tiên, nên chưa có học viên nào để kể lại kết quả, và chương trình sẽ không mượn kết quả của khóa khác lấp vào chỗ đó. Lúc này bạn chỉ có thể cân nhắc dựa trên cơ chế, chương trình, những kết quả đã cam kết và kinh nghiệm của người dạy.</p>
+            <p>Ba con số phía trên đến từ các chương trình đào tạo và tư vấn trước đây của Coach Duy, không phải kết quả của The Trusted Creator. Khóa này là khóa đầu tiên, nên chưa có học viên nào để kể lại kết quả, và chương trình sẽ không mượn kết quả của khóa khác lấp vào chỗ đó. Lúc này bạn chỉ có thể cân nhắc dựa trên cơ chế, chương trình, những kết quả đã cam kết và kinh nghiệm của người dạy.</p>
           </div>
         </div>
       </div>
@@ -747,12 +776,12 @@ figure{margin:0}
       <div class="co">
         <h3>Chương trình phù hợp nếu</h3>
         <ul>
-          <li>Bạn đã có chuyên môn và trải nghiệm khách hàng thật.</li>
-          <li>Bạn có sản phẩm, dịch vụ hoặc doanh nghiệp để đưa sự chú ý quay về.</li>
-          <li>Bạn đã bắt đầu xuất hiện hoặc sẵn sàng xuất bản ngay trong tuần đầu.</li>
-          <li>Bạn muốn xây một hệ thống, không chỉ học thêm vài mẹo.</li>
-          <li>Bạn sẵn sàng thực hành, nhận phản hồi và xem lại dữ liệu.</li>
-          <li>Bạn chịu trách nhiệm về dữ kiện và nội dung mình công bố.</li>
+          <li>Ngồi với khách thì bạn nói rất rõ, nhưng mở máy quay lên lại không biết bắt đầu từ đâu.</li>
+          <li>Bạn có sản phẩm và khách hàng thật, chỉ là thị trường chưa biết bạn đại diện cho điều gì.</li>
+          <li>Bạn từng đăng đều được một thời gian rồi dừng, và lần này chịu đăng ngay từ tuần đầu.</li>
+          <li>Bạn chán mẹo rồi. Bạn muốn một cách làm chạy được cả khi mình bận.</li>
+          <li>Bạn sẵn sàng nộp bài, nghe nhận xét thẳng và ngồi đọc lại số liệu.</li>
+          <li>Bạn chịu trách nhiệm về những gì mình nói ra trước thị trường.</li>
         </ul>
       </div>
       <div class="chua">
@@ -782,18 +811,18 @@ figure{margin:0}
       <div class="gia-the dang" id="muc-som">
         <span class="khi">Đăng ký sớm, đến hết ngày 20/09/2026</span>
         <span class="so-lon">10 triệu <small>đồng chưa thuế</small></span>
-        <p class="thue">Đã gồm thuế giá trị gia tăng 8 phần trăm: <b>10,8 triệu đồng</b>.</p>
+        <p class="thue">Đã gồm thuế giá trị gia tăng 8 phần trăm: <b>10.800.000 đồng</b>.</p>
         <p class="khi-ap">Áp dụng từ khi mở bán đến hết ngày 20/09/2026. Sau mốc này, trang sẽ chỉ còn hiện một mức.</p>
       </div>
       <div class="gia-the" id="muc-cuoi">
-        <span class="khi">Tuần cuối, từ ngày 21/09/2026</span>
-        <span class="so-lon">14 triệu <small>đồng chưa thuế</small></span>
-        <p class="thue">Đã gồm thuế giá trị gia tăng 8 phần trăm: <b>15,12 triệu đồng</b>.</p>
-        <p class="khi-ap">Áp dụng từ ngày 21/09/2026 đến khi đóng đăng ký.</p>
+        <span class="khi">Giá chính thức, từ ngày 21/09/2026</span>
+        <span class="so-lon">14,9 triệu <small>đồng chưa thuế</small></span>
+        <p class="thue">Đã gồm thuế giá trị gia tăng 8 phần trăm: <b>16.092.000 đồng</b>.</p>
+        <p class="khi-ap">Áp dụng từ ngày 21/09/2026 đến khi đóng đăng ký. Đây là giá chính thức của chương trình.</p>
       </div>
     </div>
     <div class="gia-ghi hien">
-      <p><b>Đây là giá riêng của khóa đầu tiên, không phải giá chuẩn của chương trình.</b> Mức này thấp hơn giá chuẩn của chương trình, và chỉ áp dụng cho khóa khai giảng ngày 28/09/2026, vì khóa đầu chưa có kết quả của học viên để trưng ra. Từ khóa thứ hai, giá quay về mức chuẩn.</p>
+      <p><b>Mức 10 triệu là ưu đãi dành riêng cho người đăng ký sớm ở khóa đầu tiên.</b> Nó thấp hơn giá chính thức gần 5 triệu đồng, vì khóa đầu chưa có kết quả của học viên để trưng ra và người vào lúc này chấp nhận đi cùng chương trình từ vòng chạy đầu. Sau ngày 20/09/2026, mức đầu tư quay về giá chính thức 14,9 triệu đồng chưa thuế.</p>
       <p><b>Điều khoản còn phải công bố trước ngày khai giảng:</b> lịch thanh toán, cách xuất hóa đơn, chính sách hoàn, bảo lưu và chuyển nhượng, thời hạn truy cập tài liệu, phạm vi phản hồi và điều kiện bắt đầu hoặc hủy lớp. Các điều khoản này sẽ được gửi đầy đủ cho người đăng ký trước khi thanh toán được hoàn tất.</p>
     </div>
     <div class="khong-bd hien tre">
@@ -845,7 +874,7 @@ figure{margin:0}
       </div>
       <div class="muc">
         <button type="button" aria-expanded="false"><b>08</b><span>Chương trình học khi nào và mức đầu tư bao nhiêu?</span><i aria-hidden="true"></i></button>
-        <div class="than"><div><p>Khóa đầu tiên khai giảng ngày 28/09/2026 và kéo dài 30 ngày. Mức đầu tư là 10 triệu đồng nếu bạn đăng ký từ nay đến hết ngày 20/09/2026, và 14 triệu đồng nếu bạn đăng ký trong tuần cuối, từ ngày 21/09/2026. Hai mức này chưa gồm thuế giá trị gia tăng 8 phần trăm, tính đủ thuế là 10,8 triệu đồng và 15,12 triệu đồng. Đây là giá riêng của khóa đầu tiên. Lịch buổi học, hình thức và điều khoản đầy đủ được ghi trong trang đăng ký.</p></div></div>
+        <div class="than"><div><p>Khóa đầu tiên khai giảng ngày 28/09/2026 và kéo dài 30 ngày. Nếu bạn đăng ký từ nay đến hết ngày 20/09/2026, mức đầu tư là 10 triệu đồng. Từ ngày 21/09/2026 là giá chính thức 14,9 triệu đồng. Hai mức này chưa gồm thuế giá trị gia tăng 8 phần trăm, tính đủ thuế là 10.800.000 đồng và 16.092.000 đồng. Lịch buổi học, hình thức và điều khoản đầy đủ được ghi trong trang đăng ký.</p></div></div>
       </div>
     </div>
   </div>
@@ -871,7 +900,7 @@ figure{margin:0}
 
       <form class="form hien" id="form" novalidate>
         <div class="an-khi-xong">
-          <p class="gia-form" id="gia-form"><b>Mức đang áp dụng: 10 triệu đồng chưa thuế, tức 10,8 triệu đồng đã gồm thuế giá trị gia tăng 8 phần trăm.</b> Áp dụng đến hết ngày 20/09/2026. Từ ngày 21/09/2026 là 14 triệu đồng chưa thuế, tức 15,12 triệu đồng đã thuế.</p>
+          <p class="gia-form" id="gia-form"><b>Mức đang áp dụng: 10 triệu đồng chưa thuế, tức 10.800.000 đồng đã gồm thuế giá trị gia tăng 8 phần trăm.</b> Đây là mức đăng ký sớm, đến hết ngày 20/09/2026. Từ ngày 21/09/2026 là giá chính thức 14,9 triệu đồng chưa thuế, tức 16.092.000 đồng đã thuế.</p>
           <p class="nhom">Thông tin liên hệ</p>
           <div class="hang">
             <label>Họ và tên <input name="ten" type="text" autocomplete="name" placeholder="Nguyễn Văn A"></label>
@@ -974,9 +1003,9 @@ figure{margin:0}
     var som=d.getElementById('muc-som'); if(som) som.remove();
     var bang=d.getElementById('bang-gia'); if(bang) bang.style.gridTemplateColumns='minmax(0,1fr)';
     var cuoi=d.getElementById('muc-cuoi'); if(cuoi){ cuoi.classList.add('dang'); cuoi.querySelector('.khi').textContent='Mức đang áp dụng'; cuoi.querySelector('.khi-ap').textContent='Áp dụng đến khi đóng đăng ký cho khóa khai giảng ngày 28/09/2026.'; }
-    var gh=d.getElementById('gia-hero'); if(gh) gh.innerHTML='<b>Khóa đầu tiên, học trong 30 ngày.</b> Mức đầu tư 14 triệu đồng chưa gồm thuế, tức 15,12 triệu đồng đã gồm thuế giá trị gia tăng 8 phần trăm.';
-    var ct=d.getElementById('ck-tien'); if(ct) ct.textContent='15.120.000 đồng';
-    var gf=d.getElementById('gia-form'); if(gf) gf.innerHTML='<b>Mức đang áp dụng: 14 triệu đồng chưa thuế, tức 15,12 triệu đồng đã gồm thuế giá trị gia tăng 8 phần trăm.</b> Áp dụng đến khi đóng đăng ký cho khóa khai giảng ngày 28/09/2026.';
+    var gh=d.getElementById('gia-hero'); if(gh) gh.innerHTML='<b>Khóa đầu tiên, học trong 30 ngày.</b> Mức đầu tư 14,9 triệu đồng chưa gồm thuế, tức 16.092.000 đồng đã gồm thuế giá trị gia tăng 8 phần trăm.';
+    var ct=d.getElementById('ck-tien'); if(ct) ct.textContent='16.092.000 đồng';
+    var gf=d.getElementById('gia-form'); if(gf) gf.innerHTML='<b>Mức đang áp dụng: giá chính thức 14,9 triệu đồng chưa thuế, tức 16.092.000 đồng đã gồm thuế giá trị gia tăng 8 phần trăm.</b> Áp dụng đến khi đóng đăng ký cho khóa khai giảng ngày 28/09/2026.';
   }
 
   /* hero hiện theo nhịp */
@@ -1034,7 +1063,7 @@ figure{margin:0}
       if(thieu){ var first=form.querySelector('[aria-invalid]'); if(first) first.focus(); return; }
 
       data.trang_nguon=meta.trang_nguon; data.phien_ban_trang=meta.phien_ban_trang; data.nguon_chien_dich=meta.nguon_chien_dich;
-      data.muc_gia=qua?'14 triệu chưa thuế, 15,12 triệu đã thuế':'10 triệu chưa thuế, 10,8 triệu đã thuế';
+      data.muc_gia=qua?'14,9 triệu chưa thuế, 16.092.000 đồng đã thuế':'10 triệu chưa thuế, 10.800.000 đồng đã thuế';
 
       function xong(loiNhan){
         form.classList.add('da-gui');

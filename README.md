@@ -8,6 +8,8 @@ Phong cách kế thừa nguyên từ trang Cộng đồng Next Gen Founder (kho 
 
 ## Chỗ còn phải điền trước khi đưa trang cho khách
 
+**Cảnh báo lệch nguồn:** tài liệu chiến lược phiên bản 1.5 trong vault ghi mức tuần cuối là 14 triệu đồng (mục 33 và mục 44). Ngày 24/08/2026 Coach Duy chốt lại: 10 triệu là giá đăng ký sớm, **14,9 triệu là giá chính thức**, cả hai chưa thuế. Trang đã sửa theo mức mới. Tài liệu nguồn chưa sửa, cần cập nhật và tăng số phiên bản.
+
 0. **Gỡ dòng chặn công cụ tìm kiếm.** Trong `index.html` có dòng `<meta name="robots" content="noindex, nofollow">` và một dòng ghi chú ngay trên nó. Trang đang ở dạng bản nháp nên chưa muốn Google ghi nhận. Khi đã điền đủ các mục dưới đây thì xóa cả hai dòng đó rồi đẩy lại.
 1. **Thông tin chuyển khoản** trong khối `#khoi-ck`: chủ tài khoản, số tài khoản, ngân hàng. Đang để dấu `[Điền ...]`.
 2. **Nơi nhận đăng ký**: biến `DANG_KY` ở đầu đoạn mã. Đang để `loai:'thu'`, tức mở sẵn ứng dụng thư. Khi có địa chỉ nhận biểu mẫu, đổi thành `loai:'form'` và điền `form`.
@@ -78,3 +80,17 @@ Một số chỗ đã đổi:
 - "Đầu ra" thành "kết quả" ở mọi chỗ, theo bảng cấm trong Quy tắc tiếng Việt.
 
 Cách kiểm: chạy `python3 "05 Skills/scripts/kiem_van_dich.py"` trên tệp. Trước khi sửa có 5 từ dịch thẳng, sau khi sửa còn 0, và không nhóm cấu trúc câu nào vượt ngưỡng.
+
+## Vòng sửa ngày 24/08/2026, sau khi đối chiếu trang tham chiếu
+
+Đối chiếu với landing page của Mehreen Jan, trang tham chiếu ghi ở mục nguồn của tài liệu chiến lược. Trang họ 739 chữ, cao 3.804 điểm ảnh, một lối hành động, và chỉ xin một địa chỉ thư điện tử. Trang ta 4.816 chữ, cao 14.417 điểm ảnh, thu tiền ngay. Hai việc khác nhau, nhưng có bốn thứ học được.
+
+Đã áp dụng ba:
+
+1. **Kết quả lên hero.** Năm dòng "Sau 30 ngày, bạn có" đặt ngay dưới đoạn mô tả, trên nút đăng ký. Trước đó người đọc phải cuộn qua sáu phần mới biết mình cầm về gì. Đoạn mô tả trong hero cũng rút ngắn để bù chiều cao.
+2. **Cột "Chương trình phù hợp nếu" viết lại bằng giọng nỗi đau.** Sáu dòng cũ là tiêu chí xét tuyển, đọc như đang bị chấm điểm. Sáu dòng mới mô tả tình huống thật, giữ nguyên tác dụng lọc người.
+3. **Ba con số uy tín của Coach Duy** đặt trong phần Người dạy: hơn 30 doanh nghiệp đã tư vấn và đào tạo, hơn 2.000 học viên chính thức, hơn 30.000 người tham gia các chương trình khác nhau. Ngay dưới có câu nói rõ ba con số này đến từ các chương trình trước, không phải kết quả của The Trusted Creator.
+
+Điều thứ tư, neo giá, nay tự có: mức 10 triệu đứng cạnh giá chính thức 14,9 triệu, chênh gần 5 triệu đồng, và trang nói rõ vì sao có mức chênh đó.
+
+Không lấy của họ: cách tạo cảm giác lỡ chuyến bằng câu "đợt trước đã đóng". Khóa này là khóa đầu, không có gì để đóng, và tài liệu nguồn cấm khan hiếm giả.
