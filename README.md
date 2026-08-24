@@ -310,3 +310,24 @@ Trong khi khảo sát cho thấy 17 trên 29 người nói muốn hình ảnh ch
 3. **Nối triệu chứng với lời giải** trên từng bậc leo dốc, mỗi bậc thêm một dòng bắt đầu bằng "Hết cảnh": hết cảnh sáng nào cũng nghĩ đăng gì, hết cảnh bận một tuần là mất nhịp, hết cảnh bài có người xem mà không ai nhắn tin.
 4. **Gỡ câu dè dặt khỏi hai đỉnh cảm xúc**: phần Đích đến và phần Bốn tuần. Nội dung dè dặt vẫn còn đủ ở khối "Điều chương trình không bảo đảm" và phần Người dạy, chỉ không rải vào chỗ người đọc đang lên cảm xúc.
 5. **Bỏ hết cụm nội bộ còn sót.** "Chất liệu" từ 10 lần xuống **0**, đổi thành "chuyện để kể" và "ý để nói". Viết lại câu dẫn Bốn tuần bằng lời người: người ta nhớ bạn vì cái gì, bạn có chuyện gì để kể, kể bằng giọng của chính bạn.
+
+### Sửa lại tiêu đề hero lần hai, ngày 24/08/2026
+
+Coach Duy nghi câu "Ngồi với khách, bạn nói đâu ra đấy. Lên mạng, không ai biết bạn là ai" chưa phải nỗi đau chung của tệp. Đếm riêng 16 phiếu của nhóm chủ doanh nghiệp và quản lý thì đúng là chưa:
+
+| Nhóm nỗi đau | Số phiếu |
+| --- | --- |
+| Có chuyên môn mà chưa biến thành nội dung | **8/16** |
+| Biết cần làm mà không bắt đầu hoặc không duy trì được | **6/16** |
+| Ngại xuất hiện, chưa tự tin trước ống kính | 3/16 |
+| Muốn khách chủ động tìm đến | 3/16 |
+| Giỏi khi gặp trực tiếp mà thị trường không thấy | **2/16** |
+
+Câu cũ rơi đúng vào nhóm yếu nhất. Thêm một rủi ro: nói với một người chủ có 20 năm nghề rằng "không ai biết bạn là ai" dễ đọc thành coi thường, trái với mục 6 Voice DNA.
+
+Câu mới gộp hai nhóm mạnh nhất và trùng đúng Big Idea ở mục 18 Voice DNA:
+
+> **Bạn không thiếu điều để nói.**
+> **Bạn thiếu một cách để nói đều, và nói ra đúng chất của mình.**
+
+Hai câu dự phòng nếu Coach Duy muốn đổi hướng: nhấn vào trì hoãn thì dùng "Bạn biết mình cần xuất hiện. Đã lâu rồi vẫn chưa bắt đầu."; nhấn vào chuyển đổi thì dùng "Bài có người xem. Nhưng chưa ai nhắn tin cho bạn."
