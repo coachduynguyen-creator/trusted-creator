@@ -111,15 +111,15 @@ button,input,select,textarea{font:inherit;color:inherit}
 @media (max-width:640px){.hero-ket li{font-size:15px;padding-left:24px}}
 
 .hero-anh{position:relative;display:flex;flex-direction:column;gap:16px}
-.hero-anh .anh-khung{aspect-ratio:4/5}
-.hero-anh .anh-khung img{object-position:50% 8%}
+.hero-anh .anh-khung{aspect-ratio:1/1}
+.hero-anh .anh-khung img{object-position:50% 45%}
 .so3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
 .so3 > div{padding:14px 12px 0 0}
 .so3 > div + div{padding-left:16px;border-left:1px solid var(--line)}
 .so3 b{display:block;font-family:var(--f-tit);font-size:30px;letter-spacing:-.03em;line-height:1;color:var(--ink)}
 .so3 b small{font-size:14px;letter-spacing:0;font-weight:600;margin-left:3px}
 .so3 span{display:block;font-size:13px;color:var(--ink-3);margin-top:6px;line-height:1.4}
-@media (max-width:1000px){.hero-luoi{grid-template-columns:minmax(0,1fr);gap:32px}.hero-anh{max-width:520px}.hero-anh .anh-khung{aspect-ratio:4/3}}
+@media (max-width:1000px){.hero-luoi{grid-template-columns:minmax(0,1fr);gap:32px}.hero-anh{max-width:520px}}
 @media (max-width:640px){.hero{padding:32px 0 60px}.hero h1{font-size:26px;line-height:1.12}.hero .dan{font-size:16.5px}}
 
 /* ============ PHẦN ============ */
@@ -380,7 +380,7 @@ figure{margin:0}
 @media (max-width:1040px){@supports (grid-template-rows: subgrid){.ke > div{grid-row:auto;grid-template-rows:none;display:flex;flex-direction:column}}}
 
 /* ============ KẾT QUẢ ============ */
-.ket-cap{margin-top:32px;padding:4px 0 4px 18px;border-left:3px solid var(--cam);max-width:80ch}
+.ket-cap{margin-top:32px;padding:4px 0 4px 18px;border-left:3px solid var(--cam);max-width:820px}
 .ket-cap b{display:block;font-size:17px;color:var(--ink);font-weight:700;letter-spacing:-.01em;line-height:1.45}
 .ket-cap span{display:block;font-size:14.5px;color:var(--ink-2);margin-top:4px;line-height:1.55}
 
@@ -500,7 +500,10 @@ figure{margin:0}
 
 
 /* ============ DÒNG NHÂN DẠNG ============ */
-.nhan-dang{margin:26px 0 0;padding:20px 24px;border-radius:var(--r);background:var(--cam-mo);border:1px solid color-mix(in srgb,var(--cam-dam) 35%,transparent);max-width:74ch}
+#ket-qua .dau-phan{margin-bottom:26px}
+.nhan-dang{margin:0;padding:24px 28px;border-radius:var(--r);background:var(--cam-mo);border:1px solid color-mix(in srgb,var(--cam-dam) 35%,transparent)}
+.nhan-dang b,.nhan-dang span{max-width:74ch}
+.nhan-dang + .ke{margin-top:32px}
 .nhan-dang b{display:block;font-family:var(--f-tit);font-size:clamp(19px,2.1vw,25px);letter-spacing:-.02em;line-height:1.25;color:var(--cam-sau);margin-bottom:8px;text-wrap:balance}
 .nhan-dang span{display:block;font-size:15.5px;line-height:1.55;color:var(--ink-2)}
 
@@ -779,7 +782,7 @@ figure{margin:0}
           <div><b>5<small>chặng</small></b><span>Đi từ chỗ làm rõ bạn là ai, tới lúc khách chủ động hỏi</span></div>
           <div><b>10<small>kết quả</small></b><span>Những việc bạn làm xong và giữ lại được sau khóa</span></div>
         </div>
-        <figure class="anh-khung"><img src="img/cd-ca-phong.jpg?v=2" alt="Coach Duy Nguyễn đang dẫn một chương trình trước hội trường đông người" width="886" height="1182" loading="eager" decoding="async"></figure>
+        <figure class="anh-khung"><img src="img/cd-ca-phong.jpg?v=3" alt="Coach Duy Nguyễn đang dẫn một chương trình trước hội trường đông người" width="886" height="902" loading="eager" decoding="async"></figure>
       </div>
     </div>
   </div>
@@ -824,10 +827,10 @@ figure{margin:0}
       <span class="nhan">Đích đến</span>
       <h2>Bạn thôi phải chứng minh mình lại từ đầu <span>trong mỗi cuộc gặp</span></h2>
       <p class="dan">Khách đọc bạn trước, hiểu bạn trước, tin bạn một phần trước khi hai bên ngồi xuống.</p>
-      <div class="nhan-dang hien">
-        <b>Thị trường nhìn bạn như một người cố vấn đáng tin trong nghề của mình, không phải một người đang chào hàng.</b>
-        <span>Đó là chỗ đến. Dưới đây là những thứ bạn cầm trong tay sau 30 ngày để đi tới đó.</span>
-      </div>
+    </div>
+    <div class="nhan-dang hien">
+      <b>Thị trường nhìn bạn như một người cố vấn đáng tin trong nghề của mình, không phải một người đang chào hàng.</b>
+      <span>Đó là chỗ đến. Dưới đây là những thứ bạn cầm trong tay sau 30 ngày để đi tới đó.</span>
     </div>
     <div class="ke hien tre">
       <div>
@@ -852,6 +855,7 @@ figure{margin:0}
         <ul>
           <li>Bảng theo dõi việc viết và đăng, làm cho người chạy một mình.</li>
           <li>Bộ mẫu đặt bài và câu lệnh cho trợ lý AI.</li>
+          <li>Kế hoạch cho vòng chạy 30 ngày tiếp theo.</li>
         </ul>
       </div>
       <div>
@@ -861,7 +865,6 @@ figure{margin:0}
           <li>Một tài liệu hoặc bài kiểm tra ngắn đáng để khách để lại số.</li>
           <li>Cách giữ liên lạc với người vừa để lại thông tin.</li>
           <li>Bảng số liệu đi từ bài đăng tới cuộc trao đổi.</li>
-          <li>Kế hoạch cho vòng chạy tiếp theo.</li>
         </ul>
       </div>
     </div>

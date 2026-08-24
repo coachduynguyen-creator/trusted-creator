@@ -376,3 +376,23 @@ Trang còn 4.668 chữ, bớt 77 chữ. Sáu bài kiểm chạy ở 1400, 1000, 
 Bài kiểm báo cả 158 lớp đều thiếu luật, tức báo sai toàn bộ. Lỗi nằm trong bài kiểm chứ không nằm ở trang: Chrome nay gắn một danh sách `cssRules` rỗng cho cả luật kiểu thường, để đỡ luật lồng nhau. Vòng đệ quy cũ viết `if (r.cssRules) return di(r.cssRules)` nên gặp luật nào cũng chui vào danh sách rỗng rồi thoát, không bao giờ đọc tới `selectorText`.
 
 Đã sửa trong `.claude/skills/thiet-ke-trang/kiem-lop.js`: đọc `selectorText` trước, đệ quy sau, và chỉ đệ quy khi danh sách con có phần tử. Chạy lại ra 158 lớp dùng, 192 lớp có luật, thiếu 0.
+
+### Cắt lại ảnh hero và cân lại phần Kết quả, ngày 24/08/2026
+
+**Ảnh hero đặt sai khung.** Coach Duy xem ở cửa sổ hẹp và không thấy người trong ảnh. Đo lại: ảnh gốc `cd-ca-phong.jpg` là ảnh đứng 886x1182, người đứng ở khoảng 43 đến 87 phần trăm chiều cao, trần nhà chiếm nguyên 40 phần trăm phía trên. Ở khổ dưới 1000px khung đổi sang 4:3 nằm ngang, tức cắt 44 phần trăm chiều cao, mà luật `object-position:50% 8%` lại neo lên đỉnh, nên phần giữ lại đúng là trần nhà.
+
+Đây không chỉ là lỗi khung, ảnh gốc bố cục cũng yếu: kể cả trên máy tính, khung 4:5 chỉ cắt 6 phần trăm nên trang vẫn hiện gần trọn mảng trần trống.
+
+Đã cắt lại tệp ảnh: bỏ 230 dòng trần phía trên và 50 dòng sàn phía dưới, còn 886x902, tỉ lệ 0,982 gần vuông. Người nay chiếm từ 30 tới 88 phần trăm chiều cao. Khung đổi sang 1:1 cho mọi khổ, bỏ luật 4:3 ở khổ hẹp, neo về `50% 45%`. Cắt còn 2 phần trăm.
+
+Ghi lại cách cắt vì `sips` trên máy này chỉ cắt từ tâm, cờ `--cropOffset` không có tác dụng và cũng không có ffmpeg hay ImageMagick: đổi ảnh sang BMP bằng `sips -s format bmp`, cắt dòng bằng Python thuần (BMP 24 bit, không nén, chiều cao âm nghĩa là dòng xếp từ trên xuống, mỗi dòng đệm cho tròn 4 byte), rồi đổi ngược về JPEG bằng `sips -s format jpeg -s formatOptions 84`.
+
+**Phần Kết quả lệch mép.** Coach Duy nói "có vẻ không cân đối lắm". Đo ở khổ 1400 thì trong cùng một phần có năm mép phải khác nhau: tiêu đề 984, câu dẫn 945, ô cam 984, lưới thẻ 1236, câu chốt 1083.
+
+Mép so le của chữ chạy là bình thường, mắt không bắt. Cái mắt bắt là **ô cam có nền và viền** dừng lại cách lưới thẻ bên dưới 252px. Đã đưa ô cam ra ngoài `.dau-phan` để nó chạy hết chiều ngang, thẳng mép với lưới thẻ; khổ chữ bên trong ô vẫn giữ 74ch để còn đọc được. Câu chốt cuối phần đổi từ 80ch sang đúng 820px của khối tiêu đề. Nay chỉ còn hai mép: chữ chạy ở 945 tới 984, khối có nền ở 1236.
+
+**Thẻ lệch số gạch đầu dòng.** Thẻ "Đường về khách" có 4 gạch trong khi ba thẻ kia có 2, mà lưới con ép mọi thẻ cao bằng nhau nên ba thẻ đầu hụt một mảng trống. Chuyển "Kế hoạch cho vòng chạy 30 ngày tiếp theo" sang thẻ "Bộ máy chạy đều", vì nó là việc vận hành chứ không phải đường về khách. Nay là 2, 2, 3, 3 và thẻ thấp xuống từ 421 còn 369px.
+
+Không thêm gạch đầu dòng để cho đủ bốn thẻ bằng nhau. Bịa việc bàn giao để lấp ô là đúng thứ trang này đang tránh.
+
+Sáu bài kiểm chạy ở 1400, 1000, 768 và 375 đều ra 0 lỗi, không có kéo ngang.
