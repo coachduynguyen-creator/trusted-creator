@@ -210,3 +210,30 @@ Ghi chú: chiều cao giảm ít hơn số chữ vì trong cùng vòng đã thê
 ### Chỗ không cắt thêm, và vì sao
 
 Ba phần nặng còn lại là biểu mẫu đăng ký, phần Cách học và phần Người dạy. Cắt tiếp sẽ phải bỏ đúng những thứ khách đòi trong khảo sát: đầu ra rõ, người trực tiếp đào tạo, mức học phí, và các giới hạn chương trình không hứa. Đây là nội dung xây niềm tin, không phải nội dung thừa.
+
+## Vòng đổi khung từ lớp học sang thử thách, ngày 24/08/2026
+
+Coach Duy gửi `Quy Trình Vận Hành TTA` và nói rõ mục tiêu của chương trình 30 ngày là thử thách rèn luyện, cộng đồng cùng đạt kết quả, có nguồn lực và người đồng hành để thực thi, chứ không phải một lớp học 30 ngày.
+
+Đếm từ ngữ trên trang trước khi sửa cho thấy trang đang trình bày sai khung:
+
+| Chữ | Trước | Sau |
+| --- | --- | --- |
+| buổi học | 3 | **0** |
+| lớp | 5 | **1**, và lần đó là câu phủ định "không phải một lớp học 30 ngày" |
+| nhóm | 2 | **5** |
+| thử thách | 0 | **1** |
+
+Đã đổi 14 chỗ: nhãn phần và mục điều hướng thành "Cách vận hành 30 ngày"; "buổi học" thành "buổi hướng dẫn"; "số người trong lớp" thành "số người trong nhóm"; "đứng lớp" thành "dẫn chương trình"; "ngồi nhầm lớp" thành "vào nhầm chương trình"; "học viên" thành "người đi qua chương trình" ở chỗ nói về khóa đầu.
+
+Câu dẫn phần Cách vận hành viết lại thành: đây là một thử thách 30 ngày, không phải một lớp học 30 ngày, phần lớn thời gian nằm ở việc làm thật ngoài buổi, và bạn làm cùng một nhóm chứ không làm một mình.
+
+### Lỗi ảnh bắt được trong vòng này
+
+`kiem-anh.js` báo `cd-ca-phong.jpg` là ảnh ngang 1800x1182 bị ép vào khung dọc 3:4, cắt mất 51% và neo giữa. Đây đúng loại lỗi ở mục 6c của skill. Đã cắt sẵn ảnh bằng `sips -c 1182 886` cho khớp tỉ lệ khung, thêm `?v=2` vào đường dẫn để trình duyệt không dùng bản cũ trong bộ nhớ đệm.
+
+Cùng lúc phát hiện khung ảnh ở khổ dưới 900px đang đặt 4:3 ngang trong khi ảnh giờ là 3:4 dọc, tức lại cắt 44% theo chiều ngược lại. Đã đổi khung điện thoại về 3:4 và giới hạn rộng 320px.
+
+### Phần chưa làm, chờ Coach Duy quyết
+
+Tài liệu TTA có bảy cơ chế mà trang chưa nói, và tất cả đều là lời hứa về cách giao hàng nên không được tự đưa lên: nhóm 6 tới 10 người có nhóm trưởng, cặp đồng đội, phần trăm hoàn thành hành trình với năm mốc mở khóa, ứng dụng theo dõi tiến độ, luyện tập đóng vai hằng ngày, hồ sơ trước và sau, buổi vinh danh cuối hành trình. Xem phần đề xuất trong tin nhắn ngày 24/08.
