@@ -482,3 +482,58 @@ Câu này **khác mục 30 của tài liệu nguồn 3.1**. Phải cập nhật 
 Đã sửa cả trong skill: mục 3b đổi luật, thêm mục 3c cho từ ghép. Nhãn đậm ngắn thì vẫn giữ `balance`, vì nhãn hai tới sáu chữ mà đổ đầy dòng sẽ rớt một chữ xuống dòng hai.
 
 Bảy bài kiểm chạy ở 1400, 1000, 768 và 375 đều 0 lỗi. `kiem_van_dich.py` 0 lỗi.
+
+## Nghiên cứu cấu trúc trang bán và dựng lại thứ tự, ngày 25/08/2026
+
+Coach Duy nói cả trang dài, và yêu cầu tra nguồn chuyên về landing page rồi đề xuất.
+
+### Nguồn nói gì
+
+Hai nhóm dữ liệu ngược nhau, cả hai đều đúng cho từng loại trang.
+
+Nhóm một, càng ngắn càng chuyển đổi tốt: dưới 100 chữ đạt khoảng 13 phần trăm, trên 800 chữ chỉ còn 1 tới 4. Ngành dịch vụ doanh nghiệp, trang dưới 100 chữ chuyển đổi cao hơn 50 phần trăm so với trang trên 500 chữ. Số phần tử tăng từ 400 lên 6.000 thì xác suất chuyển đổi giảm 95 phần trăm.
+
+Nhóm hai, hàng giá cao thì cần dài: giá càng cao càng cần nhiều chữ để gỡ lo lắng và trả lời phản đối. Trang dài với offer phức tạp chuyển đổi tốt hơn 23 phần trăm khi có nhiều nút rải đều thay vì một nút trên đầu.
+
+Một con số riêng đáng ghi: trang bán thử thách có thu phí chuyển đổi 25 tới 40 phần trăm trên tệp đã biết mình, còn trang bán khóa học chỉ 5 tới 12. Lý do là thử thách bán một kết quả có hạn thời gian và có ngày khai giảng thật. Việc đổi tên sang Challenge và chốt ba tuần là quyết định đúng theo dữ liệu, không chỉ đúng về vận hành.
+
+Cách hòa giải: xếp tầng. Người quyết nhanh đủ thông tin để quyết ở tầng trên, người cần đào sâu tìm được phần sâu ở dưới hoặc sau nút mở gập. Độ cuộn trung bình chỉ khoảng 50 phần trăm chiều dài trang.
+
+Nguồn: cxl.com, unbounce.com, instapage.com, digitalapplied.com, communipass.com, kit.com.
+
+### Đo trang trước khi sửa
+
+3.029 chữ, cao 13.894px, tức 15,4 màn hình. Hai điều đập vào mắt:
+
+Giá nằm ở 68 phần trăm chiều dài trang. Với độ cuộn trung bình 50 phần trăm, một nửa người đọc không bao giờ nhìn thấy con số. Họ dừng đúng giữa phần Khác gì, chưa từng thấy giá, người dạy hay phần phù hợp.
+
+Phần Cách chạy là phần nặng nhất trang, 535 chữ và 2.264px, nhiều hơn cả phần Hỏi đáp, mà nó nói về vận hành. Nó nằm ở 31 phần trăm nên chắn đường tới mọi phần sau.
+
+### Đã làm
+
+**Đổi thứ tự.** Mức đầu tư từ vị trí 9 lên vị trí 5, ngay sau Ba tuần. Khác gì xuống sau Phù hợp. Thứ tự mới: tự nhận diện, vấn đề, đích đến, ba tuần, **mức đầu tư**, cách chạy, người dạy, phù hợp, khác gì, hỏi đáp.
+
+**Ghi giá vào hero.** "10 triệu đồng nếu đăng ký tới hết 20/09/2026, sau đó 14,9 triệu." Có mã tự đổi câu này sau ngày 21/09 giống các chỗ giá khác.
+
+**Cắt ba phần.** Cách chạy 535 còn 257 chữ, bỏ khối gập nhịp tham gia và rút hai đoạn dài; phần lịch chưa chốt chuyển vào khối điều khoản ở Mức đầu tư. Khác gì 329 còn 228, sáu mục còn bốn. Vấn đề 184 còn 135, bỏ một đoạn và một gạch đầu dòng.
+
+**Gập danh sách không bảo đảm.** Sáu dòng đó vẫn phải có, nhưng không cần chiếm chỗ trước mắt người chưa quyết.
+
+Không cắt Hỏi đáp. Nó 597 chữ nhưng gập lại chỉ tốn 978px, và nó chính là tầng gỡ nghi ngờ mà nguồn nói hàng giá cao bắt buộc phải có.
+
+### Kết quả
+
+| | Trước | Sau |
+|---|---:|---:|
+| Chữ | 3.029 | 2.454 |
+| Cao, khối gập đóng | 13.894px | 11.815px |
+| Số màn hình 900px | 15,4 | 13,1 |
+| Giá nằm ở | 68% | 32% |
+
+Ở mức cuộn trung bình 50 phần trăm, người đọc nay đã đi qua: hero có giá, nỗi đau, vấn đề, đích đến, ba tuần, trọn phần mức đầu tư, và phần cách chạy. Đủ để quyết.
+
+### Một lỗi lặp lại phải ghi
+
+Ký tự khoảng trắng không ngắt viết thẳng trong chuỗi Python truyền qua heredoc của shell bị biến thành khoảng trắng thường, im lặng, ba lần trong phiên. Kết quả là script chạy xong báo "thêm 0" hoặc bài kiểm vẫn báo từ gãy dù đã sửa.
+
+Cách chặn: luôn viết `NB = chr(160)` chứ đừng gõ ký tự đó vào chuỗi. Đã tách hẳn thành `dinh_tu_ghep.py` trong skill `thiet-ke-trang`, chạy `python3 dinh_tu_ghep.py <tệp>`, chạy lại nhiều lần không sao.
