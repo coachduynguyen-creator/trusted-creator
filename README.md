@@ -253,3 +253,36 @@ Coach Duy gửi hai ảnh kết quả của **The Sales Warrior mùa 2**, chươ
 **Không bê thiết kế của poster gốc.** Poster dùng chữ 3D nền lửa cam đỏ, phá hoàn toàn giao diện trang. Chỉ lấy con số, trình bày bằng ngôn ngữ của trang: khối tối, số lớn màu vàng kim `--vang-toi` `#E9C46A` đạt 11.2:1 trên nền than.
 
 **Câu gắn nhãn bắt buộc giữ nguyên khi sửa nội dung:** "Đây là The Sales Warrior mùa 2, không phải The Trusted Creator... Bốn con số này cho thấy cách vận hành đó khiến người ta thực sự làm, không cho thấy bạn sẽ đạt đúng những con số này." Bỏ câu này là vi phạm mục 34 tài liệu nguồn.
+
+## Vòng cắt chi tiết vận hành, ngày 24/08/2026
+
+Coach Duy: khách mua kết quả, nếu họ tin thì đưa cho họ thế nào cũng được. Điều họ cần cảm nhận là chương trình này khác biệt, không phải lớp học, có thực hành, có hệ thống, có cộng đồng, có người giúp vượt rào cản.
+
+Cách đo trước khi sửa: gắn nhãn vai trò cho từng phần rồi cộng chiều cao.
+
+| Vai trò | Số phần | Chiều cao | Tỷ lệ |
+| --- | --- | --- | --- |
+| Cơ chế | 4 | 4.721px | 30 phần trăm |
+| Nỗi đau | 1 | 751px | 5 phần trăm |
+
+Cơ chế chiếm gấp sáu lần nỗi đau. Đó là con số nói rõ trang đang bán tính năng.
+
+Đã làm ba vòng:
+
+1. **Gộp Chu trình năm chặng vào Bốn tuần**, vì hai phần kể cùng một hành trình hai lần. **Gộp Khác gì vào Ranh giới**. 14 phần còn 12.
+2. **Đưa phần Kết quả lên ngay sau phần Vấn đề**, mạch đọc thành nỗi đau rồi khát vọng rồi mới tới cơ chế. Đổi tiêu đề phần Kết quả sang câu chạm động lực chính lấy từ khảo sát: bạn thôi phải chứng minh mình lại từ đầu trong mỗi cuộc gặp.
+3. **Rút phần Cách vận hành**: bỏ ba dòng chi tiết vận hành vì bậc 0 và bậc 5 của leo dốc đã nói rồi; lịch tuần và ô thời gian gộp vào một khối gập; thanh tiến độ rút đoạn dẫn. Phần này giờ chủ yếu là ảnh.
+
+| Chỉ số | Trước ba vòng | Sau |
+| --- | --- | --- |
+| Số phần | 14 | **12** |
+| Phần nói về cơ chế | 4 | **2** |
+| Chữ người đọc thấy ngay | 3.844 | **3.473** |
+| Chiều cao | 15.805px | **14.239px** |
+| Phần Cách vận hành | 605 chữ, 2.383px | **330 chữ, 1.868px** |
+
+Trang hiện có bốn khối gập cho người muốn xem kỹ: khối lượng thực hành, một câu chuyện ra bốn dạng bài, điều khoản, và một tuần trông như thế nào.
+
+### Nguyên tắc giữ lại cho các vòng sau
+
+Không thêm phần mới để giải thích cách vận hành. Nếu cần nói chi tiết, đặt trong khối gập. Phần hiện ra mặc định chỉ giữ thứ chạm cảm xúc: nỗi đau, điều họ muốn, ảnh thật của lò rèn, người dạy, giá và lời mời.
