@@ -183,3 +183,30 @@ Coach Duy bắt lỗi cụm "nhà sáng lập hoặc chủ doanh nghiệp chuyê
 2. **Phần Điều kiện tham gia nói rõ ngành chỉ là ví dụ.** Thêm câu: điều quyết định không phải bạn làm ngành nào, mà là khách có cần tin người trước khi xuống tiền hay không. Nếu khách mua chủ yếu vì giá hoặc vì tiện thì chương trình chưa phải chỗ của họ. Câu này vừa mở cho ngành không có trong danh sách, vừa loại đúng nhóm mà mục 4 tài liệu nguồn xếp vào rủi ro nhận sai người.
 
 Cụm "chủ doanh nghiệp chuyên môn" đã bị gỡ khỏi toàn bộ trang.
+
+## Vòng cắt bớt để tập trung, ngày 24/08/2026
+
+Nguyên tắc Coach Duy chốt: giữ thứ chạm đúng cảm xúc, đúng mong muốn, đúng nỗi đau và đẩy khách sang bước tiếp. Thứ khác chỉ làm mất tập trung.
+
+Bốn việc đã làm:
+
+1. **Biểu mẫu đăng ký: 12 mục bắt buộc còn 7.** Bắt buộc: họ tên, điện thoại, email, vai trò, doanh nghiệp và ngành, tình trạng nội dung, điểm nghẽn, cộng ô đồng ý được liên hệ. Bốn mục còn lại để tùy chọn và đội ngũ hỏi nốt khi gọi lại. Vẫn thu đủ dữ liệu theo mục 40 tài liệu nguồn, chỉ bỏ phần chặn.
+2. **Gập ba khối chi tiết** sau một dòng bấm mở: khối lượng thực hành, khối một câu chuyện ra bốn dạng bài, đoạn điều khoản còn phải công bố. Bản tĩnh `?static` tự mở cả ba để chụp ảnh và chạy bài kiểm.
+3. **Thêm một lối đăng ký ngay sau phần Mức đầu tư.** Đây là chỗ người đọc vừa nhìn thấy con số và đã quyết trong đầu, trước đó họ phải cuộn qua hết phần hỏi đáp mới tới biểu mẫu. Trang hiện có bốn lối đăng ký: hero, giữa trang sau phần Kết quả, sau phần Mức đầu tư, và biểu mẫu cuối.
+4. **Rút gọn phần Người dạy và ô lưu ý trong phần Cách học.**
+
+### Số đo trước và sau, ở khổ 1400px
+
+| Chỉ số | Đầu ngày | Sau vòng này |
+| --- | --- | --- |
+| Chữ người đọc thấy ngay | 5.073 | **3.610** |
+| Chiều cao trang | 15.344px | **14.232px** |
+| Mục bắt buộc trong biểu mẫu | 12 | **7** |
+| Số khối hình | 1 | **5** |
+| Số lối đăng ký | 2 | **4** |
+
+Ghi chú: chiều cao giảm ít hơn số chữ vì trong cùng vòng đã thêm bốn khối hình và một lối đăng ký. Đổi lại, mật độ chữ trên mỗi màn hình giảm rõ.
+
+### Chỗ không cắt thêm, và vì sao
+
+Ba phần nặng còn lại là biểu mẫu đăng ký, phần Cách học và phần Người dạy. Cắt tiếp sẽ phải bỏ đúng những thứ khách đòi trong khảo sát: đầu ra rõ, người trực tiếp đào tạo, mức học phí, và các giới hạn chương trình không hứa. Đây là nội dung xây niềm tin, không phải nội dung thừa.
