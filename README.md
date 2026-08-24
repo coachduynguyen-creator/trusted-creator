@@ -537,3 +537,53 @@ Không cắt Hỏi đáp. Nó 597 chữ nhưng gập lại chỉ tốn 978px, v�
 Ký tự khoảng trắng không ngắt viết thẳng trong chuỗi Python truyền qua heredoc của shell bị biến thành khoảng trắng thường, im lặng, ba lần trong phiên. Kết quả là script chạy xong báo "thêm 0" hoặc bài kiểm vẫn báo từ gãy dù đã sửa.
 
 Cách chặn: luôn viết `NB = chr(160)` chứ đừng gõ ký tự đó vào chuỗi. Đã tách hẳn thành `dinh_tu_ghep.py` trong skill `thiet-ke-trang`, chạy `python3 dinh_tu_ghep.py <tệp>`, chạy lại nhiều lần không sao.
+
+## Học từ bốn trang challenge lớn, ngày 25/08/2026
+
+Coach Duy nói trang không thuyết phục, quá nhiều chữ, không chạm cảm xúc, và yêu cầu tìm trang challenge của các KOL lớn để tham khảo.
+
+### Bốn trang đã bóc
+
+| | Chữ | Phần | Mặt người thật | Ảnh chụp thứ được nhận | Con số |
+|---|---:|---:|---:|---:|---:|
+| Creator MBA, Justin Welsh | ~8.750 | 14+ | 18 | có | 9 |
+| Ship 30 for 30 | ~5.500 | 31 | 11 | 6+ | 10.000 học viên |
+| Creator College, Jun | ~2.900 | 17 | có | có | 5 triệu người theo dõi |
+| One Funnel Away, Russell Brunson | ~1.200 | 7 | 3 | mockup | không |
+| **Trang của ta lúc đó** | **2.454** | **10** | **0** | **0** | **3** |
+
+Kết luận ngược với dự đoán: trang của ta **ngắn thứ hai trong năm trang**. Vấn đề không phải độ dài. Ảnh chỉ chiếm 5,1 phần trăm diện tích trang và không có ảnh chụp thứ học viên sẽ nhận.
+
+### Điều Creator College làm khác hẳn
+
+Đây là bản đối chiếu sát nhất: thử thách 21 ngày, dạy kể chuyện để xây thương hiệu cá nhân, 349 đô, đang lan trên Instagram.
+
+**Trang họ nói về nỗi sợ. Trang ta nói về hệ thống.** Ngay sau hero họ đặt sáu câu trong ngoặc kép, là lời người đọc tự nói trong đầu: "Tôi không có câu chuyện nào, đời tôi có gì thú vị đâu", "Tôi sợ bị người ta phán xét", "Người thân của tôi sẽ nghĩ gì khi thấy tôi như thế". Khối tương ứng của ta lúc đó là năm câu về quy trình làm việc: "Mỗi khi đội nội dung cần ý, họ vẫn phải chờ tôi". Cùng là năm câu trong ngoặc kép, nhưng một bên chạm vào sợ, một bên chạm vào lịch làm việc.
+
+Bốn thứ khác nữa: tiêu đề là lời của chính người đọc; bằng chứng cá nhân cụ thể tới mức nhớ được, Jun viết "nó mua cho bố tôi một căn nhà mới và một chiếc xe mới" chứ không chỉ viết 5 triệu người theo dõi; hỏi đáp viết bằng giọng người đọc; ngày khai giảng nhắc ít nhất năm lần.
+
+### Ba thứ đã quyết không lấy
+
+Bảng cộng dồn giá trị 11.591 đô rồi bán 349 đô kèm dòng "giảm 96 phần trăm": con số do họ tự đặt, làm vậy là tự phá vị thế người cố vấn tin cậy.
+
+Bảo đảm hoàn tiền nếu không đạt 10.000 lượt xem: chính tài liệu 3.1 ghi "không bảo đảm lượt xem".
+
+Giải thưởng 18.499 đô và ưu đãi 48 giờ: gấp gáp nhân tạo, trong khi ta đã có mốc thật ngày 20/09.
+
+### Đã sửa
+
+**Khối tự nhận diện thành khối nỗi sợ.** Năm câu mới đều là nỗi sợ của người chủ khi phải xuất hiện: "Nhìn mình trên video, tôi thấy không giống mình ngoài đời", "Người quen sẽ nghĩ gì khi thấy tôi đi kể chuyện mình như thế", "Lỡ nói ra rồi có người bảo tôi chưa đủ tầm thì sao", "Đăng xong không ai xem, còn ngại hơn là không đăng", "Nhân viên cũ và cả đối thủ cũng đang theo dõi tôi". Đóng lại bằng một câu lật: không câu nào là chuyện thiếu kỹ thuật, đó là chuyện phải đứng ra trước người khác khi mình chưa chắc.
+
+**Phần Người dạy thay hai đoạn giải thích bằng câu chuyện thật.** Lấy từ `02 Projects/RISE/Cau-chuyen-ca-nhan-Coach-Duy-Nguyen.md`, chi tiết đã xác minh do chính Coach Duy kể: năm 2004, đêm chung kết một cuộc thi ý tưởng toàn quốc có truyền hình trực tiếp, anh bước ra bục và không nói được câu nào trong năm phút, một người trong nhóm phải lên nói thay. Chính tệp nguồn ghi chú "chi tiết Phương phải nói thay là chi tiết người nhất, giữ lại, đừng bỏ vì sợ kém oai". Nối tiếp bằng thử thách 100 ngày của mentor Bank Supakit năm 2020, vừa giải thích vì sao anh dạy phong thái, vừa giải thích vì sao chương trình này là thử thách chứ không phải khóa học.
+
+**Mười câu hỏi đáp đổi sang giọng người đọc**, đặt trong ngoặc kép. "Có bắt buộc làm video không?" thành "Tôi không muốn lộ mặt. Có bắt buộc làm video không?". "Đây có phải khóa đầu tiên không?" thành "Khóa đầu tiên thì tôi có đang làm chuột bạch không?".
+
+**Ô chốt đơn thêm sáu dòng nhắc lại thứ được nhận**, và nhãn đổi thành "Khai giảng 28/09/2026, đăng ký sớm tới hết 20/09".
+
+**Sáu kết quả thành sáu thẻ có hình.** Mỗi thẻ một khối mô phỏng bằng CSS: bản định vị, khung video, kho chất liệu, ba định dạng, quy trình, bảng tín hiệu. Chỉ dùng vạch và hình, không dùng chữ giả, nên nó đọc ra là hình minh họa chứ không phải ảnh chụp màn hình giả. Có ghi chú trong mã chỗ thay bằng ảnh chụp bản mẫu thật khi có.
+
+Bảy bài kiểm 0 lỗi ở 1400, 1000, 768 và 375. `kiem_van_dich.py` 0 lỗi.
+
+### Còn thiếu để trang đủ sức thuyết phục
+
+Ảnh chụp bản mẫu thật (bản định vị một trang, bảng tín hiệu, bộ mẫu đặt bài) để thay sáu khối mô phỏng. Thêm ảnh người tham gia thật. Và sau khóa đầu thì bổ sung lời chứng của học viên chính chương trình, thứ mà cả bốn trang tham khảo đều dựa vào và ta chưa có quyền dùng.
