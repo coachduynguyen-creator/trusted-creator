@@ -461,7 +461,11 @@ Sáu bài kiểm chạy ở 1400, 1000, 768 và 375: 0 lỗi cỡ chữ, 0 lỗi
 
 **Câu hero.** Coach Duy nói câu hero nên nói tới đích đến của chương trình chứ không phải chẩn đoán vấn đề. Câu cũ, lấy đúng nguyên văn mục 30 của tài liệu, là "Phần lớn điều khiến khách hàng tin doanh nghiệp vẫn đang nằm trong đầu người chủ" — một câu chẩn đoán, khá gián tiếp.
 
-Câu mới: **"Bạn muốn là cái tên khách hàng và đối tác tin trước khi gặp. Nhưng thứ thị trường nhìn thấy chưa nói được điều đó."** Vế đầu là nhân dạng người đọc muốn trở thành, vế sau in màu mờ là khoảng cách. Cấu trúc này giữ được cả mong muốn lẫn nỗi đau mà không phải kể lể.
+Thử lần một: "Bạn muốn là cái tên khách hàng và đối tác tin trước khi gặp. Nhưng thứ thị trường nhìn thấy chưa nói được điều đó." Coach Duy gạt, lý do là **trừu tượng quá**. Đúng: "là cái tên được tin" là một khái niệm, "thứ thị trường nhìn thấy" là một cụm mơ hồ. Không ai đọc xong thấy mình trong đó.
+
+Câu đang dùng: **"Ngồi với bạn một buổi là khách tin. Nhưng bạn chỉ ngồi được với vài người."**
+
+Đây là một cảnh có thật mà chủ doanh nghiệp nào cũng nhận ra ngay. Nó nói cùng lúc ba điều: tài sản họ đang có là uy tín khi ngồi trực tiếp, giới hạn của tài sản đó là không nhân ra được, và vì sao nội dung là lời giải. Hai dòng, đúng luật hero tối đa hai dòng.
 
 Câu này **khác mục 30 của tài liệu nguồn 3.1**. Phải cập nhật tài liệu lên 3.2 sau khi Coach Duy duyệt chữ, vì tài liệu là nguồn duy nhất đang hiệu lực.
 
