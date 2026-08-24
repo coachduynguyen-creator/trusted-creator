@@ -328,12 +328,17 @@ figure{margin:0}
 .leo em{font-style:normal;display:block;margin-top:7px;font-size:13.5px;line-height:1.4;color:var(--cam-sau);font-weight:600}
 .leo .cuoi b{color:var(--cam-sau)}
 .leo.nam{grid-template-columns:repeat(5,minmax(0,1fr))}
+.tuan-dai{display:none;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:0 0 18px}
+.tuan-dai > div{display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--cam-sau);white-space:nowrap}
+.tuan-dai > div::before,.tuan-dai > div::after{content:'';height:2px;background:var(--cam);flex:1;border-radius:1px}
+.tuan-dai > div:nth-child(1){grid-column:span 2}
+.tuan-dai > div:nth-child(3){grid-column:span 2}
 .leo.nam > div:nth-child(1) .bac{height:52px;background:color-mix(in srgb,var(--cam) 18%,#fff)}
 .leo.nam > div:nth-child(2) .bac{height:88px;background:color-mix(in srgb,var(--cam) 34%,#fff)}
 .leo.nam > div:nth-child(3) .bac{height:124px;background:color-mix(in srgb,var(--cam) 52%,#fff)}
 .leo.nam > div:nth-child(4) .bac{height:160px;background:color-mix(in srgb,var(--cam) 72%,#fff)}
 .leo.nam > div:nth-child(5) .bac{height:196px;background-color:var(--ink);background-image:var(--chip);border-color:var(--ink)}
-@media (min-width:820px){.leo{display:grid}.nl.the-ve-thay,.dong.the-ve-thay,.vach.the-ve-thay{display:none}}
+@media (min-width:820px){.leo{display:grid}.tuan-dai{display:grid}.nl.the-ve-thay,.dong.the-ve-thay,.vach.the-ve-thay{display:none}}
 @media (max-width:1100px){.leo.nam .cot{height:210px}.leo.nam > div:nth-child(5) .bac{height:156px}.leo.nam > div:nth-child(4) .bac{height:130px}.leo.nam > div:nth-child(3) .bac{height:104px}.leo.nam > div:nth-child(2) .bac{height:78px}.leo.nam > div:nth-child(1) .bac{height:52px}}
 @media (max-width:1100px){.leo .cot{height:210px}.leo > div:nth-child(6) .bac{height:168px}.leo > div:nth-child(5) .bac{height:145px}.leo > div:nth-child(4) .bac{height:122px}.leo > div:nth-child(3) .bac{height:99px}.leo > div:nth-child(2) .bac{height:76px}.leo > div:nth-child(1) .bac{height:53px}.leo b{font-size:15px}.leo span{font-size:13.5px}}
 
@@ -741,7 +746,6 @@ figure{margin:0}
       <a href="#tu-nhan-dien">Bạn đang gặp gì</a>
       <a href="#van-de">Vấn đề</a>
       <a href="#ket-qua">Kết quả</a>
-      <a href="#nam-chuan">Năm tiêu chuẩn</a>
       <a href="#ba-tuan">Ba tuần</a>
       <a href="#cach-hoc">Cách chạy</a>
       <a href="#ranh-gioi">Khác gì</a>
@@ -837,24 +841,19 @@ figure{margin:0}
     <div class="dau-phan hien">
       <span class="nhan">Đích đến</span>
       <h2>Sau ba tuần, bạn có một nền thương hiệu chạy tiếp được, <span>không phải một thư mục bài học chưa xem hết</span></h2>
-      <p class="dan">Khách đọc bạn trước, hiểu bạn trước, tin bạn một phần trước khi hai bên ngồi xuống.</p>
     </div>
     <div class="nhan-dang hien">
       <b>Thị trường nhìn bạn như một người cố vấn đáng tin trong nghề của mình, không phải một người đang chào hàng.</b>
-      <span>Đó là chỗ đến. Dưới đây là sáu thứ bạn cầm trong tay sau ba tuần để đi tới đó.</span>
+      <span>Sáu thứ bạn cầm về sau ba tuần:</span>
     </div>
     <ul class="ket6 hien tre">
-      <li>Một vị thế và ba luận điểm bạn bảo vệ được.</li>
-      <li>Một tiêu chuẩn phong thái để tự xem lại mỗi lần xuất hiện.</li>
-      <li>Một kho chất liệu từ khách hàng, quyết định và trải nghiệm thật.</li>
-      <li>Nội dung đã đăng thật, có video và các định dạng phù hợp.</li>
-      <li>Một quy trình rõ phần bạn giữ, phần AI và đội ngũ đỡ.</li>
-      <li>Một bảng tín hiệu và kế hoạch bốn tuần tiếp theo.</li>
+      <li>Một vị thế và ba luận điểm bảo vệ được.</li>
+      <li>Một tiêu chuẩn phong thái để tự soi lại.</li>
+      <li>Kho chất liệu từ khách hàng và việc thật.</li>
+      <li>Nội dung đã đăng, có video và nhiều định dạng.</li>
+      <li>Quy trình rõ phần bạn giữ, phần AI đỡ.</li>
+      <li>Bảng tín hiệu và kế hoạch bốn tuần tiếp.</li>
     </ul>
-    <div class="ket-cap hien">
-      <b>Điều bạn thật sự muốn: khách tin bạn, rồi từ đó hiểu và quan tâm tới doanh nghiệp, sản phẩm, đội ngũ và cách bạn phục vụ họ.</b>
-      <span>Đó là lý do chương trình không dừng ở việc bạn nói hay hơn trước máy quay.</span>
-    </div>
     <div class="moi-giua hien">
       <p>Nếu đọc tới đây bạn thấy đúng chỗ mình đang đứng, phần còn lại của trang nói về cách học, điều kiện, mức đầu tư và những gì chương trình không hứa.</p>
       <div class="loi2">
@@ -865,75 +864,46 @@ figure{margin:0}
   </div>
 </section>
 
-<!-- ================= NĂM TIÊU CHUẨN ================= -->
-<section class="phan" id="nam-chuan">
-  <div class="bao">
-    <div class="dau-phan hien">
-      <span class="nhan">Cơ chế</span>
-      <h2>Năm tiêu chuẩn để thương hiệu bắt đầu tích lũy niềm tin</h2>
-      <p class="dan">Năm tiêu chuẩn này là xương sống của ba tuần. Chúng xếp theo thứ tự, vì thiếu tiêu chuẩn trước thì tiêu chuẩn sau không đứng được.</p>
-    </div>
-    <div class="leo nam hien tre" role="img" aria-label="Năm bậc tăng dần: đúng vị thế, có phong thái, đủ chất liệu, đều nhịp và có tín hiệu">
-      <div>
-        <div class="cot"><span class="so">1</span><div class="bac"></div></div>
-        <div class="chan"><b>Đúng vị thế</b><span>Ai cần nghe bạn, bạn có quyền nói về điều gì, muốn được nhớ bằng quan điểm nào.</span><em>Chưa trả lời được thì chưa có gì để nói đều.</em></div>
-      </div>
-      <div>
-        <div class="cot"><span class="so">2</span><div class="bac"></div></div>
-        <div class="chan"><b>Có phong thái</b><span>Nói rõ ý, giọng và nhịp dừng tạo cảm giác vững, người trên nội dung giống người ngoài đời.</span><em>Không phải lớp hình thể. Đây là cách vị thế được cảm nhận.</em></div>
-      </div>
-      <div>
-        <div class="cot"><span class="so">3</span><div class="bac"></div></div>
-        <div class="chan"><b>Đủ chất liệu</b><span>Câu hỏi khách hay hỏi, quyết định đã cân, câu chuyện có quyền kể, sai lầm và bài học.</span><em>Hết cảnh sáng nào cũng ngồi nghĩ hôm nay đăng gì.</em></div>
-      </div>
-      <div>
-        <div class="cot"><span class="so">4</span><div class="bac"></div></div>
-        <div class="chan"><b>Đều nhịp</b><span>Thu chất liệu, chọn luận điểm, làm bài trụ cột, chuyển định dạng, đăng, xem tín hiệu, quyết định giữ hay bỏ.</span><em>Bạn giữ phần quan điểm. AI và đội ngũ đỡ phần lặp lại.</em></div>
-      </div>
-      <div>
-        <div class="cot"><span class="so">5</span><div class="bac"></div></div>
-        <div class="chan cuoi"><b>Có tín hiệu</b><span>Phản hồi có bối cảnh từ đúng tệp, tin nhắn cho thấy người xem hiểu đúng vấn đề.</span><em>Chương trình không lấy doanh thu làm chuẩn hoàn thành.</em></div>
-      </div>
-    </div>
-    <ul class="vach the-ve-thay hien tre">
-      <li><b>01</b><p><strong>Đúng vị thế.</strong> Ai cần nghe bạn, bạn có quyền nói về điều gì, muốn được nhớ bằng quan điểm và tiêu chuẩn nào.</p></li>
-      <li><b>02</b><p><strong>Có phong thái.</strong> Nói rõ ý, giọng và nhịp dừng tạo cảm giác vững, người trên nội dung giống người ngoài đời.</p></li>
-      <li><b>03</b><p><strong>Đủ chất liệu.</strong> Câu hỏi khách hay hỏi, quyết định đã cân, câu chuyện có quyền kể, sai lầm và bài học nghề.</p></li>
-      <li><b>04</b><p><strong>Đều nhịp.</strong> Một vòng gọn từ thu chất liệu tới đăng và đọc tín hiệu. Bạn giữ quan điểm, AI và đội ngũ đỡ phần lặp lại.</p></li>
-      <li><b>05</b><p><strong>Có tín hiệu.</strong> Phản hồi có bối cảnh từ đúng tệp, tin nhắn cho thấy người xem hiểu đúng vấn đề.</p></li>
-    </ul>
-  </div>
-</section>
 
 
 <!-- ================= BA TUẦN ================= -->
-<section class="phan nen" id="ba-tuan">
+<section class="phan" id="ba-tuan">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Ba tuần chạy thế nào</span>
-      <h2>Mỗi tuần đóng lại bằng một việc bạn làm xong, <span>không phải bằng cảm giác đã hiểu thêm</span></h2>
-      <p class="dan">Ba tuần đo bằng việc bạn làm xong, không phải bằng 21 ngày ngồi liên tục. Bạn vẫn đang điều hành doanh nghiệp, xử lý khách và ra quyết định, nên chương trình được thiết kế quanh khoảng <b>3 tới 4 giờ mỗi tuần</b>.</p>
+      <h2>Năm bậc, mỗi bậc là một việc bạn làm xong</h2>
+      <p class="dan">Thiếu bậc trước thì bậc sau không đứng được. Khoảng <b>3 tới 4 giờ mỗi tuần</b>, không phải 21 ngày giữ chuỗi.</p>
     </div>
-    <div class="nl ba hien tre">
+    <div class="tuan-dai hien" aria-hidden="true"><div>Tuần 1</div><div>Tuần 2</div><div>Tuần 3</div></div>
+    <div class="leo nam hien tre" role="img" aria-label="Năm bậc tăng dần trong ba tuần. Tuần một gồm đúng vị thế và có phong thái. Tuần hai là đủ chất liệu. Tuần ba gồm đều nhịp và có tín hiệu">
       <div>
-        <div class="so">1</div>
-        <h3>Đúng và có trọng lượng</h3>
-        <p>Thị trường hiểu được bạn đại diện cho điều gì, và cách bạn xuất hiện bắt đầu phản ánh đúng vị thế đó.</p>
-        <div class="dat">Nộp: bản định vị một trang, ba luận điểm bảo vệ được, tiêu chuẩn phong thái riêng, ba bài luyện và một nội dung công khai.</div>
+        <div class="cot"><span class="so">1</span><div class="bac"></div></div>
+        <div class="chan"><b>Đúng vị thế</b><span>Ai cần nghe bạn, và bạn có quyền nói về điều gì.</span></div>
       </div>
       <div>
-        <div class="so">2</div>
-        <h3>Đủ chất liệu và đúng cách thể hiện</h3>
-        <p>Ngừng phụ thuộc vào cảm hứng. Công việc thật trở thành nguyên liệu dùng được ở nhiều định dạng.</p>
-        <div class="dat">Nộp: bản đồ lãnh địa nội dung, kho tối thiểu 30 chất liệu, ngân hàng 10 câu chuyện, một nội dung trụ cột và hai bài chuyển định dạng.</div>
+        <div class="cot"><span class="so">2</span><div class="bac"></div></div>
+        <div class="chan"><b>Có phong thái</b><span>Cách bạn nói và xuất hiện tạo được cảm giác vững.</span></div>
       </div>
       <div>
-        <div class="so">3</div>
-        <h3>Đều nhịp và bắt đầu có tín hiệu</h3>
-        <p>Chạy trọn một vòng sản xuất, đăng, rồi xem lại đủ gọn để bạn tiếp tục được sau khi chương trình khép lại.</p>
-        <div class="dat">Nộp: nội dung trụ cột thứ hai, bốn bài tái sử dụng, quy trình một trang, một lời mời bước tiếp theo, bảng tín hiệu và kế hoạch bốn tuần.</div>
+        <div class="cot"><span class="so">3</span><div class="bac"></div></div>
+        <div class="chan"><b>Đủ chất liệu</b><span>Kho câu chuyện và quyết định lấy từ việc thật.</span></div>
+      </div>
+      <div>
+        <div class="cot"><span class="so">4</span><div class="bac"></div></div>
+        <div class="chan"><b>Đều nhịp</b><span>Một vòng làm gọn, chạy được cả khi bạn bận.</span></div>
+      </div>
+      <div>
+        <div class="cot"><span class="so">5</span><div class="bac"></div></div>
+        <div class="chan cuoi"><b>Có tín hiệu</b><span>Đọc được ai đang thật sự nghe, để giữ hay bỏ.</span></div>
       </div>
     </div>
+    <ul class="vach the-ve-thay hien tre">
+      <li><b>01</b><p><strong>Đúng vị thế.</strong> Ai cần nghe bạn, và bạn có quyền nói về điều gì.</p></li>
+      <li><b>02</b><p><strong>Có phong thái.</strong> Cách bạn nói và xuất hiện tạo được cảm giác vững.</p></li>
+      <li><b>03</b><p><strong>Đủ chất liệu.</strong> Kho câu chuyện và quyết định lấy từ việc thật.</p></li>
+      <li><b>04</b><p><strong>Đều nhịp.</strong> Một vòng làm gọn, chạy được cả khi bạn bận.</p></li>
+      <li><b>05</b><p><strong>Có tín hiệu.</strong> Đọc được ai đang thật sự nghe, để giữ hay bỏ.</p></li>
+    </ul>
     <details class="gap hien" style="margin-top:30px">
       <summary><i aria-hidden="true"></i>Xem mười việc phải làm xong để được ghi nhận <span>đây là thước đo, không phải số buổi có mặt</span></summary>
       <div class="noi-gap">
@@ -956,7 +926,7 @@ figure{margin:0}
 </section>
 
 <!-- ================= CÁCH CHẠY ================= -->
-<section class="phan" id="cach-hoc">
+<section class="phan nen" id="cach-hoc">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Cách vận hành</span>
@@ -1045,7 +1015,7 @@ figure{margin:0}
 </section>
 
 <!-- ================= RANH GIỚI ================= -->
-<section class="phan nen" id="ranh-gioi">
+<section class="phan" id="ranh-gioi">
   <div class="bao">
     <div class="toi hien">
       <h3>Không phải khóa làm video. Cũng không phải khóa dùng AI để sản xuất thật nhiều.</h3>
@@ -1074,7 +1044,7 @@ figure{margin:0}
 </section>
 
 <!-- ================= NGƯỜI DẠY VÀ BẰNG CHỨNG ================= -->
-<section class="phan" id="nguoi-day">
+<section class="phan nen" id="nguoi-day">
   <div class="bao">
     <div class="ai2">
       <figure class="anh-khung hien"><img src="img/cd-chua-bai.jpg" alt="Coach Duy Nguyễn đang trao đổi trực tiếp với một người tham gia trên sân khấu" width="525" height="700" loading="lazy" decoding="async"></figure>
@@ -1103,7 +1073,7 @@ figure{margin:0}
 </section>
 
 <!-- ================= PHÙ HỢP VÀ CHƯA PHÙ HỢP ================= -->
-<section class="phan nen" id="phu-hop">
+<section class="phan" id="phu-hop">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Điều kiện tham gia</span>
@@ -1137,7 +1107,7 @@ figure{margin:0}
 </section>
 
 <!-- ================= MỨC ĐẦU TƯ ================= -->
-<section class="phan" id="muc-dau-tu">
+<section class="phan nen" id="muc-dau-tu">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Mức đầu tư</span>
@@ -1188,7 +1158,7 @@ figure{margin:0}
 </section>
 
 <!-- ================= HỎI ĐÁP ================= -->
-<section class="phan nen" id="hoi-dap">
+<section class="phan" id="hoi-dap">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Câu hỏi thường gặp</span>
