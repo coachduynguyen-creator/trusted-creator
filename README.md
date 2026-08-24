@@ -456,3 +456,25 @@ Sáu bài kiểm chạy ở 1400, 1000, 768 và 375: 0 lỗi cỡ chữ, 0 lỗi
 1. **Landing Chuyên gia**, biến thể thứ hai ở mục 31. Chỉ thay hero, khối tự nhận diện và khối kết quả theo vai trò; các phần còn lại dùng chung.
 2. **Mười quyết định vận hành ở mục 37** phải khóa trước khi giao hàng: ngày giờ và nền tảng từng buổi, công suất phản hồi, nơi nộp bài, trách nhiệm của Coach Duy và người phản hồi, danh mục công cụ AI và chi phí, chính sách thanh toán và hoàn, điều kiện mở lớp, bằng chứng được phép công bố, giá và quyền lợi Cộng đồng Thành viên, và **nội dung phần quà Challenge cùng cách đối soát điểm danh**. Chỗ cuối đã đánh dấu bằng ghi chú trong mã.
 3. Số tài khoản chuyển khoản, nơi nhận biểu mẫu, trang `phieu-chan-doan.html`, và gỡ thẻ chặn tìm kiếm trước khi mở công khai.
+
+## Đổi câu hero và sửa lỗi ngắt dòng tiếng Việt, ngày 24/08/2026
+
+**Câu hero.** Coach Duy nói câu hero nên nói tới đích đến của chương trình chứ không phải chẩn đoán vấn đề. Câu cũ, lấy đúng nguyên văn mục 30 của tài liệu, là "Phần lớn điều khiến khách hàng tin doanh nghiệp vẫn đang nằm trong đầu người chủ" — một câu chẩn đoán, khá gián tiếp.
+
+Câu mới: **"Bạn muốn là cái tên khách hàng và đối tác tin trước khi gặp. Nhưng thứ thị trường nhìn thấy chưa nói được điều đó."** Vế đầu là nhân dạng người đọc muốn trở thành, vế sau in màu mờ là khoảng cách. Cấu trúc này giữ được cả mong muốn lẫn nỗi đau mà không phải kể lể.
+
+Câu này **khác mục 30 của tài liệu nguồn 3.1**. Phải cập nhật tài liệu lên 3.2 sau khi Coach Duy duyệt chữ, vì tài liệu là nguồn duy nhất đang hiệu lực.
+
+**Lỗi ngắt dòng tiếng Việt, hai tầng.**
+
+*Tầng một, từ ghép gãy đôi.* Coach Duy chỉ ảnh chụp: "thương" nằm cuối dòng một, "hiệu" đầu dòng hai. Nguyên nhân là tiếng Việt viết rời từng âm tiết nên trình duyệt coi "thương hiệu" là hai từ. `kiem-mo-coi.js` không bắt được vì nó chỉ nhìn dòng cuối có mấy từ.
+
+Đã viết bài kiểm mới `kiem-tu-gay.js` trong skill `thiet-ke-trang`: nó đo toạ độ dòng của từng từ, đối chiếu với danh sách khoảng 80 từ ghép hay gặp, và báo cặp nào nằm khác dòng. Chạy lần đầu ở khổ 1400 ra 5 lỗi, gồm "Thị / trường", "thương / hiệu" hai chỗ, "rèn / luyện". Sửa bằng cách chèn `&nbsp;` giữa hai âm tiết, tổng 100 chỗ, chỉ trong tiêu đề, nhãn đậm, câu trích lớn và câu dẫn. Không chèn cho chữ thân bài.
+
+*Tầng hai, hụt một mảng giữa khối chữ.* Coach Duy còn nói "tạo khoảng trống thừa ở một bên". Cái này do `text-wrap: balance`, thứ mà skill cũ bắt dùng cho mọi tiêu đề. `balance` chia đều số chữ mỗi dòng, nên tiêu đề phần Kết quả ra ba dòng rộng 495px, 690px và 608px trong khung 820px, hụt hẳn một mảng ở dòng đầu.
+
+Đổi sang `text-wrap: pretty` thì cùng tiêu đề đó ra 808px, 746px và 239px: hai dòng đầu gần đầy khổ, chỉ dòng cuối ngắn. Đo thêm bốn tiêu đề khác đều cùng hướng. `pretty` vẫn tránh được chữ mồ côi, bài kiểm ra 0 lỗi ở cả năm khổ.
+
+Đã sửa cả trong skill: mục 3b đổi luật, thêm mục 3c cho từ ghép. Nhãn đậm ngắn thì vẫn giữ `balance`, vì nhãn hai tới sáu chữ mà đổ đầy dòng sẽ rớt một chữ xuống dòng hai.
+
+Bảy bài kiểm chạy ở 1400, 1000, 768 và 375 đều 0 lỗi. `kiem_van_dich.py` 0 lỗi.
