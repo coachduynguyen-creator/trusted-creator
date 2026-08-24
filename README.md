@@ -342,3 +342,13 @@ Coach Duy bắt lỗi ảnh hero: ảnh chân dung chụp trong phòng là ảnh
 - **Phần Người dạy** dùng `cd-portrait-760.png`, tức ảnh chân dung. Đây mới là chỗ hợp của một ảnh chân dung trang trọng, vì phần đó trả lời câu "người thiết kế và dẫn chương trình là ai".
 
 Cả hai khung đều khớp tỉ lệ ảnh, `kiem-anh.js` trả về danh sách rỗng ở cả hai khổ.
+
+### Bỏ khối lượng thực hành và đổi ảnh phần Người dạy, ngày 24/08/2026
+
+**Bỏ khối gập "Xem khối lượng thực hành trong 30 ngày".** Nó trả lời câu hỏi vận hành, trong khi phần Kết quả đã trả lời câu hỏi bạn cầm về gì, và phần lò rèn đã cho thấy cường độ bằng ảnh. Trùng lặp, cắt.
+
+Trang còn ba khối gập: một câu chuyện ra bốn dạng bài, điều khoản, và một tuần trông như thế nào. Riêng khối lịch tuần thì giữ, vì nó trả lời câu hỏi quyết định "mỗi tuần tôi mất bao nhiêu tối", và 9 trên 29 phiếu khảo sát nêu thời gian là rào cản.
+
+**Đổi ảnh phần Người dạy** từ ảnh chân dung phòng chụp sang `cd-chua-bai.jpg`, cắt từ ảnh Coach Duy đang trao đổi trực tiếp với một người trên sân khấu. Ảnh chân dung tách nền đặt trong khung 3:4 bị cắt ngang đùi, nhìn như lỗi. Ảnh mới có tương tác, có người, và slide phía sau tình cờ ghi đúng "THIẾT LẬP VỊ THẾ" và "MỐI QUAN HỆ TIN TƯỞNG".
+
+Tệp `cd-portrait-760.png` đã gỡ khỏi kho vì không còn chỗ dùng. Thư mục ảnh còn 1,3MB.
