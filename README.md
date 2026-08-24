@@ -56,3 +56,25 @@ Sau khi tự soi lại bằng góc nhìn trang chuyển đổi và góc nhìn ng
 - Biểu mẫu được **chia hai nhóm có tiêu đề** và có **dòng giá đang áp dụng ngay đầu biểu mẫu**, để người điền không phải cuộn ngược lên tìm giá.
 - Thêm khối **thời gian người học cần dành mỗi tuần** trong phần Cách học, vì đây là câu hỏi đầu tiên của một người chủ đang bận.
 - **Không dùng ảnh slide của chương trình khác** để lấp chỗ trống ở đoạn giữa trang. Ảnh `cd-thuc-hanh.jpg` đã bị gỡ vì nó là tài liệu của một chương trình khác, đưa lên đây là mượn bằng chứng sai chỗ.
+
+## Vòng sửa ngôn ngữ ngày 24/08/2026
+
+Coach Duy bắt lỗi ở ba cái thẻ "Trạng thái 1", "Tệp chính", "Cần kiểm tra": đó là chữ điều hành nội bộ lấy thẳng từ tài liệu chiến lược, không phải chữ của người đọc. Rà lại toàn trang theo Voice DNA v3.1 và Quy tắc tiếng Việt bản 24/08 thì thấy khoảng 40 chỗ cùng lỗi đó. Đã viết lại hết.
+
+Nguyên tắc áp dụng: người đọc tới đâu phải thấy mình tới đó. Mọi nhãn mô tả bằng ngôn ngữ vận hành đều đổi sang mô tả tình huống thật của khách.
+
+Một số chỗ đã đổi:
+
+- "Trạng thái 1, 2, 3" thành "Chưa bắt đầu", "Đã bắt đầu, còn rời rạc", "Đang chạy khá ổn".
+- "Tệp chính" thành "Đúng người". "Có điều kiện" thành "Có thể phù hợp". "Cần kiểm tra" thành "Nên kiểm tra trước".
+- "Định tuyến" thành "Nếu đúng là bạn".
+- "Lãnh địa chuyên môn", "hệ quan điểm", "đích đến của niềm tin" thành câu nói thẳng: bạn nói mạnh nhất về chủ đề nào, bạn bảo vệ quan điểm gì, khách tin bạn rồi thì tin tiếp vào đâu.
+- "Tài sản thu thông tin", "điểm thu hút" thành "một tài liệu đáng để khách để lại số".
+- "Nhịp nuôi dưỡng" thành "cách giữ liên lạc với người vừa để lại thông tin".
+- "Bảng điều hành nội dung" thành "bảng theo dõi việc viết và đăng". "Bản yêu cầu có nguồn" thành "bản đặt bài ghi rõ nguồn chất liệu". "Bảng đo" thành "bảng số liệu".
+- "Đường cơ sở" thành "mức hiện tại của bạn". "Điểm gãy" thành "chỗ tắc". "Mức trưởng thành" thành "bạn đang đứng ở đâu".
+- "Hình thức giao hàng" thành "Cách học". "Công suất phản hồi" thành "số bài chấm kỹ được".
+- "Lớp bằng chứng 1, 2, 3" thành ba câu người đọc thật sự hỏi: vì sao Coach Duy đứng lớp này, bạn sẽ được xem cơ chế chạy thật một lần, điều chương trình chưa có.
+- "Đầu ra" thành "kết quả" ở mọi chỗ, theo bảng cấm trong Quy tắc tiếng Việt.
+
+Cách kiểm: chạy `python3 "05 Skills/scripts/kiem_van_dich.py"` trên tệp. Trước khi sửa có 5 từ dịch thẳng, sau khi sửa còn 0, và không nhóm cấu trúc câu nào vượt ngưỡng.
