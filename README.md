@@ -684,3 +684,23 @@ Nó nói thẳng chữ thương hiệu, công nhận người đọc đã có s�
 Câu dẫn sửa theo cho khỏi trùng ý: "Đây không phải thêm một khóa học về cách làm nội dung. Đây là ba tuần bạn lấy những gì mình đã làm, đã biết và đã tin, rồi dựng thành một thương hiệu thị trường nhìn thấy được."
 
 Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.
+
+## Hero viết lại theo lời Coach Duy, ngày 25/08/2026
+
+Coach Duy nói phần đầu "chưa rõ về chương trình, lại càng không rõ dành cho ai", rồi đưa hai đoạn của chính anh. Cả hai đều tốt hơn bản tôi viết, và lý do rất cụ thể.
+
+**Câu dẫn.** Bản tôi viết: "Đây là ba tuần bạn lấy những gì mình đã làm, đã biết và đã tin, rồi dựng thành một thương hiệu thị trường nhìn thấy được." Nghe thì xuôi nhưng nói chung chung, và **không gọi tên chương trình**.
+
+Bản của Coach Duy làm ba việc cùng lúc: gọi tên chương trình, nói ba việc cụ thể chương trình làm (biết mình muốn được nhớ đến là ai, rèn cách nói và xuất hiện, biến kinh nghiệm thật thành nội dung), rồi nêu chuỗi kết quả (hiểu, nhớ, tin, muốn tìm hiểu thêm). Câu cuối gỡ luôn phản đối về AI: "AI và đội ngũ giúp công việc nhẹ hơn, không nói thay bạn." Lấy nguyên, chỉ đổi "nhân sự" thành "đội ngũ" cho khớp phần còn lại của trang.
+
+**Tiêu đề chính.** Coach Duy đưa tiếp: "Bạn có chuyên môn, có doanh nghiệp, có sản phẩm nhưng khách hàng, đối tác chưa hiểu rõ và chủ động tìm tới."
+
+Đây là chỗ tôi hụt suốt ba lần trước. Câu này nói thẳng **ba thứ người đọc phải đang có** để tự nhận ra mình, rồi mới nói khoảng cách. Ba câu tôi thử trước đều nói khoảng cách mà không nói điều kiện, nên ai đọc cũng thấy đúng, và vì thế không ai thấy đó là viết cho mình.
+
+Câu hiện hành: "Bạn có chuyên môn, có doanh nghiệp, có sản phẩm. Nhưng khách hàng và đối tác vẫn chưa hiểu rõ để chủ động tìm tới bạn."
+
+Chip trên tiêu đề cũng đổi thành "Cho nhà sáng lập và chuyên gia đã có sản phẩm và khách hàng thật".
+
+**Bài học cho lần sau.** Một câu hero phải trả lời được ba câu cùng lúc: trang này bán gì, dành cho ai, và người đọc đang thiếu gì. Ba lần trước tôi chỉ lo vế cuối.
+
+Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.
