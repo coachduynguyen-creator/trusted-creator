@@ -351,6 +351,19 @@ figure{margin:0}
 /* Tên của chuyển đổi là dòng quan trọng nhất khối, nên không để nó ở cỡ nhãn
    11,5px màu xám mờ. Coach Duy bắt lỗi ngày 25/08/2026: "những dòng quan trọng
    nhất thì lại mờ và nhỏ nhất". Nay là 16,5px đậm màu cam, kèm ô số. */
+/* Ba định dạng nội dung, dùng thay ảnh ở khối 03. Tên lớp phải riêng: lần đầu
+   tôi đặt là .fmt và va vào lớp .fmt sẵn có của trang, lớp đó có
+   flex-direction:column cùng hai thẻ giả vẽ đường nối và chấm tròn, nên ba khối
+   xếp dọc và mọc thêm một chấm. Đây là lỗi va tên lớp thứ ba của dự án. */
+.anh-khung.mp{display:grid;place-items:center;background:var(--bg-2);border:1px solid var(--line)}
+.ba-dang{display:flex;align-items:flex-end;justify-content:center;gap:22px}
+.ba-dang i{display:block;background:#fff;border:1px solid var(--line-2);border-radius:12px;box-shadow:var(--shadow-s);position:relative}
+.ba-dang i::after{content:'';position:absolute;left:12px;right:12px;bottom:12px;height:4px;border-radius:2px;background:var(--line-2)}
+.ba-dang i:nth-child(1){width:78px;height:134px}
+.ba-dang i:nth-child(2){width:110px;height:110px}
+.ba-dang i:nth-child(3){width:94px;height:72px}
+.ba-dang i:nth-child(2)::after{background:var(--cam)}
+@media (max-width:520px){.ba-dang{gap:14px}.ba-dang i:nth-child(1){width:60px;height:104px}.ba-dang i:nth-child(2){width:84px;height:84px}.ba-dang i:nth-child(3){width:72px;height:56px}}
 .doi-ten{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .doi-ten b{flex:none;width:34px;height:34px;border-radius:50%;background-color:var(--ink);background-image:var(--chip);color:#fff;font-family:var(--f-mono);font-size:13px;font-weight:600;display:grid;place-items:center;box-shadow:0 6px 14px -6px rgba(15,18,24,.5)}
 .doi-ten span{font-size:16.5px;font-weight:700;letter-spacing:-.01em;color:var(--cam-sau);line-height:1.25;text-wrap:balance}
@@ -914,9 +927,7 @@ figure{margin:0}
       </div>
     </div>
     <div class="doi nguoc">
-      <!-- CHỖ THAY ẢNH: khối này cần một ảnh có người đang nói và người khác đang nghe
-           chăm chú, để nói được chuyện vị thế. Ảnh hội trường dưới đây là tạm. -->
-      <figure class="anh-khung hien"><img src="img/cd-gio-tay.jpg" alt="Cả hội trường cùng giơ tay trong một chương trình của Coach Duy Nguyễn" loading="lazy" decoding="async"></figure>
+      <figure class="anh-khung hien"><img src="img/cd-nguoi-nghe.jpg" alt="Một hàng người tham gia đang chăm chú lắng nghe trong chương trình" loading="lazy" decoding="async"></figure>
       <div class="doi-chu hien tre">
         <div class="doi-ten"><b>02</b><span>Vị thế, định vị và thương hiệu</span></div>
         <h3>Khách hỏi bạn làm gì, và bạn trả lời xong trong một câu</h3>
@@ -926,7 +937,7 @@ figure{margin:0}
       </div>
     </div>
     <div class="doi">
-      <div class="anh-khung hien" style="display:grid;place-items:center;background:var(--bg-2)"><div class="fmt" style="display:flex;align-items:flex-end;gap:18px"><i style="width:74px;height:126px;background:#fff;border:1px solid var(--line-2);border-radius:12px;box-shadow:var(--shadow-s)"></i><i style="width:104px;height:104px;background:#fff;border:1px solid var(--line-2);border-radius:12px;box-shadow:var(--shadow-s)"></i><i style="width:88px;height:68px;background:#fff;border:1px solid var(--line-2);border-radius:12px;box-shadow:var(--shadow-s)"></i></div></div>
+      <div class="anh-khung mp hien"><div class="ba-dang" aria-hidden="true"><i></i><i></i><i></i></div></div>
       <div class="doi-chu hien tre">
         <div class="doi-ten"><b>03</b><span>Hệ thống làm nội dung</span></div>
         <h3>Hết cảnh sáng nào cũng ngồi nghĩ hôm nay đăng gì</h3>
