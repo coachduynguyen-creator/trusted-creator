@@ -729,3 +729,19 @@ Nhãn phần trước là "Nói thẳng chỗ này trước". Đó là giọng g
 Câu dẫn trước là "Phần lớn người chủ dừng ở đúng một trong năm câu dưới đây." Thiếu hẳn vế: dừng cái gì. Đổi thành "Phần lớn người chủ dừng việc xuất hiện vì một trong năm lý do dưới đây. Ít ai nói ra, vì nói ra nghe như mình đang yếu."
 
 Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.
+
+## Giá ở hero và câu hỏi bản sao, ngày 25/08/2026
+
+**Giá ở hero: giữ con số, nhưng đổi chỗ.** Coach Duy hỏi lại lần hai có nên đưa giá lên đầu không. Giữ, vì thương hiệu của anh là người cố vấn tin cậy, giấu giá để kéo người ta vào phễu là hành vi ngược vị thế. Ở mức 14,9 tới 18,9 triệu, người không hợp nên tự loại mình ở dòng thứ tư chứ đừng đọc hết trang rồi mới bỏ.
+
+Nhưng chỗ đặt thì sai. Câu giá đang nằm **sau** nút đăng ký, nên hero đóng lại bằng một câu về tiền và thuế, giọng kế toán, ở đúng chỗ cảm xúc mạnh nhất trang. Đã đưa lên **trước** nút. Người đọc vẫn thấy giá sớm, nhưng nhịp cuối của hero là hành động.
+
+**Nỗi sợ thành bản sao.** Coach Duy hỏi: chương trình nên đặt một tiêu chuẩn phong thái chung cho các founder, hay giúp họ tìm ra chất riêng? Anh nói thêm rằng founder có thể nghĩ mình sẽ thành bản sao của Coach Duy, và như vậy thì không hấp dẫn.
+
+Đây là rủi ro thật, và trang đang nói mập mờ đúng chỗ đó. Câu cũ ở hero là "Một tiêu chuẩn phong thái để tự xem lại mỗi lần xuất hiện" — đọc ra như một bảng chấm chung.
+
+Tài liệu 3.1 thực ra đứng về phía chất riêng. Mục 11.2 ghi phong thái là "thống nhất giữa con người ngoài đời và con người trên nội dung", tức là làm cho bạn giống bạn hơn chứ không phải giống ai. Đầu ra tuần 1 cũng ghi rõ "Tiêu chuẩn Founder Presence **cá nhân**".
+
+Đã sửa ba chỗ. Gạch đầu dòng ở hero thành "Chất riêng của bạn khi xuất hiện, gọi được tên và giữ được đều". Đoạn chiều sâu ở khối 01 thêm câu chốt "**và không có một khuôn chung nào để bạn nhập vào**", rồi kể ra thứ thuộc về riêng người đọc: cách bạn nói khi tự tin nhất, nhịp dừng của bạn, kiểu ví dụ bạn hay lấy, thái độ bạn giữ khi bị hỏi khó. Và thêm câu hỏi đáp thứ mười hai, hỏi thẳng bằng giọng người đọc: "Học xong tôi có thành bản sao của Coach Duy không?" Câu trả lời đóng lại bằng một lời tự ràng buộc: hai người cùng đi qua ba tuần này sẽ ra hai giọng khác hẳn nhau, nếu ra giống nhau thì chương trình đã làm sai việc của nó.
+
+Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.
