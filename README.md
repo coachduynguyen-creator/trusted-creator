@@ -608,3 +608,26 @@ Chạy lần đầu bắt được 6 chỗ:
 Tiêu đề khối nỗi sợ cũng tách làm hai: tiêu đề còn đúng một dòng, câu thứ hai xuống thành câu dẫn. Trước đó nó là ba dòng và dòng cuối chỉ có "câu dưới đây".
 
 Nay không còn phần tử nào trên trang hụt quá ngưỡng ở cả bốn khổ.
+
+## Khối Điều thay đổi, ngày 25/08/2026
+
+Coach Duy muốn các phần nói về thứ người tham gia sẽ thay đổi: phong thái, vị thế, định vị, thương hiệu, sự tự tin, hệ thống làm nội dung, đồng đội, mentor, cộng đồng, môi trường. Mỗi phần có ảnh và có câu chuyện hoặc phân tích chiều sâu, không phải bảng liệt kê tính năng.
+
+**Không làm mười khối riêng.** Mười khối, mỗi khối một ảnh, thì mỗi khối chỉ được khoảng 80 chữ, và nó lại thành đúng bảng liệt kê mà Coach Duy không muốn, chỉ khác là có ảnh. Mười thứ đó gom tự nhiên thành bốn chuyển đổi, mỗi cái đủ chỗ để kể thật.
+
+| Khối | Gom | Trục kể |
+|---|---|---|
+| 01 | phong thái, sự tự tin | bạn thôi phải gồng lên để trông đáng tin |
+| 02 | vị thế, định vị, thương hiệu | khách hỏi bạn làm gì, bạn trả lời trong một câu |
+| 03 | hệ thống làm nội dung | hết cảnh sáng nào cũng ngồi nghĩ hôm nay đăng gì |
+| 04 | đồng đội, mentor, cộng đồng, môi trường | bạn không phải người duy nhất thấy ngại |
+
+**Khuôn mỗi khối:** ảnh lớn xen kẽ trái phải, rồi ba nhịp chữ. Nhịp một là cảnh bây giờ, viết thành một tình huống cụ thể chứ không phải một nhận xét. Nhịp hai là phân tích vì sao chuyện đó xảy ra. Nhịp ba là cảnh sau ba tuần, cũng là một tình huống. Vạch bên trái nhịp một màu xám, nhịp ba màu cam, để mắt thấy được hướng đi mà không cần đọc nhãn.
+
+Ví dụ khối 01. Bây giờ: "Bật máy quay lên, bạn nói nhanh hơn ngoài đời một nhịp. Nghe lại thấy giọng mình như đang thuyết trình cho ai đó khác." Phân tích: phong thái không phải môn hình thể, nó là cách vị thế được người khác cảm nhận. Sau ba tuần: "Bạn bật máy lên và nói như đang nói với một người."
+
+**Ảnh.** Khối 01 dùng ảnh hướng dẫn trực tiếp cho hai người, khối 04 dùng ảnh những người chủ trao đổi với nhau. Khối 03 nói về hệ thống nên dùng khối mô phỏng ba định dạng bằng CSS thay vì ảnh, hợp hơn một tấm ảnh người. Khối 02 đang tạm dùng ảnh hội trường và **cần thay**: nó cần một ảnh có người đang nói và người khác đang nghe chăm chú. Đã đánh dấu chỗ thay trong mã.
+
+Ba ảnh ở khối 21 ngày chuyển lên đây, nên phần đó nay chỉ còn ba thẻ tuần và dải số. Trang cao 9.398 lên 11.621px, tức 12,9 màn hình. Đây là lần đầu trang dài ra có chủ đích, vì phần thêm vào là phần chạm chứ không phải phần giải thích.
+
+**Sửa thêm một lỗi trong bộ kiểm tiếng Việt.** Luật bắt "đội" trơ dùng `\bđội` nên khớp luôn phần "đội" trong "đồng đội", một từ tiếng Việt thật. Đã thêm chặn phía trước.

@@ -342,6 +342,23 @@ figure{margin:0}
 @media (max-width:1100px){.leo.nam .cot{height:210px}.leo.nam > div:nth-child(5) .bac{height:156px}.leo.nam > div:nth-child(4) .bac{height:130px}.leo.nam > div:nth-child(3) .bac{height:104px}.leo.nam > div:nth-child(2) .bac{height:78px}.leo.nam > div:nth-child(1) .bac{height:52px}}
 @media (max-width:1100px){.leo .cot{height:210px}.leo > div:nth-child(6) .bac{height:168px}.leo > div:nth-child(5) .bac{height:145px}.leo > div:nth-child(4) .bac{height:122px}.leo > div:nth-child(3) .bac{height:99px}.leo > div:nth-child(2) .bac{height:76px}.leo > div:nth-child(1) .bac{height:53px}.leo b{font-size:15px}.leo span{font-size:13.5px}}
 
+/* ============ ĐIỀU THAY ĐỔI: ảnh lớn xen kẽ trái phải ============ */
+.doi{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:56px;align-items:center}
+.doi + .doi{margin-top:84px;padding-top:84px;border-top:1px solid var(--line)}
+.doi .anh-khung{aspect-ratio:4/3}
+.doi.nguoc .anh-khung{order:2}
+.doi-chu{min-width:0}
+.doi .nhan{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.doi .nhan::before{content:'';width:18px;height:2px;background:var(--cam);flex:none}
+.doi h3{font-size:clamp(23px,2.6vw,32px);line-height:1.14;margin-bottom:20px}
+.canh{position:relative;padding:2px 0 2px 18px;border-left:3px solid var(--line-2);font-size:16px;line-height:1.6;color:var(--ink-2)}
+.canh em{font-style:normal;display:block;font-size:11.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
+.canh.sau{border-left-color:var(--cam);color:var(--ink);font-weight:500}
+.canh.sau em{color:var(--cam-sau)}
+.sau-do{margin:20px 0;font-size:16.5px;line-height:1.65;color:var(--ink-2)}
+.sau-do b{color:var(--ink);font-weight:600}
+@media (max-width:900px){.doi{grid-template-columns:minmax(0,1fr);gap:26px}.doi.nguoc .anh-khung{order:0}.doi + .doi{margin-top:56px;padding-top:56px}}
+
 /* ============ BỐN TUẦN ============ */
 .nl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--ink)}
 @media (min-width:981px){.nl.ba{grid-template-columns:repeat(3,minmax(0,1fr))}}
@@ -773,6 +790,7 @@ figure{margin:0}
     <nav class="nav-links" id="nav-links" aria-label="Các phần của trang">
       <a href="#noi-so">Điều giữ bạn lại</a>
       <a href="#nguoi-day">Người dạy</a>
+      <a href="#thay-doi">Điều thay đổi</a>
       <a href="#ba-tuan">21 ngày</a>
       <a href="#thu-cam-ve">Bạn cầm về gì</a>
       <a href="#dang-ky">Mức đầu tư</a>
@@ -869,8 +887,61 @@ figure{margin:0}
   </div>
 </section>
 
+<!-- ================= ĐIỀU THAY ĐỔI ================= -->
+<section class="phan nen" id="thay-doi">
+  <div class="bao">
+    <div class="dau-phan hien" style="margin-bottom:56px">
+      <span class="nhan">Điều thay đổi</span>
+      <h3 style="font-family:var(--f-tit);font-size:clamp(27px,3.1vw,41px);line-height:1.08">Bốn thứ khác đi, và bạn tự thấy được</h3>
+      <p class="dan">Không phải bốn tính năng của chương trình. Đây là bốn chỗ trong con người và cách làm của bạn sẽ khác, và bạn nhận ra ngay khi nó xảy ra.</p>
+    </div>
+    <div class="doi">
+      <figure class="anh-khung hien"><img src="img/cd-tuong-tac.jpg" alt="Coach Duy Nguyễn hướng dẫn trực tiếp cho hai người tham gia trên sân khấu" loading="lazy" decoding="async"></figure>
+      <div class="doi-chu hien tre">
+        <span class="nhan">Điều thay đổi 01 · Phong thái và sự tự tin</span>
+        <h3>Bạn thôi phải gồng lên để trông đáng tin</h3>
+        <p class="canh"><em>Bây giờ</em>Bật máy quay lên, bạn nói nhanh hơn ngoài đời một nhịp. Nghe lại thấy giọng mình như đang thuyết trình cho ai đó khác, không phải giọng lúc ngồi với khách.</p>
+        <p class="sau-do">Phong thái không phải môn hình thể, cũng không phải mẹo sân khấu. Nó là <b>cách vị thế của bạn được người khác cảm nhận</b>: nói rõ ý mà không phải chứng minh mình giỏi, dừng đúng chỗ, và người trên màn hình giống hệt người ngồi cà phê. Ba tuần có bài luyện riêng tư trước khi phải đăng công khai, vì bạn cần tìm lại nhịp nói của chính mình chứ không phải học nhịp của người khác.</p>
+        <p class="canh sau"><em>Sau ba tuần</em>Bạn bật máy lên và nói như đang nói với một người.</p>
+      </div>
+    </div>
+    <div class="doi nguoc">
+      <!-- CHỖ THAY ẢNH: khối này cần một ảnh có người đang nói và người khác đang nghe
+           chăm chú, để nói được chuyện vị thế. Ảnh hội trường dưới đây là tạm. -->
+      <figure class="anh-khung hien"><img src="img/cd-gio-tay.jpg" alt="Cả hội trường cùng giơ tay trong một chương trình của Coach Duy Nguyễn" loading="lazy" decoding="async"></figure>
+      <div class="doi-chu hien tre">
+        <span class="nhan">Điều thay đổi 02 · Vị thế, định vị và thương hiệu</span>
+        <h3>Khách hỏi bạn làm gì, và bạn trả lời xong trong một câu</h3>
+        <p class="canh"><em>Bây giờ</em>Bạn kể ba phút. Người nghe gật đầu, nhưng hôm sau hỏi lại bạn làm nghề gì thì họ ngập ngừng.</p>
+        <p class="sau-do">Vị thế không phải một chức danh dài hơn. Nó là bốn câu bạn phải trả lời được: ai cần nghe bạn, bạn có quyền nói về vấn đề gì, bạn muốn được nhớ bằng quan điểm nào, và niềm tin đó chảy về đâu trong doanh nghiệp của bạn. <b>Thiếu bốn câu này thì càng đăng nhiều càng loãng</b>, vì mỗi bài kéo bạn về một hướng khác nhau.</p>
+        <p class="canh sau"><em>Sau ba tuần</em>Bạn nói một câu. Họ hiểu, và hôm sau họ vẫn nhớ.</p>
+      </div>
+    </div>
+    <div class="doi">
+      <div class="anh-khung hien" style="display:grid;place-items:center;background:var(--bg-2)"><div class="fmt" style="display:flex;align-items:flex-end;gap:18px"><i style="width:74px;height:126px;background:#fff;border:1px solid var(--line-2);border-radius:12px;box-shadow:var(--shadow-s)"></i><i style="width:104px;height:104px;background:#fff;border:1px solid var(--line-2);border-radius:12px;box-shadow:var(--shadow-s)"></i><i style="width:88px;height:68px;background:#fff;border:1px solid var(--line-2);border-radius:12px;box-shadow:var(--shadow-s)"></i></div></div>
+      <div class="doi-chu hien tre">
+        <span class="nhan">Điều thay đổi 03 · Hệ thống làm nội dung</span>
+        <h3>Hết cảnh sáng nào cũng ngồi nghĩ hôm nay đăng gì</h3>
+        <p class="canh"><em>Bây giờ</em>Bạn chạy được ba tuần, rồi bận một tuần và mất nhịp. Lần sau bắt đầu lại từ trang trắng, y như lần đầu.</p>
+        <p class="sau-do">Nội dung dừng không phải vì bạn lười. Nó dừng vì <b>mỗi bài đều bắt đầu từ con số không</b>. Một vòng làm gọn thì khác: chất liệu nằm sẵn trong kho, luận điểm chọn ra từ kho, bài trụ cột viết một lần rồi chuyển sang nhiều định dạng, đăng, đọc tín hiệu, quyết định giữ hay bỏ. Bạn giữ phần quan điểm. AI và đội ngũ đỡ phần lặp lại.</p>
+        <p class="canh sau"><em>Sau ba tuần</em>Bận một tuần, quay lại vẫn chạy tiếp được từ chỗ đang dở.</p>
+      </div>
+    </div>
+    <div class="doi nguoc">
+      <figure class="anh-khung hien"><img src="img/cd-networking.jpg" alt="Những người chủ doanh nghiệp trao đổi với nhau trong giờ nghỉ" loading="lazy" decoding="async"></figure>
+      <div class="doi-chu hien tre">
+        <span class="nhan">Điều thay đổi 04 · Đồng đội, người dẫn và môi trường</span>
+        <h3>Bạn không phải người duy nhất thấy ngại</h3>
+        <p class="canh"><em>Bây giờ</em>Làm một mình thì lần nào cũng dừng ở đúng chỗ đó: quay xong, xem lại, thấy chưa ưng, để đấy. Không ai biết, nên cũng không sao.</p>
+        <p class="sau-do">Thứ kéo người ta đi tiếp không phải kỷ luật, mà là <b>môi trường</b>. Trong ba tuần bạn nằm trong một nhóm nhỏ có tên, có người giữ nhịp, và bài của bạn được mở ra sửa ngay trước mặt chứ không phải nhận một lời nhận xét chung cho cả lớp. Quan trọng hơn cả: bạn thấy những người chủ khác cũng ngại y như mình, rồi họ vẫn đăng. Đó là thứ một khóa học xem lại không đưa cho bạn được.</p>
+        <p class="canh sau"><em>Sau ba tuần</em>Bạn đăng bài đầu tiên vì hôm đó cả nhóm cùng đăng.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= BA TUẦN ================= -->
-<section class="phan nen" id="ba-tuan">
+<section class="phan" id="ba-tuan">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">21 ngày bạn làm gì</span>
@@ -902,45 +973,11 @@ figure{margin:0}
       <div><b>9 nội dung</b><span><em>bạn đăng thật</em>ba bài trụ cột và sáu bài dùng lại</span></div>
       <div><b>3 tới 4 giờ</b><span><em>mỗi tuần</em>thiết kế cho người vẫn phải điều hành doanh nghiệp</span></div>
     </div>
-    <div class="giu" style="margin-top:44px">
-<div class="the-anh hien tre">
-        <figure>
-          <div class="khung"><img src="img/cd-gio-tay.jpg" alt="Cả hội trường giơ tay nhận thử thách trong một chương trình của Coach Duy Nguyễn" loading="lazy" decoding="async"></div>
-          <figcaption>
-            <b>Bạn nhận thử thách cùng cả nhóm</b>
-            <ul>
-              <li>Không phải bạn ngồi làm một mình ở nhà.</li>
-              <li>Cả nhóm bắt đầu cùng một ngày, kết thúc cùng một ngày.</li>
-            </ul>
-          </figcaption>
-        </figure>
-        <figure>
-          <div class="khung"><img src="img/cd-tuong-tac.jpg" alt="Coach Duy Nguyễn trao đổi trực tiếp với hai người tham gia trên sân khấu" loading="lazy" decoding="async"></div>
-          <figcaption>
-            <b>Bài của bạn được sửa ngay trước mặt</b>
-            <ul>
-              <li>Mỗi tuần có phòng phản hồi, bài của bạn mở ra sửa trực tiếp.</li>
-              <li>Không phải một lời nhận xét chung cho cả nhóm.</li>
-            </ul>
-          </figcaption>
-        </figure>
-        <figure>
-          <div class="khung"><img src="img/cd-networking.jpg" alt="Những người chủ doanh nghiệp trao đổi với nhau" loading="lazy" decoding="async"></div>
-          <figcaption>
-            <b>Nhóm nhỏ kéo bạn lại khi trễ nhịp</b>
-            <ul>
-              <li>Bạn nằm trong một nhóm nhỏ, không lẫn vào một lớp đông.</li>
-              <li>Cuối ba tuần có buổi trình bày bằng chứng.</li>
-            </ul>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
   </div>
 </section>
 
 <!-- ================= THỨ CẦM VỀ ================= -->
-<section class="phan" id="thu-cam-ve">
+<section class="phan nen" id="thu-cam-ve">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Thứ bạn giữ lại được</span>
@@ -1101,7 +1138,7 @@ figure{margin:0}
 </section>
 
 <!-- ================= PHÙ HỢP ================= -->
-<section class="phan nen" id="phu-hop">
+<section class="phan" id="phu-hop">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Điều kiện tham gia</span>
@@ -1138,7 +1175,7 @@ figure{margin:0}
 </section>
 
 <!-- ================= HỎI ĐÁP ================= -->
-<section class="phan" id="hoi-dap">
+<section class="phan nen" id="hoi-dap">
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Câu hỏi thường gặp</span>
