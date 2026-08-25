@@ -191,7 +191,7 @@ figure{margin:0}
 .noi > div{display:grid;grid-template-columns:26px minmax(0,1fr);gap:12px;align-items:start;padding:18px 0;border-bottom:1px solid var(--line);transition:transform .2s var(--ease)}
 @media (hover:hover){.noi > div:hover{transform:translateX(2px)}}
 .noi i{display:block;font-family:var(--f-tit);font-size:30px;line-height:.9;color:var(--cam);font-style:normal;font-weight:800;user-select:none}
-.noi p{font-size:18.5px;line-height:1.4;color:var(--ink);font-weight:500;letter-spacing:-.01em;text-wrap:balance}
+.noi p{font-size:18.5px;line-height:1.4;color:var(--ink);font-weight:500;letter-spacing:-.01em;text-wrap:pretty}
 @media (max-width:1040px){.noi{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}}
 @media (max-width:620px){.noi{grid-template-columns:minmax(0,1fr);column-gap:0}.noi p{font-size:17.5px}}
 @media (max-width:520px){.noi > div{grid-template-columns:22px minmax(0,1fr);gap:10px}.noi i{font-size:26px}.noi p{font-size:16.5px}}
@@ -551,7 +551,10 @@ figure{margin:0}
 .nhan-dang{margin:0;padding:24px 28px;border-radius:var(--r);background:var(--cam-mo);border:1px solid color-mix(in srgb,var(--cam-dam) 35%,transparent)}
 .nhan-dang b,.nhan-dang span{max-width:74ch}
 .nhan-dang + .ke{margin-top:32px}
-.nhan-dang b{display:block;font-family:var(--f-tit);font-size:clamp(19px,2.1vw,25px);letter-spacing:-.02em;line-height:1.25;color:var(--cam-sau);margin-bottom:8px;text-wrap:balance}
+/* pretty chứ không balance: đây là chữ trong ô có nền, balance chia đều hai dòng
+   nên mỗi dòng chỉ dùng hai phần ba chiều ngang, để hụt 340px trống bên phải ô.
+   Coach Duy bắt lỗi ngày 25/08/2026. Chữ trong ô có nền phải đổ đầy dòng. */
+.nhan-dang b{display:block;font-family:var(--f-tit);font-size:clamp(19px,2.1vw,25px);letter-spacing:-.02em;line-height:1.25;color:var(--cam-sau);margin-bottom:8px;text-wrap:pretty}
 .nhan-dang span{display:block;font-size:15.5px;line-height:1.55;color:var(--ink-2)}
 
 /* ============ CÁCH HỌC ============ */
@@ -819,7 +822,8 @@ figure{margin:0}
   <div class="bao">
     <div class="dau-phan hien">
       <span class="nhan">Nói thẳng chỗ này trước</span>
-      <h2>Điều giữ bạn lại không phải là thiếu thời gian. <span>Phần lớn người chủ dừng ở đúng một trong năm câu dưới đây.</span></h2>
+      <h2>Điều giữ bạn lại không phải là thiếu thời gian.</h2>
+      <p class="dan">Phần lớn người chủ dừng ở đúng một trong năm câu dưới đây.</p>
     </div>
     <div class="noi hien tre">
       <div><i>&ldquo;</i><p>Nhìn mình trên video, tôi thấy không giống mình ngoài đời.</p></div>

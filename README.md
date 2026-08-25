@@ -587,3 +587,24 @@ Bảy bài kiểm 0 lỗi ở 1400, 1000, 768 và 375. `kiem_van_dich.py` 0 lỗ
 ### Còn thiếu để trang đủ sức thuyết phục
 
 Ảnh chụp bản mẫu thật (bản định vị một trang, bảng tín hiệu, bộ mẫu đặt bài) để thay sáu khối mô phỏng. Thêm ảnh người tham gia thật. Và sau khóa đầu thì bổ sung lời chứng của học viên chính chương trình, thứ mà cả bốn trang tham khảo đều dựa vào và ta chưa có quyền dùng.
+
+## Sửa khoảng trống bên phải, ngày 25/08/2026
+
+Coach Duy chụp ô cam ở khối nỗi sợ: chữ xuống dòng sớm trong khi bên phải còn nhiều chỗ trống. Đo ra hụt **340px trên 1014px chiều ngang**, tức trống một phần ba ô.
+
+Nguyên nhân là `text-wrap: balance`. Nó chia đều số chữ cho các dòng, nên một câu hai dòng nằm trong ô có nền chỉ dùng khoảng hai phần ba chiều ngang. Chữ chạy trên nền trang thì rìa phải so le là bình thường, nhưng trong một ô có nền thì mắt bắt ngay và đọc ra là lỗi dàn trang.
+
+Ba bài kiểm đang có đều không thấy: chữ không nhỏ, không mồ côi, không gãy từ ghép.
+
+**Đã viết bài kiểm thứ tư,** `kiem-hut-phai.js` trong skill `thiet-ke-trang`. Nó đo mép phải xa nhất của từng dòng rồi so với chiều ngang khối. Ngưỡng là 22 phần trăm chiều ngang với sàn 110px, tính theo phần trăm vì cột hẹp 420px mà hụt 160px là trống 38 phần trăm, còn cột rộng 1000px hụt 160px chỉ là 16 phần trăm và nhìn hoàn toàn bình thường.
+
+Bài kiểm miễn nhãn đậm dưới 45 ký tự, vì với hai tới sáu chữ thì `balance` mới đúng, còn `pretty` sẽ đổ đầy dòng một rồi rớt một chữ xuống dòng hai.
+
+Chạy lần đầu bắt được 6 chỗ:
+
+- Ô cam ở khối nỗi sợ, hụt 340px. Đổi sang `pretty`, còn hụt 44px.
+- Năm câu nỗi sợ trong lưới trích dẫn, mỗi câu hụt 155 tới 196px trên 422px, tức trống gần 40 phần trăm. Đổi `.noi p` sang `pretty`.
+
+Tiêu đề khối nỗi sợ cũng tách làm hai: tiêu đề còn đúng một dòng, câu thứ hai xuống thành câu dẫn. Trước đó nó là ba dòng và dòng cuối chỉ có "câu dưới đây".
+
+Nay không còn phần tử nào trên trang hụt quá ngưỡng ở cả bốn khổ.
