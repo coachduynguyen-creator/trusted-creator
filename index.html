@@ -348,8 +348,12 @@ figure{margin:0}
 .doi .anh-khung{aspect-ratio:4/3}
 .doi.nguoc .anh-khung{order:2}
 .doi-chu{min-width:0}
-.doi .nhan{display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.doi .nhan::before{content:'';width:18px;height:2px;background:var(--cam);flex:none}
+/* Tên của chuyển đổi là dòng quan trọng nhất khối, nên không để nó ở cỡ nhãn
+   11,5px màu xám mờ. Coach Duy bắt lỗi ngày 25/08/2026: "những dòng quan trọng
+   nhất thì lại mờ và nhỏ nhất". Nay là 16,5px đậm màu cam, kèm ô số. */
+.doi-ten{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.doi-ten b{flex:none;width:34px;height:34px;border-radius:50%;background-color:var(--ink);background-image:var(--chip);color:#fff;font-family:var(--f-mono);font-size:13px;font-weight:600;display:grid;place-items:center;box-shadow:0 6px 14px -6px rgba(15,18,24,.5)}
+.doi-ten span{font-size:16.5px;font-weight:700;letter-spacing:-.01em;color:var(--cam-sau);line-height:1.25;text-wrap:balance}
 .doi h3{font-size:clamp(23px,2.6vw,32px);line-height:1.14;margin-bottom:20px}
 .canh{position:relative;padding:2px 0 2px 18px;border-left:3px solid var(--line-2);font-size:16px;line-height:1.6;color:var(--ink-2)}
 .canh em{font-style:normal;display:block;font-size:11.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
@@ -829,7 +833,7 @@ figure{margin:0}
           <div><b>9<small>nội dung</small></b><span>Bạn đăng thật, không phải tập viết rồi cất đi</span></div>
           <div><b>15<small>lần</small></b><span>Điểm danh thực hành, đạt 12 lần là nhận phần quà</span></div>
         </div>
-        <figure class="anh-khung"><img src="img/cd-ngoi-cung.jpg" alt="Coach Duy Nguyễn trao đổi trực tiếp với hai người tham gia bên một chiếc bàn nhỏ" width="1000" height="1000" loading="eager" decoding="async"></figure>
+        <figure class="anh-khung"><img src="img/cd-quay-video.jpg" alt="Coach Duy Nguyễn ngồi tại bàn làm việc tự quay nội dung, có máy quay, đèn và micro" width="1200" height="1200" loading="eager" decoding="async"></figure>
       </div>
     </div>
   </div>
@@ -898,7 +902,7 @@ figure{margin:0}
     <div class="doi">
       <figure class="anh-khung hien"><img src="img/cd-tuong-tac.jpg" alt="Coach Duy Nguyễn hướng dẫn trực tiếp cho hai người tham gia trên sân khấu" loading="lazy" decoding="async"></figure>
       <div class="doi-chu hien tre">
-        <span class="nhan">Điều thay đổi 01 · Phong thái và sự tự tin</span>
+        <div class="doi-ten"><b>01</b><span>Phong thái và sự tự tin</span></div>
         <h3>Bạn thôi phải gồng lên để trông đáng tin</h3>
         <p class="canh"><em>Bây giờ</em>Bật máy quay lên, bạn nói nhanh hơn ngoài đời một nhịp. Nghe lại thấy giọng mình như đang thuyết trình cho ai đó khác, không phải giọng lúc ngồi với khách.</p>
         <p class="sau-do">Phong thái không phải môn hình thể, cũng không phải mẹo sân khấu. Nó là <b>cách vị thế của bạn được người khác cảm nhận</b>: nói rõ ý mà không phải chứng minh mình giỏi, dừng đúng chỗ, và người trên màn hình giống hệt người ngồi cà phê. Ba tuần có bài luyện riêng tư trước khi phải đăng công khai, vì bạn cần tìm lại nhịp nói của chính mình chứ không phải học nhịp của người khác.</p>
@@ -910,7 +914,7 @@ figure{margin:0}
            chăm chú, để nói được chuyện vị thế. Ảnh hội trường dưới đây là tạm. -->
       <figure class="anh-khung hien"><img src="img/cd-gio-tay.jpg" alt="Cả hội trường cùng giơ tay trong một chương trình của Coach Duy Nguyễn" loading="lazy" decoding="async"></figure>
       <div class="doi-chu hien tre">
-        <span class="nhan">Điều thay đổi 02 · Vị thế, định vị và thương hiệu</span>
+        <div class="doi-ten"><b>02</b><span>Vị thế, định vị và thương hiệu</span></div>
         <h3>Khách hỏi bạn làm gì, và bạn trả lời xong trong một câu</h3>
         <p class="canh"><em>Bây giờ</em>Bạn kể ba phút. Người nghe gật đầu, nhưng hôm sau hỏi lại bạn làm nghề gì thì họ ngập ngừng.</p>
         <p class="sau-do">Vị thế không phải một chức danh dài hơn. Nó là bốn câu bạn phải trả lời được: ai cần nghe bạn, bạn có quyền nói về vấn đề gì, bạn muốn được nhớ bằng quan điểm nào, và niềm tin đó chảy về đâu trong doanh nghiệp của bạn. <b>Thiếu bốn câu này thì càng đăng nhiều càng loãng</b>, vì mỗi bài kéo bạn về một hướng khác nhau.</p>
@@ -920,7 +924,7 @@ figure{margin:0}
     <div class="doi">
       <div class="anh-khung hien" style="display:grid;place-items:center;background:var(--bg-2)"><div class="fmt" style="display:flex;align-items:flex-end;gap:18px"><i style="width:74px;height:126px;background:#fff;border:1px solid var(--line-2);border-radius:12px;box-shadow:var(--shadow-s)"></i><i style="width:104px;height:104px;background:#fff;border:1px solid var(--line-2);border-radius:12px;box-shadow:var(--shadow-s)"></i><i style="width:88px;height:68px;background:#fff;border:1px solid var(--line-2);border-radius:12px;box-shadow:var(--shadow-s)"></i></div></div>
       <div class="doi-chu hien tre">
-        <span class="nhan">Điều thay đổi 03 · Hệ thống làm nội dung</span>
+        <div class="doi-ten"><b>03</b><span>Hệ thống làm nội dung</span></div>
         <h3>Hết cảnh sáng nào cũng ngồi nghĩ hôm nay đăng gì</h3>
         <p class="canh"><em>Bây giờ</em>Bạn chạy được ba tuần, rồi bận một tuần và mất nhịp. Lần sau bắt đầu lại từ trang trắng, y như lần đầu.</p>
         <p class="sau-do">Nội dung dừng không phải vì bạn lười. Nó dừng vì <b>mỗi bài đều bắt đầu từ con số không</b>. Một vòng làm gọn thì khác: chất liệu nằm sẵn trong kho, luận điểm chọn ra từ kho, bài trụ cột viết một lần rồi chuyển sang nhiều định dạng, đăng, đọc tín hiệu, quyết định giữ hay bỏ. Bạn giữ phần quan điểm. AI và đội ngũ đỡ phần lặp lại.</p>
@@ -930,7 +934,7 @@ figure{margin:0}
     <div class="doi nguoc">
       <figure class="anh-khung hien"><img src="img/cd-networking.jpg" alt="Những người chủ doanh nghiệp trao đổi với nhau trong giờ nghỉ" loading="lazy" decoding="async"></figure>
       <div class="doi-chu hien tre">
-        <span class="nhan">Điều thay đổi 04 · Đồng đội, người dẫn và môi trường</span>
+        <div class="doi-ten"><b>04</b><span>Đồng đội, người dẫn và môi trường</span></div>
         <h3>Bạn không phải người duy nhất thấy ngại</h3>
         <p class="canh"><em>Bây giờ</em>Làm một mình thì lần nào cũng dừng ở đúng chỗ đó: quay xong, xem lại, thấy chưa ưng, để đấy. Không ai biết, nên cũng không sao.</p>
         <p class="sau-do">Thứ kéo người ta đi tiếp không phải kỷ luật, mà là <b>môi trường</b>. Trong ba tuần bạn nằm trong một nhóm nhỏ có tên, có người giữ nhịp, và bài của bạn được mở ra sửa ngay trước mặt chứ không phải nhận một lời nhận xét chung cho cả lớp. Quan trọng hơn cả: bạn thấy những người chủ khác cũng ngại y như mình, rồi họ vẫn đăng. Đó là thứ một khóa học xem lại không đưa cho bạn được.</p>

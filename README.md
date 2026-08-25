@@ -631,3 +631,19 @@ Ví dụ khối 01. Bây giờ: "Bật máy quay lên, bạn nói nhanh hơn ngo
 Ba ảnh ở khối 21 ngày chuyển lên đây, nên phần đó nay chỉ còn ba thẻ tuần và dải số. Trang cao 9.398 lên 11.621px, tức 12,9 màn hình. Đây là lần đầu trang dài ra có chủ đích, vì phần thêm vào là phần chạm chứ không phải phần giải thích.
 
 **Sửa thêm một lỗi trong bộ kiểm tiếng Việt.** Luật bắt "đội" trơ dùng `\bđội` nên khớp luôn phần "đội" trong "đồng đội", một từ tiếng Việt thật. Đã thêm chặn phía trước.
+
+## Ảnh hero mới và sửa dòng nhãn mờ, ngày 25/08/2026
+
+**Ảnh hero.** Coach Duy gửi ảnh `P1072663.png`, chụp chính anh ngồi tại bàn làm việc tự quay nội dung: máy quay ở tiền cảnh, đèn softbox, micro cần, laptop và màn hình, tường sách phía sau có dấu hiệu chữ DN. Đây là ảnh đúng nhất cho một chương trình về thương hiệu cá nhân, vì nó cho thấy đúng thứ chương trình dạy chứ không phải quy mô của người dạy.
+
+Ảnh gốc 2920x5184, tỉ lệ 9:16. Cắt vuông bằng `sips -c 2920 2920`, tức lấy đúng phần giữa, rồi thu về 1200x1200. Phần giữa giữ được cả máy quay, đèn, người và bàn. Thành `cd-quay-video.jpg`, 419KB. Gỡ `cd-ngoi-cung.jpg` vì không còn dùng.
+
+**Dòng nhãn mờ.** Coach Duy nói "những dòng quan trọng nhất thì lại mờ và nhỏ nhất", chỉ vào nhãn "ĐIỀU THAY ĐỔI 01 · PHONG THÁI VÀ SỰ TỰ TIN".
+
+Anh đúng, và đây là lỗi thứ bậc chứ không phải lỗi cỡ chữ. Tên của chuyển đổi là **chủ đề của cả khối**, thứ người đọc lướt qua để biết khối này nói về cái gì. Tôi lại để nó ở lớp `.nhan` chung: 11,5px, viết hoa, giãn chữ, màu xám mờ nhất bảng. Đó là kiểu dành cho nhãn phụ như "Mức đầu tư" hay "Hỏi đáp", không phải cho chủ đề.
+
+Nay tách thành lớp riêng `.doi-ten`: một ô số tròn nền than, cộng tên chuyển đổi ở **16,5px đậm 700 màu cam sẫm**. So với 11,5px xám mờ thì đọc lướt thấy ngay.
+
+Bài học chung: đừng dùng lại lớp nhãn phụ cho thứ đóng vai chủ đề. Cỡ chữ và màu phải theo vai trò trong khối, không theo chỗ nó đứng.
+
+Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375. Trang cao 11.692px.
