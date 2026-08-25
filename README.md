@@ -704,3 +704,28 @@ Chip trên tiêu đề cũng đổi thành "Cho nhà sáng lập và chuyên gia
 **Bài học cho lần sau.** Một câu hero phải trả lời được ba câu cùng lúc: trang này bán gì, dành cho ai, và người đọc đang thiếu gì. Ba lần trước tôi chỉ lo vế cuối.
 
 Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.
+
+## Nâng giá theo tệp mới, đổi xưng hô, sửa hai câu tối nghĩa, ngày 25/08/2026
+
+**Giá mới,** vì tệp đã nâng lên chủ doanh nghiệp.
+
+| Mức | Chưa thuế | Đã thuế 8% | Điều kiện |
+|---|---:|---:|---|
+| Đăng ký sớm | 14,9 triệu | 16.092.000 | 40 vé đầu tiên, và chỉ tới hết 20/09/2026 |
+| Giá chính thức | 18,9 triệu | 20.412.000 | Khi hết 40 vé hoặc từ 21/09, tùy mốc nào tới trước |
+
+Con số nằm ở sáu chỗ: câu giá ở hero, hai thẻ giá, ô ghi chú dưới bảng giá, dòng giá trong biểu mẫu, khối chuyển khoản, và ba nhánh trong đoạn mã tự đổi giá. Đã sửa hết và kiểm lại từng chỗ bằng cách đọc trực tiếp trên trang.
+
+**Cảnh báo phải nhớ:** đoạn mã chỉ tự đổi giá **theo ngày**. Trang tĩnh không đếm được số vé đã bán. Nếu bán hết 40 vé trước ngày 20/09 thì phải đổi tay. Đã ghi rõ trong mã, kèm nhắc rằng cần chốt ai phụ trách đối soát số vé trước khi mở bán.
+
+Mốc "40 vé đầu tiên" cũng đổi cách kể của khối giá: từ "hai mức giá, một ngày chuyển mức" thành "hai mức giá, hai mốc đóng". Đây là gấp gáp thật, không phải gấp gáp bịa, nên dùng được.
+
+**Xưng hô ở phần Người dạy.** Coach Duy nói xưng "anh" nghe xa lạ, nên đổi sang "Duy". Sáu chỗ. Lần nhắc đầu vẫn là "Coach Duy Nguyễn" ở tiêu đề, trong thân bài gọi "Duy".
+
+**Hai câu tối nghĩa ở phần Rào cản.**
+
+Nhãn phần trước là "Nói thẳng chỗ này trước". Đó là giọng ghi chú cho chính mình, không phải tên phần. Người đọc không biết nó nói gì. Đổi thành "Rào cản thật".
+
+Câu dẫn trước là "Phần lớn người chủ dừng ở đúng một trong năm câu dưới đây." Thiếu hẳn vế: dừng cái gì. Đổi thành "Phần lớn người chủ dừng việc xuất hiện vì một trong năm lý do dưới đây. Ít ai nói ra, vì nói ra nghe như mình đang yếu."
+
+Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.
