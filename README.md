@@ -745,3 +745,17 @@ Tài liệu 3.1 thực ra đứng về phía chất riêng. Mục 11.2 ghi phong
 Đã sửa ba chỗ. Gạch đầu dòng ở hero thành "Chất riêng của bạn khi xuất hiện, gọi được tên và giữ được đều". Đoạn chiều sâu ở khối 01 thêm câu chốt "**và không có một khuôn chung nào để bạn nhập vào**", rồi kể ra thứ thuộc về riêng người đọc: cách bạn nói khi tự tin nhất, nhịp dừng của bạn, kiểu ví dụ bạn hay lấy, thái độ bạn giữ khi bị hỏi khó. Và thêm câu hỏi đáp thứ mười hai, hỏi thẳng bằng giọng người đọc: "Học xong tôi có thành bản sao của Coach Duy không?" Câu trả lời đóng lại bằng một lời tự ràng buộc: hai người cùng đi qua ba tuần này sẽ ra hai giọng khác hẳn nhau, nếu ra giống nhau thì chương trình đã làm sai việc của nó.
 
 Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.
+
+## Chèn nhầm chỗ và căn giữa khối tối, ngày 25/08/2026
+
+**Câu hỏi đáp thứ mười hai bị chèn vào phần hero.** Coach Duy chụp lại và hỏi phần đó để làm gì. Kiểm ra thì đúng: câu hỏi nằm trong `hero`, không nằm trong `hoi-dap`.
+
+Nguyên nhân là lệnh `s.replace(mẫu, mới, 1)` của Python thay **chỗ khớp đầu tiên trong cả tệp**, và mẫu tôi dùng là chuỗi đóng thẻ chung chung `</div>\n  </div>\n</section>`. Chỗ đầu tiên khớp mẫu đó nằm ở hero.
+
+Bài học: khi chèn vào một phần cụ thể, phải neo bằng thứ chỉ có ở phần đó, ví dụ cắt riêng khối `<div class="faq" id="faq">` ra rồi chèn vào trong khối đó. Và luôn kiểm lại vị trí sau khi chèn, đừng tin là nó rơi đúng chỗ.
+
+**Khối tối căn giữa.** Coach Duy hỏi có nên căn giữa không. Nên. Khối rộng 1072px mà chữ chỉ chiếm 524px, căn trái thì hụt gần nửa chiều ngang bên phải. Căn giữa biến chỗ trống thành khoảng thở đối xứng: nay mỗi dòng lề trái và lề phải bằng nhau tuyệt đối. Vạch vàng kim và quầng cam cũng đưa về giữa, khổ chữ nới lên 33 ký tự cho còn ba dòng thay vì bốn, đệm trên dưới nới thêm.
+
+**Một điểm mù của `kiem-hut-phai.js`.** Bài kiểm đo khoảng hụt trong chính khối chữ, nên khi chữ có `max-width` nhỏ hơn ô nền chứa nó, khoảng trống nằm giữa khối chữ và ô nền thì bài kiểm không thấy. Cần bổ sung: nếu phần tử cha có nền đặc, đo theo chiều ngang của cha.
+
+Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.
