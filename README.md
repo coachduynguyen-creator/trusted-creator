@@ -647,3 +647,19 @@ Nay tách thành lớp riêng `.doi-ten`: một ô số tròn nền than, cộng
 Bài học chung: đừng dùng lại lớp nhãn phụ cho thứ đóng vai chủ đề. Cỡ chữ và màu phải theo vai trò trong khối, không theo chỗ nó đứng.
 
 Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375. Trang cao 11.692px.
+
+## Khối chốt nỗi sợ dựng lại, và câu định vị vào hero, ngày 25/08/2026
+
+**Khối chốt trông quê.** Coach Duy nói cách trình bày ô cam "quê quá, không cao cấp". Đúng: nền hồng nhạt phẳng, viền mảnh một pixel, chữ cam, đọc ra như hộp chú thích trong tài liệu văn phòng.
+
+Dựng lại thành **khối tối duy nhất trên trang sáng**, đúng chỗ cần nặng ký vì đây là câu lật của cả phần nỗi sợ. Nền than có chuyển màu chéo, một quầng cam rất nhạt ở góc trên phải, vạch vàng kim mảnh trên đỉnh, chữ 31px trắng, và mệnh đề "đó là chuyện phải đứng ra trước người khác khi mình chưa chắc" nhấn bằng vàng kim. Khoảng đệm nới từ 24px lên 54px.
+
+Cảm giác cao cấp đến từ chiều sâu và khoảng thở, không đến từ viền và nền màu. Bài kiểm tương phản qua sạch: trắng và vàng kim trên nền than.
+
+**Câu định vị vào hero.** Coach Duy đề xuất câu mở đầu kiểu "Đây không phải là một khóa học khác về cách làm nội dung xây kênh. Đây là hành trình khẳng định thương hiệu thật của chính bạn để thu hút đúng khách hàng."
+
+Ý đúng và đang thiếu: trang chưa nói ở trên đầu rằng đây không phải một khóa nội dung nữa. Nhưng **không đặt làm tiêu đề chính**, vì hai lý do. Một, nó nói về chương trình trước khi nói về người đọc, trong khi cả Creator College lẫn dữ liệu đều cho thấy mở bằng chính người đọc thì giữ chân tốt hơn. Hai, "hành trình khẳng định thương hiệu thật" là cụm một người chủ không nói bao giờ.
+
+Đặt vào đầu câu dẫn, tức vị trí thứ ba trên trang, viết bằng lời thường: "**Đây không phải thêm một khóa học về cách làm nội dung.** Đây là ba tuần bạn dựng thương hiệu của chính mình, để đúng người tìm tới bạn." Tiêu đề chính giữ nguyên cảnh "Ngồi với bạn một buổi là khách tin."
+
+Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.

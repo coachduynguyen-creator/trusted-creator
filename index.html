@@ -569,14 +569,18 @@ figure{margin:0}
 
 /* ============ DÒNG NHÂN DẠNG ============ */
 #ket-qua .dau-phan{margin-bottom:26px}
-.nhan-dang{margin:0;padding:24px 28px;border-radius:var(--r);background:var(--cam-mo);border:1px solid color-mix(in srgb,var(--cam-dam) 35%,transparent)}
-.nhan-dang b,.nhan-dang span{max-width:74ch}
-.nhan-dang + .ke{margin-top:32px}
-/* pretty chứ không balance: đây là chữ trong ô có nền, balance chia đều hai dòng
-   nên mỗi dòng chỉ dùng hai phần ba chiều ngang, để hụt 340px trống bên phải ô.
-   Coach Duy bắt lỗi ngày 25/08/2026. Chữ trong ô có nền phải đổ đầy dòng. */
-.nhan-dang b{display:block;font-family:var(--f-tit);font-size:clamp(19px,2.1vw,25px);letter-spacing:-.02em;line-height:1.25;color:var(--cam-sau);margin-bottom:8px;text-wrap:pretty}
-.nhan-dang span{display:block;font-size:15.5px;line-height:1.55;color:var(--ink-2)}
+/* Khối chốt của phần nỗi sợ. Trước đây là ô nền hồng nhạt viền mảnh, đọc ra
+   như hộp chú thích trong tài liệu văn phòng. Coach Duy gọi là quê, không cao
+   cấp, ngày 25/08/2026. Nay là khối tối duy nhất trên trang sáng, đúng chỗ cần
+   nặng ký: nền than có chiều sâu, một quầng cam rất nhạt ở góc, vạch vàng kim
+   mảnh trên đỉnh, chữ lớn trắng và một mệnh đề nhấn bằng vàng kim.
+   Cảm giác cao cấp đến từ chiều sâu và khoảng thở, không từ viền và nền màu. */
+.nhan-dang{position:relative;margin:0;padding:clamp(34px,4vw,54px) clamp(26px,3.4vw,50px);border-radius:var(--r);overflow:hidden;background-color:var(--ink);background-image:linear-gradient(155deg,#1C222D 0%,#0F1218 64%);box-shadow:var(--shadow)}
+.nhan-dang::before{content:'';position:absolute;inset:0;background:radial-gradient(115% 95% at 84% 0%,rgba(217,119,87,.22),transparent 58%);pointer-events:none}
+.nhan-dang::after{content:'';position:absolute;left:clamp(26px,3.4vw,50px);top:0;width:52px;height:3px;background:var(--vang-toi);border-radius:0 0 3px 3px}
+.nhan-dang b{position:relative;display:block;font-family:var(--f-tit);font-size:clamp(21px,2.5vw,31px);letter-spacing:-.025em;line-height:1.22;color:#fff;margin-bottom:16px;text-wrap:pretty;max-width:30ch}
+.nhan-dang b i{font-style:normal;color:var(--vang-toi)}
+.nhan-dang span{position:relative;display:block;font-size:16px;line-height:1.6;color:#C4CBD6;max-width:66ch}
 
 /* ============ CÁCH HỌC ============ */
 .hoc{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:start}
@@ -813,7 +817,7 @@ figure{margin:0}
       <div class="hero-chu">
         <span class="vien"><i></i>Trusted Founder Brand Challenge dành cho nhà sáng lập</span>
         <h1>Ngồi với bạn một buổi là khách tin. <span>Nhưng bạn chỉ ngồi được với vài người.</span></h1>
-        <p class="dan"><b>Thử thách ba tuần, khai giảng 28/09/2026.</b> Mỗi ngày bạn nhận đúng một việc: hôm nay viết gì, quay gì, đăng gì. Hết ba tuần bạn có chín nội dung thật đã đăng và một nhịp làm chạy tiếp được. Và bạn không làm một mình.</p>
+        <p class="dan"><b>Đây không phải thêm một khóa học về cách làm nội dung.</b> Đây là ba tuần bạn dựng thương hiệu của chính mình, để đúng người tìm tới bạn. Mỗi ngày một việc có đề bài: hôm nay viết gì, quay gì, đăng gì. Hết ba tuần bạn có chín nội dung thật đã đăng. Khai giảng 28/09/2026, và bạn không làm một mình.</p>
         <ul class="hero-ket">
           <li class="tieu" style="padding-left:0">Sau ba tuần, bạn có</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Một vị thế rõ: ai cần nghe bạn, và bạn có quyền nói về điều gì.</li>
@@ -855,7 +859,7 @@ figure{margin:0}
       <div><i>&ldquo;</i><p>Nhân viên cũ và cả đối thủ cũng đang theo dõi tôi.</p></div>
     </div>
     <div class="nhan-dang hien" style="margin-top:34px">
-      <b>Không câu nào trong số đó là chuyện thiếu kỹ thuật. Đó là chuyện phải đứng ra trước người khác khi mình chưa chắc.</b>
+      <b>Không câu nào trong số đó là chuyện thiếu kỹ thuật. <i>Đó là chuyện phải đứng ra trước người khác khi mình chưa chắc.</i></b>
       <span>Chương trình này gỡ đúng chỗ đó trước, rồi mới nói tới cách làm.</span>
     </div>
   </div>
