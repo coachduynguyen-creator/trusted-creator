@@ -663,3 +663,24 @@ Cảm giác cao cấp đến từ chiều sâu và khoảng thở, không đến
 Đặt vào đầu câu dẫn, tức vị trí thứ ba trên trang, viết bằng lời thường: "**Đây không phải thêm một khóa học về cách làm nội dung.** Đây là ba tuần bạn dựng thương hiệu của chính mình, để đúng người tìm tới bạn." Tiêu đề chính giữ nguyên cảnh "Ngồi với bạn một buổi là khách tin."
 
 Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.
+
+## Câu hero, lần thứ ba, ngày 25/08/2026
+
+Hai câu trước đều bị Coach Duy gạt, và cả hai lần lý do đều đúng.
+
+Lần một, "Bạn muốn là cái tên khách hàng và đối tác tin trước khi gặp": **trừu tượng**. "Là cái tên được tin" là một khái niệm, không phải cảnh.
+
+Lần hai, "Ngồi với bạn một buổi là khách tin. Nhưng bạn chỉ ngồi được với vài người": **không nói lên điều gì và gây khó hiểu**. Nó bắt người đọc tự suy ra mối liên hệ, rằng vì không ngồi được với nhiều người nên cần nội dung để thay mình. Không ai làm phép suy luận đó trong hai giây. Nặng hơn: cả hai dòng không có chữ nào cho biết trang này nói về thương hiệu cá nhân.
+
+Bài học: một câu hero hay không chỉ cần chạm, nó còn phải **nói được trang này bán cái gì**. Cảnh cụ thể mà thiếu chủ đề thì thành câu đố.
+
+Câu đang dùng, Coach Duy chọn từ ba hướng:
+
+> **Thương hiệu của bạn đã có sẵn. Nó chỉ chưa được nhìn thấy.**
+> *Ba tuần để đúng khách hàng tìm tới bạn.*
+
+Nó nói thẳng chữ thương hiệu, công nhận người đọc đã có sẵn thứ đó chứ không chê họ thiếu, và nêu luôn đích đến là đúng khách hàng tìm tới.
+
+Câu dẫn sửa theo cho khỏi trùng ý: "Đây không phải thêm một khóa học về cách làm nội dung. Đây là ba tuần bạn lấy những gì mình đã làm, đã biết và đã tin, rồi dựng thành một thương hiệu thị trường nhìn thấy được."
+
+Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.
