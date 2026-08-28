@@ -759,3 +759,22 @@ Bài học: khi chèn vào một phần cụ thể, phải neo bằng thứ ch�
 **Một điểm mù của `kiem-hut-phai.js`.** Bài kiểm đo khoảng hụt trong chính khối chữ, nên khi chữ có `max-width` nhỏ hơn ô nền chứa nó, khoảng trống nằm giữa khối chữ và ô nền thì bài kiểm không thấy. Cần bổ sung: nếu phần tử cha có nền đặc, đo theo chiều ngang của cha.
 
 Tám bài kiểm 0 lỗi ở 1400, 1000, 768, 375.
+
+## Đồng bộ bảng màu với trang Cộng đồng, ngày 25/08/2026
+
+Trang Cộng đồng đã đổi sang vàng đồng thương hiệu, trang này vẫn còn cam đất, nên hai trang trên cùng tên miền nhìn như của hai nơi khác nhau.
+
+| Biến | Cũ, cam đất | Mới, vàng đồng |
+|---|---|---|
+| `--cam` | `#D97757` | `#C98A28` |
+| `--cam-dam` | `#B34E30` | `#8A5A0F` |
+| `--cam-mo` | `#F6E7E0` | `#FBF1DC` |
+| `--cam-sau` | `#9E4229` | `#7A4E0C` |
+
+Bốn biến trên lấy đúng ba giá trị đầu từ trang Cộng đồng. Riêng `--cam-sau` là biến chỉ trang này có, dùng cho chữ đặt trên nền vàng đồng nhạt, nên chọn một sắc sâu hơn `--cam-dam` một bậc để vẫn đạt tương phản.
+
+Ngoài bảng biến còn bốn chỗ ghi mã màu chết mà lần trước lọt lưới: nền nút khi rê chuột, quầng sáng trong khối tối, và hai chấm cam trong dấu hiệu logo dạng SVG ở đầu trang và chân trang. Đã đưa hết về vàng đồng. Nay tìm `#D97757` trong tệp ra 0 kết quả.
+
+`--vang-toi` `#E9C46A` giữ nguyên, vì nó đã thuộc họ vàng và chỉ dùng cho chữ trên nền than, đạt 11.2:1.
+
+Tám bài kiểm 0 lỗi ở 1400, 1000, 768 và 375, trong đó bài kiểm tương phản quét 241 khối chữ không lỗi nào. Đây là bài kiểm quan trọng nhất khi đổi màu, vì đổi một biến là đổi tương phản của mọi chỗ dùng biến đó.
