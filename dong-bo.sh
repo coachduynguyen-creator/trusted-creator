@@ -24,15 +24,19 @@ python3 - "$DICH/index.html" <<'PY'
 import sys
 p = sys.argv[1]
 s = open(p, encoding='utf-8').read()
-cu = '<meta name="robots" content="noindex, nofollow">'
-moi = '<link rel="canonical" href="https://coachduynguyen.vn/founder-brand/">'
-if cu in s:
-    open(p, 'w', encoding='utf-8').write(s.replace(cu, moi, 1))
+import re
+DUNG = 'https://coachduynguyen.vn/founder-brand/'
+chan = '<meta name="robots" content="noindex, nofollow">'
+if chan in s:
+    s = s.replace(chan, '<link rel="canonical" href="%s">' % DUNG, 1)
     print('  đã gỡ thẻ chặn tìm kiếm, thay bằng đường dẫn chuẩn')
-elif moi in s:
-    print('  bản đích đã đúng')
+if 'rel="canonical"' in s:
+    s = re.sub(r'<link rel="canonical" href="[^"]*">',
+               '<link rel="canonical" href="%s">' % DUNG, s, count=1)
+    open(p, 'w', encoding='utf-8').write(s)
+    print('  đường dẫn chuẩn trỏ về', DUNG)
 else:
-    raise SystemExit('  DỪNG: không thấy thẻ chặn tìm kiếm lẫn đường dẫn chuẩn, kiểm tay')
+    raise SystemExit('  DỪNG: bản đích không có đường dẫn chuẩn, kiểm tay')
 PY
 
 cd "$KHO"
