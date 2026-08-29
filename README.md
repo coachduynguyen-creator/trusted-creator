@@ -778,3 +778,24 @@ Ngoài bảng biến còn bốn chỗ ghi mã màu chết mà lần trước l�
 `--vang-toi` `#E9C46A` giữ nguyên, vì nó đã thuộc họ vàng và chỉ dùng cho chữ trên nền than, đạt 11.2:1.
 
 Tám bài kiểm 0 lỗi ở 1400, 1000, 768 và 375, trong đó bài kiểm tương phản quét 241 khối chữ không lỗi nào. Đây là bài kiểm quan trọng nhất khi đổi màu, vì đổi một biến là đổi tương phản của mọi chỗ dùng biến đó.
+
+## Chữ "nhịp" dùng mười lần cho bảy nghĩa, ngày 25/08/2026
+
+Coach Duy nói không hiểu chữ "nhịp", và nhận xét rằng tôi hay dùng nó. Đếm ra **mười lần trong trang, gánh bảy nghĩa khác nhau**: một cách làm đều đặn, tốc độ nói, chỗ ngừng khi nói, cách nói riêng, chuyện đứt quãng, người thúc, và mức độ làm đều.
+
+Một chữ gánh bảy việc thì nó không còn nghĩa nào cả. Người đọc phải đoán nghĩa theo ngữ cảnh mỗi lần gặp, và đó chính là cảm giác đọc văn máy.
+
+| Cũ | Mới |
+|---|---|
+| Một nhịp làm vẫn chạy sau ba tuần | Một cách làm đều đặn, vẫn chạy sau ba tuần |
+| nói nhanh hơn ngoài đời một nhịp | nói nhanh hơn ngoài đời một chút |
+| nhịp dừng của bạn | chỗ bạn dừng lại khi nói |
+| tìm lại nhịp nói của mình, không học nhịp người khác | tìm ra cách nói của chính mình, không bắt chước ai |
+| bận một tuần và mất nhịp | bận một tuần là đứt |
+| có người giữ nhịp | có người nhắc bạn làm đều |
+| chưa có nhịp | chưa đều được |
+| 15 lần điểm danh để tạo nhịp | 15 lần điểm danh để bạn làm đều |
+
+Còn đúng một lần: **"đều nhịp"** trong danh sách năm tiêu chuẩn. Đây là tên chính thức của tiêu chuẩn 11.4 trong tài liệu 3.1, không phải chữ tôi tự đặt, nên giữ nguyên và hỏi lại Coach Duy.
+
+Bài học chung: khi một chữ xuất hiện quá nhiều lần trong một trang, kiểm xem nó có đang gánh nhiều nghĩa không. Nếu có thì đó là chữ rỗng, không phải chữ hay.
